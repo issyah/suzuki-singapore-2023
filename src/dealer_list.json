@@ -1,0 +1,93 @@
+[
+  {
+    "name": "A.S. Phoon Pte Ltd - Changi Branch",
+    "address": "399 Changi Rd",
+    "postal_code": "Singapore 419846",
+    "tel": "+6567470770",
+    "region": "east"
+  },
+  {
+    "name": "A.S. Phoon Pte Ltd - Toh Guan Branch",
+    "address": "36 Toh Guan Rd East Enterprise Hub #01-35",
+    "postal_code": "Singapore 608580",
+    "tel": "+6565150770",
+    "region": "west"
+  },
+  {
+    "name": "A.S. Phoon Pte Ltd - Ubi Branch",
+    "address": "Blk 3007 Ubi Rd 1 #01-436",
+    "postal_code": "Singapore 408701",
+    "tel": "+6567440770",
+    "region": "east"
+  },
+  {
+    "name": "De Xing Motor Pte Ltd",
+    "address": "3006 Ubi Rd 1 #01-356",
+    "postal_code": "Singapore 408700",
+    "tel": "+6567468582",
+    "region": "east"
+  },
+  {
+    "name": "Looi’s Motor Enterprise Pte Ltd",
+    "address": "55 Kaki Bukit Place",
+    "postal_code": "Singapore 416230",
+    "tel": "+6567431072",
+    "region": "east"
+  },
+  {
+    "name": "New Union Company",
+    "address": "Blk 9004 Tampines Street 93 #01-106",
+    "postal_code": "Singapore 528838",
+    "tel": "+6567849488",
+    "region": "east"
+  },
+  {
+    "name": "Speedway Motor Pte Ltd",
+    "address": "36 Toh Guan Rd East Enterprise Hub #01-32",
+    "postal_code": "Singapore 608580",
+    "tel": "+6563161611",
+    "region": "west"
+  },
+  {
+    "name": "iMotoring Singapore",
+    "address": "Blk 1008 Bukit Merah Lane 3 #01-14",
+    "postal_code": "Singapore 159722",
+    "tel": "+6563771385",
+    "region": "south"
+  },
+  {
+    "name": "Teo Spray Trading",
+    "address": "Blk 6 Defu Lane 10 #01-558/560/562 Defu Industrial Park C",
+    "postal_code": "Singapore 539187",
+    "tel": "+6562835474",
+    "region": "east"
+  },
+  {
+    "name": "Albert Motor Supply Pte Ltd (AMS)",
+    "address": "Blk 1008 Bukit Merah Lane 3 #01-10",
+    "postal_code": "Singapore 159722",
+    "tel": "+6562737188",
+    "region": "south"
+  },
+  {
+    "name": "M.1 Motoring (Changi)",
+    "address": "411 Changi Road",
+    "postal_code": "Singapore 419860",
+    "tel": "+6567437030",
+    "region": "east"
+  },
+  {
+    "name": "M.1 Motoring (Serangoon)",
+    "address": "1080 Serangoon Road",
+    "postal_code": "Singapore 328183",
+    "tel": "+6562927040",
+    "region": "north"
+  },
+  {
+    "name": "S.1 Motoring",
+    "address": "Blk 3006 Ubi Rd #01-366",
+    "postal_code": "Singapore 408700",
+    "tel": "+6567499535",
+    "region": "east"
+  }
+]
