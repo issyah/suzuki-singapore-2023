@@ -13,6 +13,8 @@ import {
 import SuzukiLogo from "@/public/suzuki-logo.webp";
 import Image from "next/image";
 import Link from "./Link";
+import {red} from '@mui/material/colors';
+import { PinDrop } from "@mui/icons-material";
 export default function Nav(props) {
   const pages = [
     {
@@ -30,11 +32,18 @@ export default function Nav(props) {
     {
       label: "LOCATE A DEALER",
       href: "/locate-a-dealer",
+      startIcon: <PinDrop/>,
       sx: {
         bgcolor: "primary.main",
         color: "white",
+        mt:-1,
+        mb:-1,
+        transform: 'skewX(-10deg)',
+        'span' : {
+          transform: 'skewX(10deg)'
+        },
         "&:hover": {
-          bgcolor: "secondary.main",
+          bgcolor: red[800],
           color: "white",
         },
       },
@@ -62,7 +71,6 @@ export default function Nav(props) {
               <Button
                 size="large"
                 sx={{
-                  typography: "h6",
                   fontFamily: "Oswald",
                   ml: 1,
                   ...item?.sx,
@@ -70,8 +78,9 @@ export default function Nav(props) {
                 key={index}
                 component={Link}
                 href={item.href}
+                startIcon={item.startIcon}
               >
-                {item.label}
+                <span>{item.label}</span>
               </Button>
             ))}
           </Box>

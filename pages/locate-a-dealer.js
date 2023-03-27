@@ -26,6 +26,7 @@ import { grey } from "@mui/material/colors";
 import Link from "@/src/Link";
 import { Phone, PinDrop } from "@mui/icons-material";
 import { useState, useEffect } from "react";
+import Public from "templates/public";
 export default function LocateADealer(props) {
   const [selectedDealer, setSelectedDealer] = useState(0);
   const [region, setRegion] = useState("all");
@@ -61,10 +62,8 @@ export default function LocateADealer(props) {
   }, [selectedDealer]);
 
   return (
-    <div>
-      <Nav />
-      <Toolbar />
-      <Container maxWidth="xl" sx={{ my: 4 }}>
+    <Public>
+      <Container maxWidth="xl">
         <Typography variant="h3" component={"h1"}>
           LOCATE A DEALER
         </Typography>
@@ -140,7 +139,7 @@ export default function LocateADealer(props) {
                   }}
                 >
                   <CardContent>
-                    <Typography variant="h6" gutterBottom>
+                    <Typography fontWeight={'bold'} >
                       {item.name}
                     </Typography>
                     {/* <Typography variant='body1'>{item.address}</Typography> */}
@@ -153,7 +152,7 @@ export default function LocateADealer(props) {
                     >
                       {item.address}
                     </Link>
-                    <Typography variant="body1" fontWeight={700}>
+                    <Typography variant="body2" fontWeight={700}>
                       {item.postal_code}
                     </Typography>
                   </CardContent>
@@ -174,6 +173,7 @@ export default function LocateADealer(props) {
                       component={Link}
                       startIcon={<PinDrop />}
                       variant="contained"
+                      target={"_blank"}
                     >
                       Directions
                     </Button>
@@ -210,10 +210,10 @@ export default function LocateADealer(props) {
         </Grid>
       </Container>
       <Container maxWidth="xl">
-        <Typography variant="h3" component={"h2"}>
+        <Typography variant="h3" gutterBottom component={"h2"} sx={{ mt: 2 }}>
           LOCATE SPARE PARTS STOCKIST
         </Typography>
-        <Grid container spacing={2} sx={{ my: 4 }}>
+        <Grid container spacing={2} sx={{ my: 2 }}>
           {StockistList.map((item, index) => (
             <Grid item md={4} xs={12} key={index}>
               <Card
@@ -223,7 +223,7 @@ export default function LocateADealer(props) {
                 }}
               >
                 <CardContent>
-                  <Typography variant="h6" gutterBottom>
+                  <Typography fontWeight={'bold'}>
                     {item.name}
                   </Typography>
                   {/* <Typography variant='body1'>{item.address}</Typography> */}
@@ -236,7 +236,7 @@ export default function LocateADealer(props) {
                   >
                     {item.address}
                   </Link>
-                  <Typography variant="body1" fontWeight={700}>
+                  <Typography variant="body2" fontWeight={700}>
                     {item.postal_code}
                   </Typography>
                 </CardContent>
@@ -254,6 +254,7 @@ export default function LocateADealer(props) {
                       " ",
                       "+"
                     )}`}
+                    target={"_blank"}
                     component={Link}
                     startIcon={<PinDrop />}
                     variant="contained"
@@ -266,6 +267,6 @@ export default function LocateADealer(props) {
           ))}
         </Grid>
       </Container>
-    </div>
+    </Public>
   );
 }

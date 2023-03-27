@@ -29,17 +29,22 @@ const theme = createTheme({
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
     ].join(','),
+    fontSize: 16,
     h1: {
-      fontFamily: 'Oswald'
+      fontFamily: 'Oswald',
+      fontWeight: 700,
     },
     h2: {
-      fontFamily: 'Oswald'
+      fontFamily: 'Oswald',
+      fontWeight: 700,
     },
     h3: {
-      fontFamily: 'Oswald'
+      fontFamily: 'Oswald',
+      fontWeight:700,
     },
     h4: {
-      fontFamily: 'Oswald'
+      fontFamily: 'Oswald',
+      fontWeight: 700,
     },
     button: {
       fontFamily: 'Oswald'
