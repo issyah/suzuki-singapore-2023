@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+@media screen and (min-width: 768px){
+    footer {
+        padding: 20px !important;
+    }
+    .footer-bottom {
+    	margin: 0 auto !important; 
+    	padding-bottom:0 !important;
+    }
+}
+
+@media (max-width: 768px) {
+	footer {
+		padding-top:10vw !important;
+		padding-bottom:10vw !important;
+	}
+    .footer-bottom {
+        margin-bottom:0 !important;
+    }
+}

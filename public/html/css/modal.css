@@ -1,0 +1,181 @@
+/*----------------------------------------
+	font
+----------------------------------------*/
+@font-face {
+	font-family: 'SuzukiPROBold';
+	src: url('font/SuzukiPROBold.woff') format('woff');
+}
+@font-face {
+	font-family: 'SuzukiPROHeadline';
+	src: url('font/SuzukiPROHeadline.woff') format('woff');
+}
+@font-face {
+	font-family: 'SuzukiPRORegular';
+	src: url('font/SuzukiPRORegular.woff') format('woff');
+}
+
+/*----------------------------------------
+	modal
+----------------------------------------*/
+/*overlay*/
+#modal_overlay {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.75);
+    z-index: 7;
+}
+/*modal*/
+#modal_contents {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    width: 800px;
+     height: 100%;
+    margin: 0 auto;
+    z-index: 8;
+    display: none;
+}
+#modal_contents .contents_inner {
+    position: relative;
+    width: 800px;
+    height: 100%;
+    margin: 0 auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+/*close_btn*/
+#modal_contents .close_btn {
+    position: absolute;
+    margin-left: 750px;
+    cursor: pointer;
+    z-index: 1;
+}
+/*contents*/
+#modal_contents .contents_box {
+    height: 100%;
+    overflow-y: scroll;
+    padding-right: 17px;
+    width: 817px;
+    color: #000000;
+    font-size: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#modal_contents .contents {
+  width: 800px;
+	min-height: 400px;
+    margin-bottom: 10px;
+    background-color: #ffffff;
+		padding-bottom: 41px;
+}
+#modal_contents .contents .img {
+	width: 457px;
+	text-align: center;
+	/*margin-bottom: 41px;*/
+}
+#modal_contents .contents .img img{
+	width: 415px;
+	/*height: 100%;*/
+}
+#modal_contents .contents .detail {
+	width: 314px;
+	padding-right: 29px;
+}
+#modal_contents .contents > div {
+	display: inline-block;
+	font-size: 0;
+	vertical-align: top;
+}
+#modal_contents .contents h3 {
+	font-family: "SuzukiPROHeadline", Arial, Helvetica, sans-serif;
+    font-size: 26px;
+		padding-top: 54px;
+    margin-bottom: 46px;
+    text-align: center;
+		font-weight: normal;
+}
+#modal_contents .contents p {
+	font-family: "SuzukiPRORegular", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+		margin-top: -7px;
+		line-height: 1.6;
+}
+#modal_contents .contents .paragraph {
+	margin-top: 10px;
+}
+#modal_contents .contents .modal_notation {
+	font-size: 12px;
+	margin-top: 16px;
+}
+.margin{
+	margin: 0 0 5px 0;
+}
+#modal_contents .linefeed{
+	display: inline-block;
+	margin: 0 0 0 8px;
+}
+
+/*----------------------------------------
+	detail modal
+----------------------------------------*/
+#modal_contents .contents.detailImgs{
+	height: auto;
+	padding-bottom: 0;
+}
+#modal_contents .contents.detailImgs .contener{
+	padding-bottom: 30px;
+}
+#modal_contents .contents.detailImgs h4{
+	margin: 15px 0 10px 0;
+	font-family: "SuzukiPROHeadline", Arial, Helvetica, sans-serif;
+	font-size: 26px;
+	text-align: center;
+	font-weight: normal;
+}
+#modal_contents .contents.detailImgs .img{
+	margin: 0 auto;
+	width: 100%;
+	height: auto;
+	padding: 0 45px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+#modal_contents .contents.detailImgs img{
+	width: 100%;
+	height: auto;
+}
+#modal_contents .contents.detailImgs p{
+	/*display: inline-block;*/
+	margin: 0;
+	/*line-height: 1;*/
+	line-height: 1.5em;
+	padding: 0 45px;
+}
+#modal_contents .contents.detailImgs .two_column{
+	padding: 0 45px;
+}
+#modal_contents .contents.detailImgs .two_column p{
+	display: inline-block;
+	width: 50%;
+	padding: 0;
+}
+#modal_contents .contents.detailImgs .two_column.type1 p{
+	padding-left: 15px;
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}

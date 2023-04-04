@@ -18,10 +18,12 @@
     "@fontsource/roboto": "^4.5.8",
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
+    "cheerio": "^1.0.0-rc.12",
     "next": "latest",
     "prop-types": "latest",
     "react": "latest",
-    "react-dom": "latest"
+    "react-dom": "latest",
+    "xml2js": "^0.4.23"
   },
   "devDependencies": {
     "eslint": "latest",

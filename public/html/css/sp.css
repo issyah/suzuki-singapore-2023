@@ -1,0 +1,353 @@
+/*----------------------------------------
+frame
+----------------------------------------*/
+#wp {
+  max-width: none;
+  min-width: inherit;
+  margin: 0;
+  width: 100%;
+   -webkit-text-size-adjust: 100%;
+}
+.viewer{
+  padding-top: 76.8%;
+  height: auto;
+  margin: 0;
+}
+.viewer .box {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+   left: 0;
+    width: 100%;
+    height: auto;
+}
+#spin_area1, #spin_area2 {
+  width: 100%;
+  height: 100%;
+}
+#wp .spin_images img {
+    width: auto;
+    height: 100%;
+    margin: 0 auto;
+}
+.viewer .box .rotation {
+  top: 50%;
+  left: 50%;
+  margin-top: -32px;
+  margin-left: -48px;
+}
+/*----------------------------------------
+	bike logo
+----------------------------------------*/
+#bikelogo{
+  width: 44.4%;
+  padding-top: 2.13%;
+  margin-left: 2.66%;
+  margin-top: 6px;
+}
+#bikelogo .logo_inner{
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+#bikelogo img{
+  /*width: 100%;*/
+  width: auto;
+  height: 100%;
+}
+/*----------------------------------------
+	swich
+----------------------------------------*/
+#swiches{
+  width: 169px;
+  height: 23px;
+  margin-top: 1px;
+  margin-right: 2.66%;
+  text-align: right;
+}
+#swiches p{
+  width: auto;
+  padding: 0;
+  font-size: 13px;
+}
+#swiches #swich_light p{
+  width: auto;
+  padding: 0;
+}
+#swiches .swich{
+  width: 41px;
+  height: 23px;
+  background-size: 200%;
+}
+#swiches > div{
+  display: inline-block;
+  height: 23px;
+}
+#swiches .swich.on{
+  background-position: 100% 0;
+}
+#swiches #swich_features p{
+  margin-right: 3px;
+}
+#swiches #swich_light p{
+  margin-right: 1px;
+}
+/*----------------------------------------
+menu
+----------------------------------------*/
+#menu{
+  position: inherit;
+  width: 100%;
+  overflow: hidden;
+}
+#menu .tabs{
+  width: 33.33333%;
+  height: 40px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+#menu .tabs:first-child+* {
+  margin: 0;
+  border-right: 1px solid #ffffff;
+  border-left: 1px solid #ffffff;
+}
+#menu .tabs span{
+  font-size: 17px;
+}
+#menu #list,
+#menu .listbox
+{
+  height: 100%;
+  overflow: scroll;
+}
+#menu .lists{
+  height: 60px;
+}
+#menu .lists:before{
+  /*width: 7.2%;*/
+  width: 3.2%;
+}
+#menu .noradio:before{
+  width: 7.2%;
+  margin-right: 43px;
+}
+#menu .adapt360:before {
+  /*width: 4.66%;*/
+  width: 0.56%;
+}
+#menu .lists label{
+  background-size: 100%;
+  background-position: center;
+}
+#gradeList .lists .two_paragraph {
+    margin-top: 15px;
+}
+#gradeList .lists .two_paragraph .sub{
+  font-size: 11px;
+}
+#menu #genuineAccessory {
+  width: 33.33%;
+}
+#menu .lists .thum {
+    width: auto;
+    height: 100%;
+}
+#menu .lists p {
+    font-size: 14px;
+}
+#menu .havebtn, #bodyColorList .lists p {
+    max-width: 60%;
+}
+#menu .havebtn{
+  /*width: 54.06%;*/
+  width: 60.06%;
+}
+#menu .lists .detail_btn {
+  background-image: url("../img/ui/detail_btn_sp.gif");
+  margin-top: 3px;
+    width: 77.5px;
+    height: 22.5px;
+    background-size: 200%;
+}
+#menu .lists .detail_btn:hover {
+    background-position: 100% 0;
+}
+#menu .have_chips{
+  height: 27.5px;
+}
+#menu .icon360 {
+  display: block;
+  width: 70%;
+  margin: 4px auto 0 auto;
+}
+
+/*---color chips---*/
+#menu .color_chips{
+  /*margin: 3px 0 0 10.14%;*/
+  margin: 3px 0 0 4.14%;
+}
+#menu .color_chips li{
+  margin-right: 2.1px;
+}
+#menu .color_chips img{
+  width: 24.5px;
+}
+#menu .color_chips .select:before{
+  background-image: url("../img/ui/color_chips/chip_forcus_sp.png");
+  width: 24.5px;
+  height: 24.5px;
+  background-size: 100%;
+}
+
+#menu .adapt360 .listright {
+    margin-right: 0;
+}
+#menu .adapt360 .havebtn {
+  max-width: none;
+  width: 69.06%;
+}
+#menu .adapt360 .color_chips {
+  margin: 3px 0 0 1.14%;
+}
+#menu .adapt360 .listright {
+  margin-left: -7px;
+}
+
+/*----------------------------------------
+	info
+----------------------------------------*/
+#wp .info_area{
+  background-color: #ffffff;
+   padding-bottom: 2px;
+   margin-top: -67px;
+   position: inherit;
+}
+#wp .info_area > div{
+  position: inherit;
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+  vertical-align: bottom;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+.info_area p.notation{
+  margin-top: 8px;
+  width: 100%;
+  padding: 0 3.33%;
+  font-size: 9px;
+  -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+/*----------------------------------------
+	selected
+----------------------------------------*/
+#selected{
+  /*padding-left: 3.33%;*/
+  /*padding-right: 6%;*/
+	padding-right: 1%;
+  padding-left: 2%;
+}
+#wp .info_area > div{
+	width: 53%;
+}
+#selected #sGrade{
+  margin-bottom: 6px;
+}
+#selected span{
+  font-size: 12px;
+  padding-bottom:2px;
+  margin-bottom:3px;
+}
+#selected p{
+  font-size: 8px;
+}
+#selected #sColor span{
+	width: 100%;
+}
+#selected #sColor {
+  margin-bottom: 0;
+}
+/*----------------------------------------
+	header
+----------------------------------------*/
+#header{
+  height: 37px;
+}
+#header img{
+  width: auto;
+  height: 100%;
+}
+
+/*----------------------------------------
+	footer
+----------------------------------------*/
+#footer{
+  display: none;
+}
+
+/*----------------------------------------
+	horizontal_notation
+----------------------------------------*/
+#horizontal_notation.horizontal{
+	display: block;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 20px;
+  background-color: #003145;
+  z-index: 1;
+  text-align: center;
+  line-height: 2;
+}
+
+/*----------------------------------------
+	footer
+----------------------------------------*/
+.footer{
+	width: 100%;
+  height: 62px;
+	text-align: center;
+	font-size: 0;
+	background-color: #003145;
+}
+.footer:before{
+  content: " ";
+  height: 100%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.footer p{
+  font-size: 10px;
+  color: #ffffff;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+
+/*----------------------------------------
+  holizontal
+----------------------------------------*/
+.horizontal_mode{
+  display: none !important;
+}
+
+/*----------------------------------------
+	adjustment bike & marker
+----------------------------------------*/
+#wp #spin_area1,#wp #spin_area2,#wp #mark{
+  margin-top: -11px;
+}

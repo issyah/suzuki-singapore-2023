@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<meta charset="utf-8">
+	<title>Hayabusa</title>
+	<script>
+		var ua = navigator.userAgent;
+		var title = document.getElementsByTagName('title');
+		if ((ua.indexOf('iPhone') > 0) || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0)) {
+			title[0].insertAdjacentHTML('afterend','<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">');
+		} else {
+			title[0].insertAdjacentHTML('afterend','<meta name="viewport" content="width=1280, user-scalable=yes">');
+		}
+	</script>
+	<link rel="stylesheet" href="./commons/css/base.css">
+	<link rel="stylesheet" href="./commons/css/header-footer.css">
+	<link rel="stylesheet" href="./commons/css/common.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/simple.css">
+</head>
+<body>
+
+<!-- header -->
+<header>
+	<div id="head">
+		<h1 class="logo"><a href="#"><img src="/images/logo.png" alt=""></a></h1>
+	</div><!--head-->
+</header>
+<!-- header end -->
+
+<div id="stage">
+
+<!--contents-->
+
+<div id="configurator" class="configurator" data-current-grade="1" data-current-bodycolor="1">
+	<div class="configurator__wrapper">
+		<div class="configurator__header">
+			<p class="configurator__header__change"><a href="/motorcycles">Change Models</a></p>
+			<h1 class="configurator__header__name">Hayabusa</h1>
+		</div>
+		<div class="configurator__view">
+			<ul class="configurator__view__list" data-current-view="1">
+				<li class="configurator__view__list__item">
+					<picture>
+						<source srcset="./img/data/grade1/color1/01.webp" type="image/webp" class="webp">
+						<img src="./img/data/grade1/color1/01.jpg" alt="" class="jpg">
+					</picture>
+				</li>
+			</ul>
+			<div class="configurator__view__icn"><!--/.configurator__view__icn--></div>
+		<!--/.configurator__view--></div>
+
+
+		<div class="configurator__nav -active">
+			<ul class="configurator__nav__list">
+				<li class="configurator__nav__list__item">
+					<button class="configurator__nav__list__btn -bodyColor js-change-bodyColor">
+						<span class="icn"><img src="./img/icn_body_color.svg" alt="BODY COLOR" class="svg"></span>
+						<span class="txt">BODY COLOR</span>
+					</button>
+				</li>
+				<li class="configurator__nav__list__item">
+					<button class="configurator__nav__list__btn -accessories js-accessories-open">
+						<span class="icn"><img src="./img/icn_genuine_accessories.svg" alt="GENUINE ACCESSORIES" class="svg"></span>
+						<span class="txt">GENUINE<br>ACCESSORIES</span>
+					</button>
+				</li>
+				<li class="configurator__nav__list__item">
+					<a href="/motorcycles/hayabusa" class="configurator__nav__list__btn -features">
+						<span class="icn"><img src="./img/icn_features.svg" alt="FEATURES AND BENEFITS" class="svg"></span>
+						<span class="txt">FEATURES<br>AND BENEFITS</span>
+					</a>
+				</li>
+			</ul>
+			<ul class="configurator__nav__control">
+				<li class="configurator__nav__control__item">
+					<button class="configurator__nav__control__btn -zoom js-zoom-list-open">
+						<span class="icn"><img src="./img/icn_zoom_plus.svg" alt="ZOOM" class="svg"></span>
+						<span class="txt">ZOOM</span>
+					</button>
+				</li>
+				<li class="configurator__nav__control__item">
+					<button class="configurator__nav__control__btn -angle js-balloon-open">
+						<span class="icn"><img src="./img/img_sp_rotate.svg" alt="" class="svg"></span>
+						<span class="balloon">You can rotate the<br>device on this page</span>
+					</button>
+				</li>
+			</ul>
+		<!--/.configurator__nav--></div>
+
+		<div class="configurator__bodyColor" data-bodycolor-grade="1">
+			<div class="configurator__bodyColor__inner">
+				<p class="configurator__bodyColor__head">BODY COLOR</p>
+				<ul class="configurator__bodyColor__list">
+					<li class="configurator__bodyColor__list__item">
+						<button class="configurator__bodyColor__list__btn" data-bodycolor="1">
+							<figure class="img">
+								<picture>
+									<source srcset="./img/data/img_body_color1.webp" type="image/webp">
+									<img src="./img/data/img_body_color1.png" alt="Metallic Thunder Gray / Candy Daring Red (CJH)">
+								</picture>
+							</figure>
+							<p class="txt">
+								<span class="name">Metallic Thunder Gray / Candy Daring Red</span>
+								<span class="notes">CJH</span>
+							</p>
+						</button>
+					</li>
+					<li class="configurator__bodyColor__list__item">
+						<button class="configurator__bodyColor__list__btn" data-bodycolor="2">
+							<figure class="img">
+								<picture>
+									<source srcset="./img/data/img_body_color2.webp" type="image/webp">
+									<img src="./img/data/img_body_color2.png" alt="Pearl Vigor Blue / Pearl Brilliant White (JWN)">
+								</picture>
+							</figure>
+							<p class="txt">
+								<span class="name">Pearl Vigor Blue / Pearl Brilliant White</span>
+								<span class="notes">JWN</span>
+							</p>
+						</button>
+					</li>
+					<li class="configurator__bodyColor__list__item">
+						<button class="configurator__bodyColor__list__btn" data-bodycolor="3">
+							<figure class="img">
+								<picture>
+									<source srcset="./img/data/img_body_color3.webp" type="image/webp">
+									<img src="./img/data/img_body_color3.png" alt="Metallic Mat Black No.2 / Glass Sparkle Black (KGL)">
+								</picture>
+							</figure>
+							<p class="txt">
+								<span class="name">Metallic Mat Black No.2 / Glass Sparkle Black</span>
+								<span class="notes">KGL</span>
+							</p>
+						</button>
+					</li>
+				</ul>
+			<!--/.configurator__bodyColor__inner--></div>
+			<button class="configurator__bodyColor__close js-config-close">
+				<span class="icn"></span>
+				<span class="txt">CLOSE</span>
+			</button>
+		<!--/.configurator__bodyColor--></div>
+
+		<div class="configurator__control">
+			<p class="configurator__control__zoom">
+				<span class="txt">ZOOM</span>
+				<span class="icn"><img src="./img/icn_zoom.svg" alt="ZOOM" class="svg"></span>
+			</p>
+			<ul class="configurator__control__list hayabusa" data-zoom-grade="1">
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle1 js-zoom-open" data-zoom-angle="1">
+						<img src="./img/data/icn_angle1.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle2 js-zoom-open" data-zoom-angle="4">
+						<img src="./img/data/icn_angle2.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle3 js-zoom-open" data-zoom-angle="7">
+						<img src="./img/data/icn_angle3.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle4 js-zoom-open" data-zoom-angle="9">
+						<img src="./img/data/icn_angle4.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle5 js-zoom-open" data-zoom-angle="14">
+						<img src="./img/data/icn_angle5.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle6 js-zoom-open" data-zoom-angle="19">
+						<img src="./img/data/icn_angle6.svg" alt="" class="addSvg">
+					</button>
+				</li>
+			</ul>
+			<button class="configurator__control__close js-config-close">
+				<span class="icn"></span>
+				<span class="txt">CLOSE</span>
+			</button>
+		<!--/.configurator__control--></div>
+
+		<div class="configurator__footer">
+			<div class="configurator__footer__list">
+				<dl class="configurator__footer__list__item">
+					<dt class="configurator__footer__list__title">BODY COLOR</dt>
+					<dd class="configurator__footer__list__data -bodyColor -line">
+						<span class="name">Metallic Thunder Gray / Candy Daring Red</span>
+						<span class="notes">CJH</span>
+					</dd>
+				</dl>
+			<!--/.configurator__footer__list--></div>
+			<p class="configurator__footer__notes">
+				*Specifications shown in this 360° Viewer are subject to change by Suzuki at any time without notice.
+			</p>
+		<!--/.configurator__footer--></div>
+
+	<!--/.configurator__wrapper--></div>
+
+		<div class="configurator__accessory">
+			<div class="configurator__accessory__wrapper">
+				<div class="configurator__accessory__inner">
+					<p class="configurator__accessory__head">GENUINE ACCESSORIES</p>
+					<figure class="configurator__accessory__image js-image-open">
+						<p class="img -border">
+							<picture>
+								<source srcset="./img/data/accessory/th.webp" type="image/webp">
+								<img src="./img/data/accessory/th.jpg" alt="Image Photo">
+							</picture>
+						</p>
+						<p class="txt">
+							Image Photo
+						</p>
+					</figure>
+					<ul class="configurator__accessory__list">
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/01.webp" type="image/webp">
+										<img src="./img/data/accessory/01.jpg" alt="Touring screen">
+									</picture>
+								</p>
+								<p class="head">
+									Touring screen
+								</p>
+								<p class="txt">Clear type wind screen with better wind protection due to 38 mm higher screen than original one.<br>
+The shape of the wind screen is carefully designed to consider the whole shape of the bike, and this leads to keep the original image of the bike.<br>
+Hayabusa logo is put on the sporty graphic of the wind screen which makes you feel ownership of this bike.<br>
+*Including screen cover.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/02.webp" type="image/webp">
+										<img src="./img/data/accessory/02.jpg" alt="Single seat cowling">
+									</picture>
+								</p>
+								<p class="head">
+									Single seat cowling
+								</p>
+								<p class="txt">It expresses the integrated feeling with the rider by appealing the silhouette of streamlined shape from front to rear, which is one of the identity of Hayabusa.<br>
+Available in the following color codes: Black / Gold (B5L), Matt Silver / Red (B5M), White / Matt blue (B5N).<br>
+*Photo shows single seat cowling for unit color of B5L (Black / gold)</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/03.webp" type="image/webp">
+										<img src="./img/data/accessory/03.jpg" alt="Color seat">
+									</picture>
+								</p>
+								<p class="head">
+									Color seat
+								</p>
+								<p class="txt">Grippy seat surface. Red double stitch, and Hayabusa logo on the surface of seat leads to show you better quality and makes the owner satisfy.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/04.webp" type="image/webp">
+										<img src="./img/data/accessory/04.jpg" alt="Grip heater">
+									</picture>
+								</p>
+								<p class="head">
+									Grip heater
+								</p>
+								<p class="txt">With heat spot function and 3 levels adjustable heat temperature. (All around of the grip is warmed but it makes you feel warm especially in the fingertips due to appropriate temperature range for each area.)</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/05.webp" type="image/webp">
+										<img src="./img/data/accessory/05.jpg" alt="Chrome plated filler cap">
+									</picture>
+								</p>
+								<p class="head">
+									Chrome plated filler cap
+								</p>
+								<p class="txt">Replacement for the original equipment part which gives your bike a unique accent.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/06.webp" type="image/webp">
+										<img src="./img/data/accessory/06.jpg" alt="Fuel tank bag (Large)">
+									</picture>
+								</p>
+								<p class="head">
+								Fuel tank bag (Large)
+								</p>
+								<p class="txt">Durable nylon material with reflective piping, volume 11 litres expandable to 15 litres, rain cover and shoulder belt included.<br>
+*“Tank ring for textile tank bag” is required for installation.<br>
+*Max load 2.5kg<br>
+*Max speed 130km (Please use the item in the speed of less than 130km.)</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/07.webp" type="image/webp">
+										<img src="./img/data/accessory/07.jpg" alt="Fuel tank bag (Small)">
+									</picture>
+								</p>
+								<p class="head">
+								Fuel tank bag (Small)
+								</p>
+								<p class="txt">Durable nylon material with reflective piping, volume 5 litres expandable to 9 litres, rain cover and shoulder belt included.<br>
+*“Tank ring for textile tank bag” is required for installation.<br>
+*Max load 2.5kg<br>
+*Max speed 130km (Please use the item in the speed of less than 130km.)</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/23.webp" type="image/webp">
+										<img src="./img/data/accessory/23.jpg" alt="Tank ring for textile tank bag">
+									</picture>
+								</p>
+								<p class="head">
+								Tank ring for textile tank bag
+								</p>
+								<p class="txt">*Required item to install fuel tank bag large or fuel tank bag small.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/08.webp" type="image/webp">
+										<img src="./img/data/accessory/08.jpg" alt="Wheel decal (With SUZUKI logo)">
+									</picture>
+								</p>
+								<p class="head">
+								Wheel decal <br class="thumb-only">(With SUZUKI logo)
+								</p>
+								<p class="txt">Red colored with SUZUKI logo, easy to customize your bike’s appearance.<br>
+*For one wheel.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/24.webp" type="image/webp">
+										<img src="./img/data/accessory/24.jpg" alt="Wheel decal (Cutting type with SUZUKI logo)">
+									</picture>
+								</p>
+								<p class="head">
+								Wheel decal <br class="thumb-only">(Cutting type with <br class="thumb-only">SUZUKI logo)
+								</p>
+								<p class="txt">Red colored with SUZUKI logo, easy to customize your bike’s appearance.<br>
+							*For one wheel.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/25.webp" type="image/webp">
+										<img src="./img/data/accessory/25.jpg" alt="Wheel decal (Without logo)">
+									</picture>
+								</p>
+								<p class="head">
+								Wheel decal <br class="thumb-only">(Without logo)
+								</p>
+								<p class="txt">Decals for one wheel, available in the following color codes: Blue (BLU), Orange (ORA), Red (RD1), White (WHT)<br>
+							*For one wheel.<br>
+						<span style="color:#fff;">*</span>Image shows Red (RD1).</p>
+							</figure>
+						</li>
+
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/09.webp" type="image/webp">
+										<img src="./img/data/accessory/09.jpg" alt="Tire valve cap">
+									</picture>
+								</p>
+								<p class="head">
+									Tire valve cap
+								</p>
+								<p class="txt">Tire valve cap with chrome-plated type.<br>
+*Set of front and rear.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/10.webp" type="image/webp">
+										<img src="./img/data/accessory/10.jpg" alt="Aluminum oil filler cap">
+									</picture>
+								</p>
+								<p class="head">
+									Aluminum oil filler cap
+								</p>
+								<p class="txt">Replacement for the original equipment part which gives your bike a unique look. Made of aluminum.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/11.webp" type="image/webp">
+										<img src="./img/data/accessory/11.jpg" alt="Front axle slider">
+									</picture>
+								</p>
+								<p class="head">
+									Front axle slider
+								</p>
+								<p class="txt">Front axle slider with S logo. Reduction of impact damage around front axle, unique design, easy to install.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/12.webp" type="image/webp">
+										<img src="./img/data/accessory/12.jpg" alt="Aluminum chain adjuster">
+									</picture>
+								</p>
+								<p class="head">
+									Aluminum chain adjuster
+								</p>
+								<p class="txt">Aluminum chain adjuster with Hayabusa logo.<br>
+*Set of right and left side.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/13.webp" type="image/webp">
+										<img src="./img/data/accessory/13.jpg" alt="Billet brake lever">
+									</picture>
+								</p>
+								<p class="head">
+									Billet brake lever
+								</p>
+								<p class="txt">With Hayabusa logo. 5 adjustable and foldable aluminum lever.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/14.webp" type="image/webp">
+										<img src="./img/data/accessory/14.jpg" alt="Billet clutch lever">
+									</picture>
+								</p>
+								<p class="head">
+									Billet clutch lever
+								</p>
+								<p class="txt">With Hayabusa logo. 4 adjustable and foldable aluminum lever.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/15.webp" type="image/webp">
+										<img src="./img/data/accessory/15.jpg" alt="Carbon look mirror cover">
+									</picture>
+								</p>
+								<p class="head">
+									Carbon look mirror cover
+								</p>
+								<p class="txt">The mirror cover with carbon pattern design which makes the bike luxury look.<br>
+*Set of right and left side.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/16.webp" type="image/webp">
+										<img src="./img/data/accessory/16.jpg" alt="Luggage hook">
+									</picture>
+								</p>
+								<p class="head">
+									Luggage hook
+								</p>
+								<p class="txt">It is convenient equipment to hook the strings for the touring riding.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/21.webp" type="image/webp">
+										<img src="./img/data/accessory/21.jpg" alt="Hayabusa fuel tank pad (Gold)">
+									</picture>
+								</p>
+								<p class="head">
+								Hayabusa fuel tank pad (Gold)
+								</p>
+								<p class="txt">Gold colored protection sticker against scratches with Hayabusa in Japanese “kanji”.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/17.webp" type="image/webp">
+										<img src="./img/data/accessory/17.jpg" alt="Hayabusa fuel tank pad (Red)">
+									</picture>
+								</p>
+								<p class="head">
+								Hayabusa fuel tank pad (Red)
+								</p>
+								<p class="txt">Red colored protection sticker against scratches with Hayabusa in Japanese “kanji”.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/22.webp" type="image/webp">
+										<img src="./img/data/accessory/22.jpg" alt="Hayabusa rim decal (Gold)">
+									</picture>
+								</p>
+								<p class="head">
+								Hayabusa rim decal (Gold)
+								</p>
+								<p class="txt">Gold colored rim decal with Hayabusa logo.<br>
+*For one wheel.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/18.webp" type="image/webp">
+										<img src="./img/data/accessory/18.jpg" alt="Hayabusa rim decal (Red)">
+									</picture>
+								</p>
+								<p class="head">
+								Hayabusa rim decal (Red)
+								</p>
+								<p class="txt">Red colored rim decal with Hayabusa logo.<br>
+*For one wheel.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/19.webp" type="image/webp">
+										<img src="./img/data/accessory/19.jpg" alt="Fuel tank protection sticker">
+									</picture>
+								</p>
+								<p class="head">
+									Fuel tank protection sticker
+								</p>
+								<p class="txt">Transparent protection sticker against scratches.<br>
+*Set of right and left side.</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/20.webp" type="image/webp">
+										<img src="./img/data/accessory/20.jpg" alt="Hayabusa slip-on muffler by Akrapovič">
+									</picture>
+								</p>
+								<p class="head">
+									Hayabusa slip-on muffler by Akrapovič
+								</p>
+								<p class="txt">The titanium body muffler with carbon heat shield, which creates pleasant exhaust sound.<br>
+Around 4 kg lighter and 1.9 kw higher (At 8,400 rpm) compared to the original equipment.<br>
+The product is developed collaborating with famous manufacturer Akrapovič. Both Hayabusa and Akrapovič logos are printed on muffler body.<br>
+*Available at EU market only. The accessory obtains EC - type approval, and photo shows the image of the accessory with its approval to install the bike.<br>
+Spec data is based on the test by Akrapovič.</p>
+							</figure>
+						</li>
+					</ul>
+					<p class="configurator__accessory__notes">
+						*Only main accessories are shown. Please contact Suzuki authorized dealers/distributor for the detail information of Suzuki Genuine Accessories.
+					</p>
+
+				<!--/.configurator__accessory__inner--></div>
+
+				<button class="configurator__accessory__close js-accessories-close">
+					<span class="icn"></span>
+					<span class="txt">CLOSE</span>
+				</button>
+
+			<!--/.configurator__accessory__wrapper--></div>
+
+			<div class="configurator__accessory__image__modal js-image-close">
+				<div class="configurator__accessory__image__modal__img">
+					<picture>
+						<source srcset="./img/data/accessory/image.webp" type="image/webp">
+						<img src="./img/data/accessory/image.jpg" alt="Image Photo">
+					</picture>
+				<!--/.configurator__accessory__image__modal__img--></div>
+				<button class="configurator__accessory__image__modal__close">
+					<span class="icn"></span>
+					<span class="txt">CLOSE</span>
+				</button>
+			<!--/.configurator__accessory__large--></div>
+
+			<div class="configurator__accessory__modal js-accessory-modal-close">
+				<div class="configurator__accessory__modal__content">
+					<p class="img">
+						<picture>
+							<source srcset="./img/data/accessory/01.webp" type="image/webp">
+							<img src="./img/data/accessory/01.jpg" alt="Image Photo">
+						</picture>
+					</p>
+					<p class="head">
+						Image Photo
+					</p>
+					<p class="txt">
+						
+					</p>
+				<!--/.configurator__accessory__modal__content--></div>
+				<button class="configurator__accessory__modal__close">
+					<span class="icn"></span>
+					<span class="txt">CLOSE</span>
+				</button>
+			<!--/.configurator__accessory__large--></div>
+
+		<!--/.configurator__accessory--></div>
+
+		<div class="configurator__zoom">
+			<div class="configurator__zoom__wrapper">
+				<div class="configurator__zoom__img">
+					<picture>
+						<source srcset="./img/blank.png" type="image/webp" class="webp">
+						<img src="./img/blank.png" alt="" class="jpg">
+					</picture>
+				<!--/.configurator__zoom__img--></div>
+			<!--/.configurator__zoom__wrapper--></div>
+			<div class="configurator__zoom__icn">
+			<!--/.configurator__zoom__icn--></div>
+			<button class="configurator__zoom__close js-zoom-close">
+				<span class="icn"></span>
+				<span class="txt">CLOSE</span>
+			</button>
+		<!--/.configurator__zoom--></div>
+
+<!--/.configurator--></div>
+
+
+<!--contents-->
+
+
+</div><!--stage-->
+<footer id="footer">
+	<div class="footer-bottom">
+		<p class="copyright">&copy; Suzuki Singapore, 2023. All rights reserved.</p>
+	</div>
+	<style>
+	@media screen and (min-width: 768px){body{background:#d5d5d5;}}
+	</style>
+</footer>
+
+<script type="text/javascript" src="./commons/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./js/bundle.js" async></script>
+<script type="text/javascript" src="./js/Open.js"></script>
+<script type="text/javascript" src="./js/pagecode.js"></script>
+</body>
+</html>

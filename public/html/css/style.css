@@ -1,0 +1,6421 @@
+/*----------------------------------------
+	Slick CSS
+----------------------------------------*/
+
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before,
+.slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
+button,
+.configurator {
+  font-family: 'SuzukiPROHeadline';
+}
+
+.configurator__footer__notes {
+  font-family: 'SuzukiPRORegular';
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img,
+svg {
+  vertical-align: bottom;
+  width: 100%;
+  height: auto;
+}
+
+svg {
+  fill: currentColor;
+}
+
+.svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  border: none;
+  border-radius: 0;
+  outline: none;
+  background: none;
+  color: #262626;
+  cursor: pointer;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+button:active {
+  color: #262626;
+}
+
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+/*
+.landscape {
+  display: none;
+  @include landscape {
+    display: block;
+  }
+}
+
+.portrait {
+  display: none;
+  @include portrait {
+    display: block;
+  }
+}
+*/
+
+#suzuki-in-your-country-bnr a {
+  font-size: 12px;
+}
+
+html.fixed {
+  height: calc(100vh);
+  overflow-y: scroll;
+}
+
+body.fixed {
+  height: calc(100vh);
+  overflow: hidden;
+}
+
+.configurator {
+  margin: -70px 0;
+  background-color: #fff;
+  color: #262626;
+}
+
+.configurator[data-current-grade="1"] [data-bodycolor-grade="1"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="1"] [data-zoom-grade="1"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="2"] [data-bodycolor-grade="2"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="2"] [data-zoom-grade="2"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="3"] [data-bodycolor-grade="3"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="3"] [data-zoom-grade="3"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="4"] [data-bodycolor-grade="4"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="4"] [data-zoom-grade="4"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="5"] [data-bodycolor-grade="5"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="5"] [data-zoom-grade="5"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="6"] [data-bodycolor-grade="6"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="6"] [data-zoom-grade="6"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="7"] [data-bodycolor-grade="7"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="7"] [data-zoom-grade="7"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="8"] [data-bodycolor-grade="8"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="8"] [data-zoom-grade="8"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="9"] [data-bodycolor-grade="9"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="9"] [data-zoom-grade="9"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="10"] [data-bodycolor-grade="10"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="10"] [data-zoom-grade="10"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="11"] [data-bodycolor-grade="11"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="11"] [data-zoom-grade="11"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="12"] [data-bodycolor-grade="12"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="12"] [data-zoom-grade="12"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="13"] [data-bodycolor-grade="13"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="13"] [data-zoom-grade="13"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="14"] [data-bodycolor-grade="14"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="14"] [data-zoom-grade="14"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="15"] [data-bodycolor-grade="15"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="15"] [data-zoom-grade="15"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="16"] [data-bodycolor-grade="16"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="16"] [data-zoom-grade="16"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="17"] [data-bodycolor-grade="17"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="17"] [data-zoom-grade="17"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="18"] [data-bodycolor-grade="18"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="18"] [data-zoom-grade="18"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="19"] [data-bodycolor-grade="19"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="19"] [data-zoom-grade="19"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="20"] [data-bodycolor-grade="20"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator[data-current-grade="20"] [data-zoom-grade="20"] {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator.-gradeChangeAvailable .configurator__nav__list__item {
+  margin-bottom: 15px;
+}
+
+.configurator__wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+  overflow: hidden;
+  -webkit-transform-origin: center top;
+  transform-origin: center top;
+}
+
+.configurator__wrapper.-hide {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.configurator__wrapper.-resize {
+  opacity: 0;
+}
+
+.configurator__header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 17px;
+  padding-left: 30px;
+  z-index: 3;
+}
+
+.configurator__header__change {
+  margin-bottom: 15px;
+  font-size: 2.3rem;
+}
+
+.configurator__header__change a {
+  position: relative;
+  display: block;
+  color: #707070;
+}
+
+.configurator__header__change a::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -10px;
+  display: block;
+  width: 7px;
+  height: 7px;
+  margin: auto 0;
+  border-top: 1px solid #707070;
+  border-left: 1px solid #707070;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__header__name {
+  font-size: 4.8rem;
+  cursor: default;
+}
+
+.configurator__view {
+  position: relative;
+  width: 1200px;
+  cursor: ew-resize;
+}
+
+.configurator__view::before {
+  content: "";
+  display: block;
+  padding-top: 56.25%;
+}
+
+.configurator__view__list {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-transform: translate(0, -30px) scale(0.985);
+  transform: translate(0, -30px) scale(0.985);
+}
+
+.configurator__view__list[data-current-view="1"] .configurator__view__list__item:nth-of-type(1) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="2"] .configurator__view__list__item:nth-of-type(2) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="3"] .configurator__view__list__item:nth-of-type(3) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="4"] .configurator__view__list__item:nth-of-type(4) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="5"] .configurator__view__list__item:nth-of-type(5) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="6"] .configurator__view__list__item:nth-of-type(6) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="7"] .configurator__view__list__item:nth-of-type(7) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="8"] .configurator__view__list__item:nth-of-type(8) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="9"] .configurator__view__list__item:nth-of-type(9) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="10"] .configurator__view__list__item:nth-of-type(10) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="11"] .configurator__view__list__item:nth-of-type(11) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="12"] .configurator__view__list__item:nth-of-type(12) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="13"] .configurator__view__list__item:nth-of-type(13) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="14"] .configurator__view__list__item:nth-of-type(14) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="15"] .configurator__view__list__item:nth-of-type(15) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="16"] .configurator__view__list__item:nth-of-type(16) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="17"] .configurator__view__list__item:nth-of-type(17) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="18"] .configurator__view__list__item:nth-of-type(18) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="19"] .configurator__view__list__item:nth-of-type(19) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list[data-current-view="20"] .configurator__view__list__item:nth-of-type(20) {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+
+.configurator__view__list__item {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+.configurator__view__list__item:nth-of-type(1)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(2)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(3)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(4)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(5)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(6)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(7)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(8)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(9)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(10)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(11)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(12)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(13)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(14)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(15)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(16)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(17)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(18)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(19)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__list__item:nth-of-type(20)::before {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 4rem;
+  z-index: 10;
+  color: #f00;
+}
+
+.configurator__view__icn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/icn_rotate.svg) no-repeat center center;
+  background-size: 8% auto;
+  pointer-events: none;
+  z-index: 2;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+  -webkit-transform: translate(0, -30px);
+  transform: translate(0, -30px);
+}
+
+.configurator__view__icn.-started {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.configurator__grade {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 70px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.configurator__grade.-active {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.configurator__grade__inner {
+  width: 240px;
+  max-height: 100%;
+  overflow: auto;
+  padding-bottom: 120px;
+}
+
+.configurator__grade__inner::-webkit-scrollbar {
+  width: 10px;
+  height: 1px;
+}
+
+.configurator__grade__inner::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.configurator__grade__inner::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, transparent calc(100% - 1px), #000 calc(100% - 1px));
+}
+
+.configurator__grade__head {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.configurator__grade__list__item + .configurator__grade__list__item {
+  margin-top: 45px;
+}
+
+.configurator__grade__list__btn {
+  width: 100%;
+}
+
+.configurator__grade__list__btn .img {
+  width: 150px;
+  margin: 0 auto;
+  margin-bottom: 10px;
+}
+
+.configurator__grade__list__btn .txt {
+  font-size: 1.8rem;
+  text-align: center;
+  line-height: 1.222;
+}
+
+.configurator__grade__list__btn .name {
+  display: block;
+}
+
+.configurator__grade__list__btn .notes {
+  display: block;
+}
+
+.configurator__grade__list__btn .notes::before {
+  content: "(";
+}
+
+.configurator__grade__list__btn .notes::after {
+  content: ")";
+}
+
+.configurator__grade__close {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 116px;
+  height: 62px;
+  text-align: center;
+  z-index: 10;
+}
+
+.configurator__grade__close .icn {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.configurator__grade__close .icn::before,
+.configurator__grade__close .icn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  border-radius: 2px;
+  background-color: #262626;
+}
+
+.configurator__grade__close .icn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__grade__close .icn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__grade__close .txt {
+  font-size: 2.3rem;
+}
+
+.configurator__bodyColor {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-top: 70px;
+  background-color: rgba(255, 255, 255, 0.9);
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.configurator__bodyColor.-active {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.configurator__bodyColor__inner {
+  width: 240px;
+  max-height: 100%;
+  overflow: auto;
+  padding-bottom: 60px;
+}
+
+.configurator__bodyColor__inner::-webkit-scrollbar {
+  width: 10px;
+  height: 1px;
+}
+
+.configurator__bodyColor__inner::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.configurator__bodyColor__inner::-webkit-scrollbar-thumb {
+  background: linear-gradient(90deg, transparent calc(50% - 1px), #000 calc(50% - 1px), #000 50%, transparent 50%);
+}
+
+.configurator__bodyColor__head {
+  margin-bottom: 20px;
+  font-size: 2.4rem;
+  text-align: center;
+}
+
+.configurator__bodyColor__list__item + .configurator__bodyColor__list__item {
+  margin-top: 15px;
+}
+
+.configurator__bodyColor__list__btn {
+  width: 100%;
+}
+
+.configurator__bodyColor__list__btn .img {
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 8px;
+}
+
+.configurator__bodyColor__list__btn .txt {
+  font-size: 1.6rem;
+  text-align: center;
+  line-height: 1.222;
+}
+
+.configurator__bodyColor__list__btn .notes::before {
+  content: "(";
+}
+
+.configurator__bodyColor__list__btn .notes::after {
+  content: ")";
+}
+
+.configurator__bodyColor__close {
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 116px;
+  height: 62px;
+  text-align: center;
+  z-index: 10;
+}
+
+.configurator__bodyColor__close .icn {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.configurator__bodyColor__close .icn::before,
+.configurator__bodyColor__close .icn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  border-radius: 2px;
+  background-color: #262626;
+}
+
+.configurator__bodyColor__close .icn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__bodyColor__close .icn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__bodyColor__close .txt {
+  font-size: 2.3rem;
+}
+
+.configurator__nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 240px;
+  padding-bottom: 92px;
+  z-index: 5;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translateX(60px);
+  transform: translateX(60px);
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.configurator__nav.-active {
+  opacity: 1;
+  pointer-events: auto;
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+
+.configurator__nav__list__item {
+  margin-bottom: 30px;
+}
+
+.configurator__nav__list__btn {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  background-color: #262626;
+  text-align: center;
+  color: #fff;
+}
+
+.configurator__nav__list__btn.-grade .icn {
+  height: 25px;
+}
+
+.configurator__nav__list__btn.-bodyColor .icn {
+  height: 29px;
+}
+
+.configurator__nav__list__btn.-accessories {
+  background-color: #000;
+  color: #fff;
+}
+
+.configurator__nav__list__btn.-accessories .icn {
+  height: 19px;
+}
+/*
+.configurator__nav__list__btn.-accessories::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border-bottom: 1px solid #707070;
+  border-left: 1px solid #707070;
+}
+
+.configurator__nav__list__btn.-accessories::after {
+  content: "";
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  display: block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #707070;
+}
+*/
+.configurator__nav__list__btn.-features {
+  border: 1px solid #000;
+  background-color: #fff;
+  color: #000;
+}
+
+.configurator__nav__list__btn.-features .icn {
+  height: 22.5px;
+}
+
+.configurator__nav__list__btn.-features::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  display: block;
+  width: 11px;
+  height: 11px;
+  margin: auto 0;
+  border-top: 1px solid #707070;
+  border-right: 1px solid #707070;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__nav__list__btn .icn {
+  position: relative;
+  display: block;
+  width: 32px;
+  margin-bottom: 9px;
+}
+
+.configurator__nav__list__btn .txt {
+  font-size: 1.6rem;
+  line-height: 1;
+}
+
+.configurator__nav__features.portrait {
+  display: none;
+}
+
+.configurator__nav__features a {
+  position: relative;
+  display: block;
+  width: 120px;
+  padding-top: 6px;
+  padding-right: 16px;
+  padding-bottom: 6px;
+  padding-left: 16px;
+  background-color: #fff;
+  font-size: 1.85rem;
+  line-height: 1;
+}
+
+.configurator__nav__features a::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 10px;
+  bottom: 0;
+  display: block;
+  width: 9px;
+  height: 9px;
+  margin: auto 0;
+  border-top: 1px solid #707070;
+  border-right: 1px solid #707070;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__nav__control {
+  display: none;
+}
+
+.configurator__control {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding-bottom: 30px;
+  padding-right: 30px;
+  z-index: 10;
+}
+
+.configurator__control__close {
+  display: none;
+}
+
+.configurator__control__close .icn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__control__close .icn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__control__close .txt {
+  font-size: 1.6rem;
+}
+
+.configurator__control__zoom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  cursor: default;
+}
+
+.configurator__control__zoom .txt {
+  display: block;
+  margin-right: 9px;
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.configurator__control__zoom .icn {
+  position: relative;
+  display: block;
+  width: 15.5px;
+  height: 14.94px;
+}
+
+.configurator__control__list {
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 32px;
+}
+
+.configurator__control__list.sv650 .configurator__control__list__btn.-angle1 {
+  width: 48px;
+  height: 38.4px;
+}
+
+.configurator__control__list.sv650 .configurator__control__list__btn.-angle2 {
+  width: 28.8px;
+  height: 40.8px;
+}
+
+.configurator__control__list.sv650 .configurator__control__list__btn.-angle3 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.sv650 .configurator__control__list__btn.-angle4 {
+  width: 58.8px;
+  height: 34.8px;
+}
+
+.configurator__control__list.sv650 .configurator__control__list__btn.-angle5 {
+  width: 22.8px;
+  height: 40.8px;
+}
+
+.configurator__control__list.sv650 .configurator__control__list__btn.-angle6 {
+  width: 58.8px;
+  height: 36px;
+}
+
+.configurator__control__list.sv650x .configurator__control__list__btn.-angle1 {
+  width: 48px;
+  height: 38.4px;
+}
+
+.configurator__control__list.sv650x .configurator__control__list__btn.-angle2 {
+  width: 28.8px;
+  height: 40.8px;
+}
+
+.configurator__control__list.sv650x .configurator__control__list__btn.-angle3 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.sv650x .configurator__control__list__btn.-angle4 {
+  width: 58.8px;
+  height: 34.8px;
+}
+
+.configurator__control__list.sv650x .configurator__control__list__btn.-angle5 {
+  width: 22.8px;
+  height: 40.8px;
+}
+
+.configurator__control__list.sv650x .configurator__control__list__btn.-angle6 {
+  width: 58.8px;
+  height: 36px;
+}
+
+.configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle1 {
+  width: 46px;
+  height: 39.1px;
+}
+
+.configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle2 {
+  width: 24.15px;
+  height: 40.25px;
+}
+
+.configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle3 {
+  width: 47.15px;
+  height: 39.1px;
+}
+
+.configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.5px;
+}
+
+.configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle5 {
+  width: 19.55px;
+  height: 41.4px;
+}
+
+.configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle6 {
+  width: 55.2px;
+  height: 35.65px;
+}
+
+.configurator__control__list.v-strom .configurator__control__list__btn.-angle1 {
+  width: 46px;
+  height: 39.1px;
+}
+
+.configurator__control__list.v-strom .configurator__control__list__btn.-angle2 {
+  width: 24.15px;
+  height: 40.25px;
+}
+
+.configurator__control__list.v-strom .configurator__control__list__btn.-angle3 {
+  width: 47.15px;
+  height: 39.1px;
+}
+
+.configurator__control__list.v-strom .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.5px;
+}
+
+.configurator__control__list.v-strom .configurator__control__list__btn.-angle5 {
+  width: 19.55px;
+  height: 41.4px;
+}
+
+.configurator__control__list.v-strom .configurator__control__list__btn.-angle6 {
+  width: 55.2px;
+  height: 35.65px;
+}
+
+.configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle1 {
+  width: 48px;
+  height: 38.4px;
+}
+
+.configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle2 {
+  width: 28.8px;
+  height: 40.8px;
+}
+
+.configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle3 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle4 {
+  width: 58.8px;
+  height: 34.8px;
+}
+
+.configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle5 {
+  width: 22.8px;
+  height: 40.8px;
+}
+
+.configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle6 {
+  width: 58.8px;
+  height: 36px;
+}
+
+.configurator__control__list.hayabusa .configurator__control__list__btn.-angle1 {
+  width: 51.6px;
+  height: 36px;
+}
+
+.configurator__control__list.hayabusa .configurator__control__list__btn.-angle2 {
+  width: 27.6px;
+  height: 38.4px;
+}
+
+.configurator__control__list.hayabusa .configurator__control__list__btn.-angle3 {
+  width: 51.6px;
+  height: 36px;
+}
+
+.configurator__control__list.hayabusa .configurator__control__list__btn.-angle4 {
+  width: 60px;
+  height: 31.2px;
+}
+
+.configurator__control__list.hayabusa .configurator__control__list__btn.-angle5 {
+  width: 19.2px;
+  height: 39.6px;
+}
+
+.configurator__control__list.hayabusa .configurator__control__list__btn.-angle6 {
+  width: 60px;
+  height: 32.4px;
+}
+
+.configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle2 {
+  width: 31.2px;
+  height: 39.6px;
+}
+
+.configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle3 {
+  width: 50.4px;
+  height: 38.4px;
+}
+
+.configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle4 {
+  width: 58.8px;
+  height: 34.8px;
+}
+
+.configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle5 {
+  width: 22.8px;
+  height: 42px;
+}
+
+.configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle6 {
+  width: 58.8px;
+  height: 34.8px;
+}
+
+.configurator__control__list.burgman400 .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.burgman400 .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.burgman400 .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.burgman400 .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.burgman400 .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.burgman400 .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.katana .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.katana .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.katana .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.katana .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.katana .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.katana .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.avenis125 .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.avenis125 .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.avenis125 .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.avenis125 .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.avenis125 .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.avenis125 .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.address_125 .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.address_125 .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.address_125 .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.address_125 .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.address_125 .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.address_125 .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.v-strom800de .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.v-strom800de .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.v-strom800de .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.v-strom800de .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.v-strom800de .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.v-strom800de .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list.gsx-8s .configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list.gsx-8s .configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.gsx-8s .configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list.gsx-8s .configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list.gsx-8s .configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list.gsx-8s .configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__control__list__item + .configurator__control__list__item {
+  margin-left: 20px;
+}
+
+.configurator__control__list__btn {
+  position: relative;
+  display: block;
+}
+
+.configurator__control__list__btn:hover {
+  opacity: 1;
+  color: #003145;
+}
+
+.configurator__control__list__btn.-angle1 {
+  width: 49.2px;
+  height: 38.4px;
+}
+
+.configurator__control__list__btn.-angle2 {
+  width: 26.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list__btn.-angle3 {
+  width: 46.8px;
+  height: 38.4px;
+}
+
+.configurator__control__list__btn.-angle4 {
+  width: 55.2px;
+  height: 34.8px;
+}
+
+.configurator__control__list__btn.-angle5 {
+  width: 20.4px;
+  height: 40.8px;
+}
+
+.configurator__control__list__btn.-angle6 {
+  width: 56.4px;
+  height: 34.8px;
+}
+
+.configurator__footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  z-index: 10;
+  pointer-events: none;
+}
+
+.configurator__footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.configurator__footer__list__item {
+  margin-right: 50px;
+  padding-left: 20px;
+  border-left-color: #262626;
+  border-left-style: solid;
+  border-left-width: 5px;
+}
+
+.configurator__footer__list__title {
+  display: block;
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid rgba(38, 38, 38, 0.3);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.configurator__footer__list__data {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+  padding-right: 20px;
+  word-break: break-all;
+}
+
+.configurator__footer__list__data .name {
+  display: block;
+  margin-right: 10px;
+  font-size: 2.6rem;
+  line-height: 1;
+}
+
+.configurator__footer__list__data .name br {
+  display: none;
+}
+
+.configurator__footer__list__data .notes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 2.2rem;
+  line-height: 1;
+}
+
+.configurator__footer__list__data .notes br {
+  display: none;
+}
+
+.configurator__footer__list__data .notes::before {
+  content: "(";
+  font-size: 1.8rem;
+}
+
+.configurator__footer__list__data .notes::after {
+  content: ")";
+  font-size: 1.8rem;
+}
+
+.configurator__footer__notes {
+  margin-top: 16px;
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.configurator__accessory {
+  position: fixed;
+  top: 100vh;
+  right: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 20;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.4s opacity ease-out;
+  transition: 0.4s opacity ease-out;
+}
+
+.configurator__accessory.-active {
+  position: relative;
+  top: 0;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.configurator__accessory.-single .configurator__accessory__wrapper {
+  padding-top: 60px;
+}
+
+.configurator__accessory.-single .configurator__accessory__head {
+  margin-bottom: 20px;
+}
+
+.configurator__accessory.-single .configurator__accessory__close {
+  top: 46px;
+}
+
+.configurator__accessory.-single .configurator__accessory__modal__content {
+  max-width: 84vh;
+}
+
+.configurator__accessory__wrapper {
+  position: relative;
+  width: 1140px;
+  margin: 0 auto;
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.configurator__accessory__head {
+  margin-bottom: 80px;
+  font-size: 4rem;
+  text-align: center;
+}
+
+.configurator__accessory__image {
+  width: 260px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+  cursor: pointer;
+}
+
+.configurator__accessory__image .img.-border {
+  border: 1px solid #CCC;
+}
+
+.configurator__accessory__image .txt {
+  margin-top: 10px;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.configurator__accessory__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 1140px;
+  margin: 0 auto;
+  margin-bottom: 12px;
+}
+
+.configurator__accessory__list__item {
+  width: 170px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.configurator__accessory__list__img {
+  position: relative;
+  cursor: pointer;
+}
+
+.configurator__accessory__list__img .img:nth-of-type(2) {
+  display: none;
+}
+
+.configurator__accessory__list__img .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 61px;
+  margin-top: 11px;
+  font-size: 1.7rem;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.configurator__accessory__list__img .txt {
+  display: none;
+}
+
+.configurator__accessory__list__img .sup {
+  display: none;
+}
+
+.configurator__accessory__notes {
+  width: 1100px;
+  margin: 0 auto;
+  font-family: 'SuzukiPRORegular';
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.configurator__accessory__close {
+  position: absolute;
+  top: 66px;
+  right: -24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 116px;
+  height: 62px;
+  background-color: #fff;
+  text-align: center;
+  z-index: 10;
+}
+
+.configurator__accessory__close .icn {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin-right: 8px;
+}
+
+.configurator__accessory__close .icn::before,
+.configurator__accessory__close .icn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: auto;
+  border-radius: 2px;
+  background-color: #262626;
+}
+
+.configurator__accessory__close .icn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__accessory__close .icn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__accessory__close .txt {
+  font-size: 2.3rem;
+}
+
+.configurator__accessory__image__modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.configurator__accessory__image__modal.-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.configurator__accessory__image__modal__img {
+  max-width: 90vh;
+  width: 800px;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.configurator__accessory__image__modal__img img,
+.configurator__accessory__image__modal__img source {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+}
+
+.configurator__accessory__image__modal__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  z-index: 10;
+}
+
+.configurator__accessory__image__modal__close .icn {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.configurator__accessory__image__modal__close .icn::before,
+.configurator__accessory__image__modal__close .icn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 1px;
+  margin: auto;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.configurator__accessory__image__modal__close .icn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__accessory__image__modal__close .icn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__accessory__image__modal__close .txt {
+  font-size: 2.1rem;
+  color: #fff;
+}
+
+.configurator__accessory__modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 17vh 0 12vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+  overflow: auto;
+}
+
+.configurator__accessory__modal.-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.configurator__accessory__modal__content {
+  max-width: 90vh;
+  width: 800px;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 28px;
+  padding-left: 20px;
+  background-color: #fff;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.configurator__accessory__modal__content .head {
+  font-size: 2.4rem;
+}
+
+.configurator__accessory__modal__content .head .thumb-only {
+  display: none;
+}
+
+.configurator__accessory__modal__content .head .thumb-pc-only {
+  display: none;
+}
+
+.configurator__accessory__modal__content .txt {
+  margin-top: 11px;
+  font-family: 'SuzukiPRORegular';
+  font-size: 1.3rem;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.configurator__accessory__modal__content .slide {
+  position: relative;
+  margin-bottom: 25px;
+  line-height: 1;
+}
+
+.configurator__accessory__modal__content .slide .img {
+  line-height: 1;
+}
+
+.configurator__accessory__modal__content .slide .slick-arrow {
+  position: absolute;
+  top: 0;
+  bottom: 35px;
+  width: 42px;
+  height: 42px;
+  margin: auto 0;
+  background-color: rgba(114, 114, 114, 0.5);
+  font-size: 0;
+  -webkit-transform: none;
+  transform: none;
+  z-index: 10;
+}
+
+.configurator__accessory__modal__content .slide .slick-arrow.slick-prev {
+  left: 0;
+}
+
+.configurator__accessory__modal__content .slide .slick-arrow.slick-next {
+  right: 0;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.configurator__accessory__modal__content .slide .slick-arrow::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 18px;
+  height: 18px;
+  margin: auto 0;
+  margin-left: 18px;
+  border-top: 1px solid #fff;
+  border-left: 1px solid #fff;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__accessory__modal__content .slide .slick-dots {
+  position: relative;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 12px;
+  margin-bottom: -12px;
+}
+
+.configurator__accessory__modal__content .slide .slick-dots li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.configurator__accessory__modal__content .slide .slick-dots li.slick-active button {
+  background-color: #727272;
+}
+
+.configurator__accessory__modal__content .slide .slick-dots button {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #D6D6D6;
+  font-size: 0;
+}
+
+.configurator__accessory__modal__content .slide .slick-dots button::before {
+  content: none;
+}
+
+.configurator__accessory__modal__close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  z-index: 10;
+}
+
+.configurator__accessory__modal__close .icn {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.configurator__accessory__modal__close .icn::before,
+.configurator__accessory__modal__close .icn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 1px;
+  margin: auto;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+.configurator__accessory__modal__close .icn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__accessory__modal__close .icn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__accessory__modal__close .txt {
+  font-size: 2.1rem;
+  color: #fff;
+}
+
+.configurator__zoom {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  z-index: 2000;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.configurator__zoom.-active {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.configurator__zoom__wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.configurator__zoom__img {
+  position: relative;
+  top: -50vh;
+  left: -50vw;
+  width: 200vw;
+  height: 200vh;
+}
+
+.configurator__zoom__img img,
+.configurator__zoom__img source {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.configurator__zoom__img.-zoomout {
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.configurator__zoom__icn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: url(../img/icn_move.svg) no-repeat center center;
+  background-size: 7.32064% auto;
+  pointer-events: none;
+  z-index: 10;
+  -webkit-transition: 0.4s all ease-out;
+  transition: 0.4s all ease-out;
+}
+
+.configurator__zoom__icn.-started {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.configurator__zoom__close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  z-index: 10;
+}
+
+.configurator__zoom__close .icn {
+  position: relative;
+  display: block;
+  width: 36px;
+  height: 36px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+
+.configurator__zoom__close .icn::before,
+.configurator__zoom__close .icn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  width: 36px;
+  height: 1px;
+  margin: auto;
+  border-radius: 2px;
+  background-color: #262626;
+}
+
+.configurator__zoom__close .icn::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+.configurator__zoom__close .icn::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.configurator__zoom__close .txt {
+  font-size: 2.1rem;
+}
+
+.configurator__loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 3;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.configurator__loading.is-loading {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.configurator__loading__bar {
+  position: relative;
+  width: 100px;
+  height: 24px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.configurator__loading__bar .bar {
+  width: 0;
+  height: 100%;
+  background-color: rgba(68, 68, 68, 0.85);
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+}
+
+.configurator__loading__bar .txt {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  font-size: 1.2rem;
+  line-height: 1;
+  text-align: center;
+  color: #fff;
+  z-index: 10;
+}
+
+@media screen and (min-width: 927px) {
+  button:hover {
+    opacity: 0.5;
+  }
+
+  .configurator__bodyColor__list__item:only-child {
+    margin-bottom: 300px;
+  }
+}
+
+@media screen and (max-width: 1366px) {
+  html {
+    font-size: 0.73206vw;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav__list__item {
+    margin-bottom: 1.0981vw;
+  }
+
+  .configurator__header {
+    padding-top: 1.24451vw;
+  }
+
+  .configurator__header {
+    padding-left: 2.19619vw;
+  }
+
+  .configurator__header__change {
+    margin-bottom: 1.0981vw;
+  }
+
+  .configurator__header__change a::before {
+    left: -0.73206vw;
+  }
+
+  .configurator__header__change a::before {
+    width: 0.51245vw;
+  }
+
+  .configurator__header__change a::before {
+    height: 0.51245vw;
+  }
+
+  .configurator__view {
+    width: 87.84773vw;
+  }
+
+  .configurator__view__list {
+    -webkit-transform: translate(0, -2.19619vw) scale(0.985);
+    transform: translate(0, -2.19619vw) scale(0.985);
+  }
+
+  .configurator__view__icn {
+    -webkit-transform: translate(0, -2.19619vw);
+    transform: translate(0, -2.19619vw);
+  }
+
+  .configurator__grade {
+    padding-top: 5.12445vw;
+  }
+
+  .configurator__grade__inner {
+    width: 17.56955vw;
+  }
+
+  .configurator__grade__inner {
+    padding-bottom: 8.78477vw;
+  }
+
+  .configurator__grade__head {
+    margin-bottom: 1.46413vw;
+  }
+
+  .configurator__grade__list__item + .configurator__grade__list__item {
+    margin-top: 3.29429vw;
+  }
+
+  .configurator__grade__list__btn .img {
+    width: 10.98097vw;
+  }
+
+  .configurator__grade__list__btn .img {
+    margin-bottom: 0.73206vw;
+  }
+
+  .configurator__grade__close {
+    top: 0vw;
+  }
+
+  .configurator__grade__close {
+    right: 0vw;
+  }
+
+  .configurator__grade__close {
+    width: 8.49195vw;
+  }
+
+  .configurator__grade__close {
+    height: 4.5388vw;
+  }
+
+  .configurator__grade__close .icn {
+    width: 1.31772vw;
+  }
+
+  .configurator__grade__close .icn {
+    height: 1.31772vw;
+  }
+
+  .configurator__grade__close .icn {
+    margin-right: 0.58565vw;
+  }
+
+  .configurator__grade__close .icn::before,
+  .configurator__grade__close .icn::after {
+    border-radius: 0.14641vw;
+  }
+
+  .configurator__bodyColor {
+    padding-top: 5.12445vw;
+  }
+
+  .configurator__bodyColor__inner {
+    width: 17.56955vw;
+  }
+
+  .configurator__bodyColor__inner {
+    padding-bottom: 4.39239vw;
+  }
+
+  .configurator__bodyColor__head {
+    margin-bottom: 1.46413vw;
+  }
+
+  .configurator__bodyColor__list__item + .configurator__bodyColor__list__item {
+    margin-top: 1.0981vw;
+  }
+
+  .configurator__bodyColor__list__btn .img {
+    width: 7.32064vw;
+  }
+
+  .configurator__bodyColor__list__btn .img {
+    margin-bottom: 0.58565vw;
+  }
+
+  .configurator__bodyColor__close {
+    top: 0vw;
+  }
+
+  .configurator__bodyColor__close {
+    right: 0vw;
+  }
+
+  .configurator__bodyColor__close {
+    width: 8.49195vw;
+  }
+
+  .configurator__bodyColor__close {
+    height: 4.5388vw;
+  }
+
+  .configurator__bodyColor__close .icn {
+    width: 1.31772vw;
+  }
+
+  .configurator__bodyColor__close .icn {
+    height: 1.31772vw;
+  }
+
+  .configurator__bodyColor__close .icn {
+    margin-right: 0.58565vw;
+  }
+
+  .configurator__bodyColor__close .icn::before,
+  .configurator__bodyColor__close .icn::after {
+    border-radius: 0.14641vw;
+  }
+
+  .configurator__nav {
+    width: 17.56955vw;
+  }
+
+  .configurator__nav {
+    padding-bottom: 6.73499vw;
+  }
+
+  .configurator__nav__list__item {
+    margin-bottom: 2.19619vw;
+  }
+
+  .configurator__nav__list__btn {
+    width: 8.78477vw;
+  }
+
+  .configurator__nav__list__btn {
+    height: 8.78477vw;
+  }
+
+  .configurator__nav__list__btn.-grade .icn {
+    height: 1.83016vw;
+  }
+
+  .configurator__nav__list__btn.-bodyColor .icn {
+    height: 2.12299vw;
+  }
+
+  .configurator__nav__list__btn.-accessories .icn {
+    height: 1.39092vw;
+  }
+/*
+  .configurator__nav__list__btn.-accessories::before {
+    top: 0.73206vw;
+  }
+
+  .configurator__nav__list__btn.-accessories::before {
+    right: 0.73206vw;
+  }
+
+  .configurator__nav__list__btn.-accessories::before {
+    width: 0.87848vw;
+  }
+
+  .configurator__nav__list__btn.-accessories::before {
+    height: 0.87848vw;
+  }
+
+  .configurator__nav__list__btn.-accessories::after {
+    top: 0.58565vw;
+  }
+
+  .configurator__nav__list__btn.-accessories::after {
+    right: 0.58565vw;
+  }
+
+  .configurator__nav__list__btn.-accessories::after {
+    width: 0.87848vw;
+  }
+
+  .configurator__nav__list__btn.-accessories::after {
+    height: 0.87848vw;
+  }
+  */
+
+  .configurator__nav__list__btn.-features .icn {
+    height: 1.64714vw;
+  }
+
+  .configurator__nav__list__btn.-features::after {
+    right: 0.73206vw;
+  }
+
+  .configurator__nav__list__btn.-features::after {
+    width: 0.80527vw;
+  }
+
+  .configurator__nav__list__btn.-features::after {
+    height: 0.80527vw;
+  }
+
+  .configurator__nav__list__btn .icn {
+    width: 2.34261vw;
+  }
+
+  .configurator__nav__list__btn .icn {
+    margin-bottom: 0.65886vw;
+  }
+
+  .configurator__nav__features a {
+    width: 8.78477vw;
+  }
+
+  .configurator__nav__features a {
+    padding-top: 0.43924vw;
+  }
+
+  .configurator__nav__features a {
+    padding-right: 1.1713vw;
+  }
+
+  .configurator__nav__features a {
+    padding-bottom: 0.43924vw;
+  }
+
+  .configurator__nav__features a {
+    padding-left: 1.1713vw;
+  }
+
+  .configurator__nav__features a::after {
+    right: 0.73206vw;
+  }
+
+  .configurator__nav__features a::after {
+    width: 0.65886vw;
+  }
+
+  .configurator__nav__features a::after {
+    height: 0.65886vw;
+  }
+
+  .configurator__control {
+    padding-bottom: 2.19619vw;
+  }
+
+  .configurator__control {
+    padding-right: 2.19619vw;
+  }
+
+  .configurator__control__zoom .txt {
+    margin-right: 0.65886vw;
+  }
+
+  .configurator__control__zoom .icn {
+    width: 1.1347vw;
+  }
+
+  .configurator__control__zoom .icn {
+    height: 1.0937vw;
+  }
+
+  .configurator__control__list {
+    margin-left: 2.34261vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle1 {
+    width: 3.51391vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle2 {
+    width: 2.10835vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle3 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle4 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle5 {
+    width: 1.66911vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle6 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle6 {
+    height: 2.63543vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle1 {
+    width: 3.51391vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle2 {
+    width: 2.10835vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle3 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle4 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle5 {
+    width: 1.66911vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle6 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle6 {
+    height: 2.63543vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle1 {
+    width: 3.3675vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle1 {
+    height: 2.86237vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle2 {
+    width: 1.76794vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle2 {
+    height: 2.94656vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle3 {
+    width: 3.45168vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle3 {
+    height: 2.86237vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle4 {
+    height: 2.52562vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle5 {
+    width: 1.43119vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle5 {
+    height: 3.03075vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle6 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle6 {
+    height: 2.60981vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle1 {
+    width: 3.3675vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle1 {
+    height: 2.86237vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle2 {
+    width: 1.76794vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle2 {
+    height: 2.94656vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle3 {
+    width: 3.45168vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle3 {
+    height: 2.86237vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle4 {
+    height: 2.52562vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle5 {
+    width: 1.43119vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle5 {
+    height: 3.03075vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle6 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle6 {
+    height: 2.60981vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle1 {
+    width: 3.51391vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle2 {
+    width: 2.10835vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle3 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle4 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle5 {
+    width: 1.66911vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle6 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle6 {
+    height: 2.63543vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle1 {
+    width: 3.77745vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle1 {
+    height: 2.63543vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle2 {
+    width: 2.0205vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle2 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle3 {
+    width: 3.77745vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle3 {
+    height: 2.63543vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle4 {
+    width: 4.39239vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle4 {
+    height: 2.28404vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle5 {
+    width: 1.40556vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle5 {
+    height: 2.89898vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle6 {
+    width: 4.39239vw;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle6 {
+    height: 2.37189vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle2 {
+    width: 2.28404vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle2 {
+    height: 2.89898vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle3 {
+    width: 3.6896vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle4 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle5 {
+    width: 1.66911vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle5 {
+    height: 3.07467vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle6 {
+    width: 4.30454vw;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list__item + .configurator__control__list__item {
+    margin-left: 1.46413vw;
+  }
+
+  .configurator__control__list__btn.-angle1 {
+    width: 3.60176vw;
+  }
+
+  .configurator__control__list__btn.-angle1 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list__btn.-angle2 {
+    width: 1.93265vw;
+  }
+
+  .configurator__control__list__btn.-angle2 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list__btn.-angle3 {
+    width: 3.42606vw;
+  }
+
+  .configurator__control__list__btn.-angle3 {
+    height: 2.81113vw;
+  }
+
+  .configurator__control__list__btn.-angle4 {
+    width: 4.041vw;
+  }
+
+  .configurator__control__list__btn.-angle4 {
+    height: 2.54758vw;
+  }
+
+  .configurator__control__list__btn.-angle5 {
+    width: 1.49341vw;
+  }
+
+  .configurator__control__list__btn.-angle5 {
+    height: 2.98682vw;
+  }
+
+  .configurator__control__list__btn.-angle6 {
+    width: 4.12884vw;
+  }
+
+  .configurator__control__list__btn.-angle6 {
+    height: 2.54758vw;
+  }
+
+  .configurator__footer {
+    padding-bottom: 2.19619vw;
+  }
+
+  .configurator__footer {
+    padding-left: 2.19619vw;
+  }
+
+  .configurator__footer__list__item {
+    margin-right: 3.66032vw;
+  }
+
+  .configurator__footer__list__item {
+    padding-left: 1.46413vw;
+  }
+
+  .configurator__footer__list__item {
+    border-left-width: 0.36603vw;
+  }
+
+  .configurator__footer__list__title {
+    margin-bottom: 0.73206vw;
+  }
+
+  .configurator__footer__list__title {
+    padding-bottom: 0.29283vw;
+  }
+
+  .configurator__footer__list__data {
+    padding-right: 1.46413vw;
+  }
+
+  .configurator__footer__list__data .name {
+    margin-right: 0.73206vw;
+  }
+
+  .configurator__footer__notes {
+    margin-top: 1.1713vw;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__wrapper {
+    padding-top: 4.39239vw;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__head {
+    margin-bottom: 1.46413vw;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__close {
+    top: 3.3675vw;
+  }
+
+  .configurator__accessory__wrapper {
+    width: 83.45534vw;
+  }
+
+  .configurator__accessory__wrapper {
+    padding-top: 5.85652vw;
+  }
+
+  .configurator__accessory__wrapper {
+    padding-bottom: 5.85652vw;
+  }
+
+  .configurator__accessory__head {
+    margin-bottom: 5.85652vw;
+  }
+
+  .configurator__accessory__image {
+    width: 19.03367vw;
+  }
+
+  .configurator__accessory__image {
+    margin-bottom: 2.56223vw;
+  }
+
+  .configurator__accessory__image .txt {
+    margin-top: 0.73206vw;
+  }
+
+  .configurator__accessory__list {
+    width: 83.45534vw;
+  }
+
+  .configurator__accessory__list {
+    margin-bottom: 0.87848vw;
+  }
+
+  .configurator__accessory__list__item {
+    width: 12.4451vw;
+  }
+
+  .configurator__accessory__list__item {
+    margin-right: 0.73206vw;
+  }
+
+  .configurator__accessory__list__item {
+    margin-bottom: 1.46413vw;
+  }
+
+  .configurator__accessory__list__item {
+    margin-left: 0.73206vw;
+  }
+
+  .configurator__accessory__list__img .head {
+    height: 4.46559vw;
+  }
+
+  .configurator__accessory__list__img .head {
+    margin-top: 0.80527vw;
+  }
+
+  .configurator__accessory__notes {
+    width: 80.52709vw;
+  }
+
+  .configurator__accessory__close {
+    top: 4.83163vw;
+  }
+
+  .configurator__accessory__close {
+    right: -1.75695vw;
+  }
+
+  .configurator__accessory__close {
+    width: 8.49195vw;
+  }
+
+  .configurator__accessory__close {
+    height: 4.5388vw;
+  }
+
+  .configurator__accessory__close .icn {
+    width: 1.31772vw;
+  }
+
+  .configurator__accessory__close .icn {
+    height: 1.31772vw;
+  }
+
+  .configurator__accessory__close .icn {
+    margin-right: 0.58565vw;
+  }
+
+  .configurator__accessory__close .icn::before,
+  .configurator__accessory__close .icn::after {
+    border-radius: 0.14641vw;
+  }
+
+  .configurator__accessory__image__modal__img {
+    width: 58.56515vw;
+  }
+
+  .configurator__accessory__image__modal__img {
+    padding: 1.46413vw;
+  }
+
+  .configurator__accessory__image__modal__close {
+    width: 8.78477vw;
+  }
+
+  .configurator__accessory__image__modal__close {
+    height: 8.78477vw;
+  }
+
+  .configurator__accessory__image__modal__close .icn {
+    width: 2.63543vw;
+  }
+
+  .configurator__accessory__image__modal__close .icn {
+    height: 2.63543vw;
+  }
+
+  .configurator__accessory__image__modal__close .icn {
+    margin-bottom: 0.36603vw;
+  }
+
+  .configurator__accessory__image__modal__close .icn::before,
+  .configurator__accessory__image__modal__close .icn::after {
+    width: 2.63543vw;
+  }
+
+  .configurator__accessory__image__modal__close .icn::before,
+  .configurator__accessory__image__modal__close .icn::after {
+    border-radius: 0.14641vw;
+  }
+
+  .configurator__accessory__modal__content {
+    width: 58.56515vw;
+  }
+
+  .configurator__accessory__modal__content {
+    padding-top: 1.46413vw;
+  }
+
+  .configurator__accessory__modal__content {
+    padding-right: 1.46413vw;
+  }
+
+  .configurator__accessory__modal__content {
+    padding-bottom: 2.04978vw;
+  }
+
+  .configurator__accessory__modal__content {
+    padding-left: 1.46413vw;
+  }
+
+  .configurator__accessory__modal__content .txt {
+    margin-top: 0.80527vw;
+  }
+
+  .configurator__accessory__modal__content .slide {
+    margin-bottom: 1.83016vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow {
+    bottom: 2.56223vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow {
+    width: 3.07467vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow {
+    height: 3.07467vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow::before {
+    width: 1.31772vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow::before {
+    height: 1.31772vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow::before {
+    margin-left: 1.31772vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots {
+    margin-top: 0.87848vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots {
+    margin-bottom: -0.87848vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots li {
+    width: 1.46413vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots li {
+    height: 1.46413vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots button {
+    width: 0.87848vw;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots button {
+    height: 0.87848vw;
+  }
+
+  .configurator__accessory__modal__close {
+    width: 8.78477vw;
+  }
+
+  .configurator__accessory__modal__close {
+    height: 8.78477vw;
+  }
+
+  .configurator__accessory__modal__close .icn {
+    width: 2.63543vw;
+  }
+
+  .configurator__accessory__modal__close .icn {
+    height: 2.63543vw;
+  }
+
+  .configurator__accessory__modal__close .icn {
+    margin-bottom: 0.36603vw;
+  }
+
+  .configurator__accessory__modal__close .icn::before,
+  .configurator__accessory__modal__close .icn::after {
+    width: 2.63543vw;
+  }
+
+  .configurator__accessory__modal__close .icn::before,
+  .configurator__accessory__modal__close .icn::after {
+    border-radius: 0.14641vw;
+  }
+
+  .configurator__zoom__close {
+    width: 8.78477vw;
+  }
+
+  .configurator__zoom__close {
+    height: 8.78477vw;
+  }
+
+  .configurator__zoom__close .icn {
+    width: 2.63543vw;
+  }
+
+  .configurator__zoom__close .icn {
+    height: 2.63543vw;
+  }
+
+  .configurator__zoom__close .icn {
+    margin-bottom: 0.36603vw;
+  }
+
+  .configurator__zoom__close .icn::before,
+  .configurator__zoom__close .icn::after {
+    width: 2.63543vw;
+  }
+
+  .configurator__zoom__close .icn::before,
+  .configurator__zoom__close .icn::after {
+    border-radius: 0.14641vw;
+  }
+
+  .configurator__loading__bar {
+    width: 7.32064vw;
+  }
+
+  .configurator__loading__bar {
+    height: 1.75695vw;
+  }
+
+  .configurator__loading__bar {
+    border-radius: 0.29283vw;
+  }
+}
+
+@media screen and (max-width: 926px) {
+  html {
+    font-size: 2.66667vmin;
+  }
+
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  #suzuki-in-your-country-bnr a {
+    font-size: 14px;
+  }
+
+  html.fixed {
+    overflow: hidden;
+  }
+
+  body.spFixed {
+    height: 100vh;
+    overflow: hidden;
+  }
+
+  .configurator[data-current-grade="1"] [data-bodycolor-grade="1"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="2"] [data-bodycolor-grade="2"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="3"] [data-bodycolor-grade="3"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="4"] [data-bodycolor-grade="4"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="5"] [data-bodycolor-grade="5"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="6"] [data-bodycolor-grade="6"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="7"] [data-bodycolor-grade="7"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="8"] [data-bodycolor-grade="8"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="9"] [data-bodycolor-grade="9"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="10"] [data-bodycolor-grade="10"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="11"] [data-bodycolor-grade="11"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="12"] [data-bodycolor-grade="12"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="13"] [data-bodycolor-grade="13"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="14"] [data-bodycolor-grade="14"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="15"] [data-bodycolor-grade="15"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="16"] [data-bodycolor-grade="16"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="17"] [data-bodycolor-grade="17"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="18"] [data-bodycolor-grade="18"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="19"] [data-bodycolor-grade="19"] {
+    display: block;
+  }
+
+  .configurator[data-current-grade="20"] [data-bodycolor-grade="20"] {
+    display: block;
+  }
+
+  .configurator a:hover {
+    opacity: 1;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav {
+    width: auto;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav__list__item {
+    margin-bottom: 3.73333vmin;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav__list__btn {
+    width: 19.2vmin;
+    height: 19.2vmin;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav__control__btn.-zoom {
+    width: 73.06667vmin;
+  }
+
+  .configurator__wrapper {
+    padding: 3.46667vmin 5.33333vmin 5.33333vmin;
+  }
+
+  .configurator__header {
+    position: relative;
+    padding: 0 0 0 1.33333vmin;
+  }
+
+  .configurator__header__change {
+    margin-bottom: 2.13333vmin;
+    font-size: 1.6rem;
+    line-height: 1;
+  }
+
+  .configurator__header__change a::before {
+    top: -0.53333vmin;
+    left: -2.66667vmin;
+    width: 1.86667vmin;
+    height: 1.86667vmin;
+  }
+
+  .configurator__header__name {
+    font-size: 2.8rem;
+    line-height: 1;
+  }
+
+  .configurator__view {
+    width: auto;
+    margin: -4vmin -18.66667vmin 0;
+  }
+
+  .configurator__view__list {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .configurator__view__icn {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  .configurator__view__icn {
+    background-size: 16% auto;
+  }
+
+  .configurator__grade {
+    top: 75.73333vmin;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    padding: 2.66667vmin 0 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  .configurator__grade__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .configurator__grade__head {
+    margin-bottom: 1.33333vmin;
+    line-height: 1.8;
+  }
+
+  .configurator__grade__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    padding: 0 2.66667vmin;
+    overflow: auto;
+  }
+
+  .configurator__grade__list__item {
+    max-width: 40vmin;
+    padding: 0 2.66667vmin;
+    margin: 0 0 4.8vmin;
+  }
+
+  .configurator__grade__list__item:first-child {
+    max-width: 42.66667vmin;
+    padding: 0 2.66667vmin 0 5.33333vmin;
+  }
+
+  .configurator__grade__list__item:last-child {
+    max-width: 42.66667vmin;
+    padding: 0 5.33333vmin 0 2.66667vmin;
+  }
+
+  .configurator__grade__list__item + .configurator__grade__list__item {
+    margin-top: 0;
+  }
+
+  .configurator__grade__list__btn .img {
+    width: 32vmin;
+    margin-bottom: 2.66667vmin;
+  }
+
+  .configurator__grade__list__btn .txt {
+    font-size: 1.3rem;
+  }
+
+  .configurator__grade__close {
+    position: absolute;
+    top: 0.8vmin;
+    right: 27.73333vmin;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 16vmin;
+    height: 16vmin;
+    margin: 0 auto;
+  }
+
+  .configurator__grade__close .icn {
+    width: 4.8vmin;
+    height: 4.8vmin;
+    margin: 0 auto 1.06667vmin;
+  }
+
+  .configurator__grade__close .icn::before,
+  .configurator__grade__close .icn::after {
+    border-radius: 0.53333vmin;
+  }
+
+  .configurator__grade__close .txt {
+    display: none;
+    font-size: 1.2rem;
+  }
+
+  .configurator__bodyColor {
+    top: 75.73333vmin;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    width: auto;
+    padding: 2.66667vmin 0 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  .configurator__bodyColor__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .configurator__bodyColor__head {
+    margin-bottom: 1.33333vmin;
+    line-height: 1.8;
+  }
+
+  .configurator__bodyColor__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    overflow: auto;
+  }
+
+  .configurator__bodyColor__list__item {
+    max-width: 29.33333vmin;
+    padding: 0 2.66667vmin;
+    margin: 0 0 1.33333vmin;
+  }
+
+  .configurator__bodyColor__list__item:first-child {
+    max-width: 32vmin;
+    padding: 0 2.66667vmin 0 5.33333vmin;
+  }
+
+  .configurator__bodyColor__list__item:last-child {
+    max-width: 32vmin;
+    padding: 0 5.33333vmin 0 2.66667vmin;
+  }
+
+  .configurator__bodyColor__list__item:only-child {
+    max-width: none;
+  }
+
+  .configurator__bodyColor__list__item + .configurator__bodyColor__list__item {
+    margin-top: 0;
+  }
+
+  .configurator__bodyColor__list__btn .img {
+    width: 21.33333vmin;
+    margin-bottom: 4.53333vmin;
+  }
+
+  .configurator__bodyColor__list__btn .txt {
+    font-size: 1.3rem;
+  }
+
+  .configurator__bodyColor__list__btn .name {
+    display: block;
+  }
+
+  .configurator__bodyColor__list__btn .notes {
+    display: block;
+  }
+
+  .configurator__bodyColor__close {
+    position: absolute;
+    top: 0.8vmin;
+    right: 20.8vmin;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    width: 16vmin;
+    height: 16vmin;
+    margin: 0 auto;
+  }
+
+  .configurator__bodyColor__close .icn {
+    width: 4.8vmin;
+    height: 4.8vmin;
+    margin: 0 auto 1.06667vmin;
+  }
+
+  .configurator__bodyColor__close .icn::before,
+  .configurator__bodyColor__close .icn::after {
+    border-radius: 0.53333vmin;
+  }
+
+  .configurator__bodyColor__close .txt {
+    display: none;
+    font-size: 1.2rem;
+  }
+
+  .configurator__nav {
+    position: static;
+    display: block;
+    width: 79.46667vmin;
+    margin: 0 auto 8.8vmin;
+    padding: 0;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+  }
+
+  .configurator__nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .configurator__nav__list__item {
+    margin-bottom: 3.73333vmin;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .configurator__nav__list__item + .configurator__nav__list__item {
+    margin-left: 3.73333vmin;
+  }
+
+  .configurator__nav__list__btn {
+    width: 100%;
+    height: 24vmin;
+  }
+
+  .configurator__nav__list__btn.-grade .icn {
+    width: 8.53333vmin;
+    height: 6.66667vmin;
+  }
+
+  .configurator__nav__list__btn.-bodyColor .icn {
+    height: 6.66667vmin;
+  }
+
+  .configurator__nav__list__btn.-accessories .icn {
+    margin-top: 1.6vmin;
+    height: 4.26667vmin;
+  }
+/*
+  .configurator__nav__list__btn.-accessories::before {
+    top: 1.6vmin;
+    right: 1.6vmin;
+    width: 2.4vmin;
+    height: 2.4vmin;
+  }
+
+  .configurator__nav__list__btn.-accessories::after {
+    top: 1.06667vmin;
+    right: 1.06667vmin;
+    width: 2.4vmin;
+    height: 2.4vmin;
+  }
+*/
+  .configurator__nav__list__btn.-features .icn {
+    margin-top: 1.6vmin;
+    margin-bottom: 1.6vmin;
+    width: 6.13333vmin;
+    height: 5.06667vmin;
+  }
+
+  .configurator__nav__list__btn.-features::after {
+    right: 1.33333vmin;
+    width: 1.86667vmin;
+    height: 1.86667vmin;
+  }
+
+  .configurator__nav__list__btn .icn {
+    width: 7.2vmin;
+    margin-bottom: 2.4vmin;
+  }
+
+  .configurator__nav__list__btn .txt {
+    font-size: 1.2rem;
+  }
+
+  .configurator__nav__features.landscape {
+    display: none;
+  }
+
+  .configurator__nav__features.portrait {
+    display: block;
+  }
+
+  .configurator__nav__features a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: auto;
+    height: 11.73333vmin;
+    padding: 0;
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .configurator__nav__features a::after {
+    position: static;
+    margin-left: 2.66667vmin;
+    width: 2.13333vmin;
+    height: 2.13333vmin;
+  }
+
+  .configurator__nav__control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 3.73333vmin;
+  }
+
+  .configurator__nav__control__btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    height: 11.73333vmin;
+    border: 1px solid #262626;
+  }
+
+  .configurator__nav__control__btn .icn {
+    position: relative;
+  }
+
+  .configurator__nav__control__btn.-zoom {
+    width: 64vmin;
+  }
+
+  .configurator__nav__control__btn.-zoom .icn {
+    width: 4.13333vmin;
+    height: 3.984vmin;
+  }
+
+  .configurator__nav__control__btn.-zoom .txt {
+    margin-left: 4.26667vmin;
+    font-size: 1.6rem;
+  }
+
+  .configurator__nav__control__btn.-angle {
+    position: relative;
+    width: 11.73333vmin;
+  }
+
+  .configurator__nav__control__btn.-angle .icn {
+    width: 6.93333vmin;
+    height: 6.41067vmin;
+  }
+
+  .configurator__nav__control__btn.-angle .balloon {
+    position: absolute;
+    right: -2.66667vmin;
+    bottom: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 34.4vmin;
+    height: 17.06667vmin;
+    margin-bottom: 2.13333vmin;
+    background-color: #D2D2D2;
+    font-family: 'SuzukiPRORegular';
+    font-size: 1rem;
+    line-height: 1.1;
+    text-align: left;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translateY(10px);
+    transform: translateY(10px);
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+  }
+
+  .configurator__nav__control__btn.-angle .balloon::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    right: 6.4vmin;
+    display: block;
+    width: 0;
+    height: 0;
+    border: 1.33333vmin solid transparent;
+    border-top: 2.13333vmin solid #D2D2D2;
+  }
+
+  .configurator__nav__control__btn.-angle .balloon.-active {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .configurator__control {
+    top: 82.4vmin;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    display: block;
+    padding-top: 18.93333vmin;
+    opacity: 0;
+    pointer-events: none;
+    -webkit-transform: translateY(30px);
+    transform: translateY(30px);
+    -webkit-transition: 0.4s all ease-out;
+    transition: 0.4s all ease-out;
+    background-color: #fff;
+  }
+
+  .configurator__control.-active {
+    opacity: 1;
+    pointer-events: auto;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+
+  .configurator__control__close {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 16vmin;
+    height: 16vmin;
+    margin: 3.73333vmin auto 0;
+    text-align: center;
+  }
+
+  .configurator__control__close .icn {
+    position: relative;
+    display: block;
+    width: 4.8vmin;
+    height: 4.8vmin;
+    margin: 0 auto 1.06667vmin;
+  }
+
+  .configurator__control__close .icn::before,
+  .configurator__control__close .icn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: block;
+    width: 4.8vmin;
+    height: 1px;
+    margin: auto;
+    border-radius: 0.53333vmin;
+    background-color: #262626;
+  }
+
+  .configurator__control__close .txt {
+    font-size: 1.2rem;
+  }
+
+  .configurator__control__zoom {
+    display: none;
+  }
+
+  .configurator__control__list {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    margin-left: 0;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle1 {
+    width: 10.66667vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle2 {
+    width: 6.4vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle3 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle4 {
+    width: 13.06667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle5 {
+    width: 5.06667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.sv650 .configurator__control__list__btn.-angle6 {
+    width: 13.06667vmin;
+    height: 8vmin;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle1 {
+    width: 10.66667vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle2 {
+    width: 6.4vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle3 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle4 {
+    width: 13.06667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle5 {
+    width: 5.06667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.sv650x .configurator__control__list__btn.-angle6 {
+    width: 13.06667vmin;
+    height: 8vmin;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle1 {
+    width: 10.13333vmin;
+    height: 8.61333vmin;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle2 {
+    width: 5.32vmin;
+    height: 8.86667vmin;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle3 {
+    width: 10.38667vmin;
+    height: 8.61333vmin;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle4 {
+    width: 12.16vmin;
+    height: 7.6vmin;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle5 {
+    width: 4.30667vmin;
+    height: 9.12vmin;
+  }
+
+  .configurator__control__list.v-strom_xt .configurator__control__list__btn.-angle6 {
+    width: 12.16vmin;
+    height: 7.85333vmin;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle1 {
+    width: 10.13333vmin;
+    height: 8.61333vmin;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle2 {
+    width: 5.32vmin;
+    height: 8.86667vmin;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle3 {
+    width: 10.38667vmin;
+    height: 8.61333vmin;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle4 {
+    width: 12.16vmin;
+    height: 7.6vmin;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle5 {
+    width: 4.30667vmin;
+    height: 9.12vmin;
+  }
+
+  .configurator__control__list.v-strom .configurator__control__list__btn.-angle6 {
+    width: 12.16vmin;
+    height: 7.85333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle1 {
+    width: 10.66667vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle2 {
+    width: 6.4vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle3 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle4 {
+    width: 13.06667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle5 {
+    width: 5.06667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.gsx-s1000 .configurator__control__list__btn.-angle6 {
+    width: 13.06667vmin;
+    height: 8vmin;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle1 {
+    width: 11.46667vmin;
+    height: 8vmin;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle2 {
+    width: 6.13333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle3 {
+    width: 11.46667vmin;
+    height: 8vmin;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle4 {
+    width: 13.33333vmin;
+    height: 6.93333vmin;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle5 {
+    width: 4.26667vmin;
+    height: 8.8vmin;
+  }
+
+  .configurator__control__list.hayabusa .configurator__control__list__btn.-angle6 {
+    width: 13.33333vmin;
+    height: 7.2vmin;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle2 {
+    width: 6.93333vmin;
+    height: 8.8vmin;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle3 {
+    width: 11.2vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle4 {
+    width: 13.06667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle5 {
+    width: 5.06667vmin;
+    height: 9.33333vmin;
+  }
+
+  .configurator__control__list.gsx-s1000gt .configurator__control__list__btn.-angle6 {
+    width: 13.06667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.burgman400 .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.katana .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.avenis125 .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.v-strom1050 .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.v-strom1050de .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.address_125 .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.burgman_street_125ex .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.v-strom800de .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list.gsx-8s .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list__item + .configurator__control__list__item {
+    margin-left: 4.8vmin;
+  }
+
+  .configurator__control__list__btn.-angle1 {
+    width: 10.93333vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list__btn.-angle2 {
+    width: 5.86667vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list__btn.-angle3 {
+    width: 10.4vmin;
+    height: 8.53333vmin;
+  }
+
+  .configurator__control__list__btn.-angle4 {
+    width: 12.26667vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__control__list__btn.-angle5 {
+    width: 4.53333vmin;
+    height: 9.06667vmin;
+  }
+
+  .configurator__control__list__btn.-angle6 {
+    width: 12.53333vmin;
+    height: 7.73333vmin;
+  }
+
+  .configurator__footer {
+    position: static;
+    padding: 0;
+  }
+
+  .configurator__footer__list {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+
+  .configurator__footer__list__item {
+    margin-right: 0;
+    padding: 0.26667vmin 0 0.26667vmin 2.66667vmin;
+    border-left-width: 0.8vmin;
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+  }
+
+  .configurator__footer__list__item + .configurator__footer__list__item {
+    margin-left: 7.73333vmin;
+  }
+
+  .configurator__footer__list__title {
+    margin-bottom: 1.33333vmin;
+    padding-bottom: 0.8vmin;
+    font-size: 1.3rem;
+  }
+
+  .configurator__footer__list__data {
+    display: block;
+    padding-right: 0;
+  }
+
+  .configurator__footer__list__data.-line {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator__footer__list__data .name {
+    margin: 0 1.6vmin 0.53333vmin 0;
+    font-size: 1.8rem;
+  }
+
+  .configurator__footer__list__data .notes {
+    display: block;
+    font-size: 1.4rem;
+  }
+
+  .configurator__footer__list__data .notes::before {
+    font-size: 1.2rem;
+  }
+
+  .configurator__footer__list__data .notes::after {
+    font-size: 1.2rem;
+  }
+
+  .configurator__footer__notes {
+    margin-top: 4.26667vmin;
+    font-size: 1rem;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__wrapper {
+    padding-top: 16vmin;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__head {
+    margin-bottom: 4.26667vmin;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__close {
+    top: 0;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__modal__content {
+    max-width: none;
+  }
+
+  .configurator__accessory__wrapper {
+    width: auto;
+    padding: 30.93333vmin 3.2vmin 16vmin;
+  }
+
+  .configurator__accessory__head {
+    margin-bottom: 9.06667vmin;
+    font-size: 3rem;
+  }
+
+  .configurator__accessory__image {
+    width: 69.33333vmin;
+    margin-bottom: 6.66667vmin;
+  }
+
+  .configurator__accessory__image .txt {
+    margin-top: 2.13333vmin;
+  }
+
+  .configurator__accessory__list {
+    width: auto;
+    margin-bottom: 0;
+  }
+
+  .configurator__accessory__list__item {
+    width: 26.66667vmin;
+    margin: 0 2.13333vmin 5.33333vmin;
+  }
+
+  .configurator__accessory__list__img {
+    height: 100%;
+  }
+
+  .configurator__accessory__list__img .img {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+
+  .configurator__accessory__list__img .head {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    height: 100%;
+    margin: 0;
+    padding-top: 21.86667vmin;
+  }
+
+  .configurator__accessory__notes {
+    width: 89.33333vmin;
+    font-size: 1rem;
+  }
+
+  .configurator__accessory__close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30.93333vmin;
+    height: 16.53333vmin;
+  }
+
+  .configurator__accessory__close .icn {
+    width: 4.8vmin;
+    height: 4.8vmin;
+    margin-right: 2.13333vmin;
+  }
+
+  .configurator__accessory__close .icn::before,
+  .configurator__accessory__close .icn::after {
+    border-radius: 0.53333vmin;
+  }
+
+  .configurator__accessory__image__modal__img {
+    max-width: none;
+    width: 100%;
+    padding: 4.53333vmin;
+  }
+
+  .configurator__accessory__image__modal__close {
+    width: 32vmin;
+    height: 32vmin;
+  }
+
+  .configurator__accessory__image__modal__close .icn {
+    width: 9.6vmin;
+    height: 9.6vmin;
+    margin-bottom: 1.33333vmin;
+  }
+
+  .configurator__accessory__image__modal__close .icn::before,
+  .configurator__accessory__image__modal__close .icn::after {
+    width: 9.6vmin;
+    border-radius: 0.53333vmin;
+  }
+
+  .configurator__accessory__modal__content {
+    max-width: none;
+    width: 100%;
+    padding: 4.53333vmin;
+  }
+
+  .configurator__accessory__modal__content .head {
+    font-size: 2rem;
+  }
+
+  .configurator__accessory__modal__content .head .thumb-only.-sp {
+    display: inherit;
+  }
+
+  .configurator__accessory__modal__content .txt {
+    margin-top: 1.6vmin;
+    font-size: 1.2rem;
+  }
+
+  .configurator__accessory__modal__content .slide {
+    margin-bottom: 3.46667vmin;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow {
+    bottom: 9.33333vmin;
+    width: 7.46667vmin;
+    height: 7.46667vmin;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-arrow::before {
+    width: 3.2vmin;
+    height: 3.2vmin;
+    margin-left: 3.2vmin;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots {
+    margin: 3.2vmin 0 -3.2vmin;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots li {
+    width: 5.33333vmin;
+    height: 5.33333vmin;
+  }
+
+  .configurator__accessory__modal__content .slide .slick-dots button {
+    width: 2.66667vmin;
+    height: 2.66667vmin;
+  }
+
+  .configurator__accessory__modal__close {
+    width: 32vmin;
+    height: 32vmin;
+  }
+
+  .configurator__accessory__modal__close .icn {
+    width: 9.6vmin;
+    height: 9.6vmin;
+    margin-bottom: 1.33333vmin;
+  }
+
+  .configurator__accessory__modal__close .icn::before,
+  .configurator__accessory__modal__close .icn::after {
+    width: 9.6vmin;
+    border-radius: 0.53333vmin;
+  }
+
+  .configurator__zoom__img img,
+  .configurator__zoom__img source {
+    -webkit-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+
+  .configurator__zoom__icn {
+    background-size: 16% auto;
+  }
+
+  .configurator__zoom__close {
+    width: 32vmin;
+    height: 32vmin;
+  }
+
+  .configurator__zoom__close .icn {
+    width: 9.6vmin;
+    height: 9.6vmin;
+    margin-bottom: 1.33333vmin;
+  }
+
+  .configurator__zoom__close .icn::before,
+  .configurator__zoom__close .icn::after {
+    width: 9.6vmin;
+    border-radius: 0.53333vmin;
+  }
+
+  .configurator__loading__bar {
+    width: 21.33333vmin;
+    height: 5.33333vmin;
+    border-radius: 1.06667vmin;
+  }
+
+  .configurator__loading__bar .txt {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 926px) and (orientation: landscape) and (max-height: 480px) {
+  body {
+    /*
+      header,
+      footer {
+        display: none;
+      }
+      body {
+        width: 100vw;
+        min-height: 1000000vh;
+      }
+      */
+  }
+
+  .configurator {
+    /*
+          position: fixed;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          margin: 0;
+          */
+    z-index: 2000;
+  }
+
+  .configurator[data-current-grade="1"] [data-bodycolor-grade="1"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="2"] [data-bodycolor-grade="2"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="3"] [data-bodycolor-grade="3"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="4"] [data-bodycolor-grade="4"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="5"] [data-bodycolor-grade="5"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="6"] [data-bodycolor-grade="6"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="7"] [data-bodycolor-grade="7"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="8"] [data-bodycolor-grade="8"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="9"] [data-bodycolor-grade="9"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="10"] [data-bodycolor-grade="10"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="11"] [data-bodycolor-grade="11"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="12"] [data-bodycolor-grade="12"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="13"] [data-bodycolor-grade="13"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="14"] [data-bodycolor-grade="14"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="15"] [data-bodycolor-grade="15"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="16"] [data-bodycolor-grade="16"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="17"] [data-bodycolor-grade="17"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="18"] [data-bodycolor-grade="18"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="19"] [data-bodycolor-grade="19"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator[data-current-grade="20"] [data-bodycolor-grade="20"] {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav__list__item {
+    margin-bottom: 1.06667vmin;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav__list__btn {
+    width: 24vmin;
+    height: 18.66667vmin;
+  }
+
+  .configurator.-gradeChangeAvailable .configurator__nav__control__btn.-zoom {
+    width: 11.73333vmin;
+  }
+
+  .configurator__wrapper {
+    height: 100vh;
+    padding: 3.73333vmin 5.33333vmin 2.93333vmin;
+  }
+
+  .configurator__header {
+    position: absolute;
+    top: 3.73333vmin;
+    left: 5.33333vmin;
+    margin-bottom: 0;
+    padding-left: 0.8vmin;
+  }
+
+  .configurator__view {
+    top: 25%;
+    width: 80.95952%;
+    margin: 0 auto 1.64918%;
+    -webkit-transform: translate(-15%, -30%);
+    transform: translate(-15%, -30%);
+  }
+
+  .configurator__grade {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    padding: 5.33333vmin 0 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+
+  .configurator__grade__inner {
+    display: block;
+    width: 42.66667vmin;
+    overflow: auto;
+    padding-bottom: 5.33333vmin;
+  }
+
+  .configurator__grade__head {
+    margin-bottom: 2.66667vmin;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .configurator__grade__list {
+    display: block;
+    overflow: visible;
+    padding: 0;
+  }
+
+  .configurator__grade__list__item {
+    max-width: none;
+    padding: 0;
+    margin: 0 0 5.86667vmin;
+  }
+
+  .configurator__grade__list__item:first-child,
+  .configurator__grade__list__item:last-child {
+    max-width: none;
+    padding: 0;
+  }
+
+  .configurator__grade__list__btn .img {
+    width: 24vmin;
+  }
+
+  .configurator__grade__close {
+    position: fixed;
+    top: 1.33333vmin;
+    right: 1.33333vmin;
+    width: 10.66667vmin;
+    height: 10.66667vmin;
+    margin: 0;
+  }
+
+  .configurator__grade__close .icn {
+    margin: 0;
+  }
+
+  .configurator__bodyColor {
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: auto;
+    padding: 5.33333vmin 0 0;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+
+  .configurator__bodyColor__inner {
+    display: block;
+    width: 42.66667vmin;
+    overflow: auto;
+    padding-bottom: 5.33333vmin;
+  }
+
+  .configurator__bodyColor__head {
+    margin-bottom: 2.66667vmin;
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+
+  .configurator__bodyColor__list {
+    display: block;
+    overflow: visible;
+  }
+
+  .configurator__bodyColor__list__item {
+    max-width: none;
+    padding: 0;
+    margin: 0 0 4vmin;
+  }
+
+  .configurator__bodyColor__list__item:first-child,
+  .configurator__bodyColor__list__item:last-child {
+    max-width: none;
+    padding: 0;
+  }
+
+  .configurator__bodyColor__list__btn .img {
+    width: 12.26667vmin;
+    margin-bottom: 1.06667vmin;
+  }
+
+  .configurator__bodyColor__list__btn .txt {
+    font-size: 1.2rem;
+  }
+
+  .configurator__bodyColor__list__btn .name {
+    display: inline;
+  }
+
+  .configurator__bodyColor__list__btn .notes {
+    display: inline;
+  }
+
+  .configurator__bodyColor__close {
+    position: fixed;
+    top: 1.33333vmin;
+    right: 1.33333vmin;
+    width: 10.66667vmin;
+    height: 10.66667vmin;
+    margin: 0;
+  }
+
+  .configurator__bodyColor__close .icn {
+    margin: 0;
+  }
+
+  .configurator__nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 34.66667vmin;
+    margin: 0 auto;
+    padding: 5.33333vmin;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+
+  .configurator__nav__list {
+    display: block;
+  }
+
+  .configurator__nav__list__item {
+    margin-bottom: 2.66667vmin;
+  }
+
+  .configurator__nav__list__item + .configurator__nav__list__item {
+    margin-left: 0;
+  }
+
+  .configurator__nav__list__btn {
+    width: 24vmin;
+    height: 18.66667vmin;
+  }
+
+  .configurator__nav__list__btn.-features::after {
+    width: 1.86667vmin;
+    height: 1.86667vmin;
+  }
+
+  .configurator__nav__list__btn .icn {
+    margin-bottom: 1.06667vmin;
+  }
+
+  .configurator__nav__features.landscape {
+    display: block;
+  }
+
+  .configurator__nav__features.portrait {
+    display: none;
+  }
+
+  .configurator__nav__features a {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    width: 24vmin;
+    height: auto;
+    margin-bottom: 3.73333vmin;
+    padding: 0 2.93333vmin;
+    font-size: 1.3rem;
+    text-align: left;
+  }
+
+  .configurator__nav__features a::after {
+    position: absolute;
+    right: 2.13333vmin;
+    width: 1.86667vmin;
+    height: 1.86667vmin;
+  }
+
+  .configurator__nav__control {
+    width: 24vmin;
+    margin-bottom: 0;
+  }
+
+  .configurator__nav__control__btn.-zoom {
+    width: 11.73333vmin;
+  }
+
+  .configurator__nav__control__btn.-zoom .txt {
+    display: none;
+  }
+
+  .configurator__control {
+    top: 0;
+    left: auto;
+    width: 32vmin;
+    padding-top: 8.53333vmin;
+    -webkit-transform: translateX(60px);
+    transform: translateX(60px);
+  }
+
+  .configurator__control__close {
+    margin-top: 1.86667vmin;
+  }
+
+  .configurator__control__close .icn {
+    margin-bottom: 0;
+  }
+
+  .configurator__control__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .configurator__control__list__item + .configurator__control__list__item {
+    margin: 4.53333vmin 0 0;
+  }
+
+  .configurator__footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 0 0 2.93333vmin 5.33333vmin;
+  }
+
+  .configurator__footer__list {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+
+  .configurator__footer__list__item {
+    min-width: 40.8vmin;
+    margin-right: 7.73333vmin;
+    -webkit-box-flex: 0;
+    -ms-flex: none;
+    flex: none;
+  }
+
+  .configurator__footer__list__item + .configurator__footer__list__item {
+    margin-left: 0;
+  }
+
+  .configurator__footer__list__data {
+    padding-right: 5.33333vmin;
+  }
+
+  .configurator__footer__notes {
+    margin-top: 2.13333vmin;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__wrapper {
+    padding: 0;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__head {
+    margin-bottom: 4.26667vmin;
+  }
+
+  .configurator__accessory.-single .configurator__accessory__modal__content {
+    max-width: 97vh;
+  }
+
+  .configurator__accessory__wrapper {
+    padding: 0;
+  }
+
+  .configurator__accessory__inner {
+    padding: 16vmin 3.2vmin;
+    /*
+          height: 100vh;
+          overflow: auto;
+          */
+  }
+
+  .configurator__accessory__head {
+    margin-bottom: 4.26667vmin;
+  }
+
+  .configurator__accessory__list {
+    width: 154.66667vmin;
+  }
+
+  .configurator__accessory__notes {
+    width: 150.4vmin;
+  }
+
+  .configurator__accessory__image__modal__img {
+    width: 100vmin;
+    margin-bottom: 4.26667vmin;
+  }
+
+  .configurator__accessory__modal__content {
+    max-width: 97vh;
+    width: 106.66667vmin;
+  }
+
+  .configurator__accessory__modal__content .txt {
+    font-size: 1.3rem;
+  }
+
+  .configurator__accessory__modal__content .slide .img {
+    height: 45.86667vmin;
+  }
+
+  .configurator__accessory__modal__content .slide .img img,
+  .configurator__accessory__modal__content .slide .img source {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
+  .configurator__zoom__img img,
+  .configurator__zoom__img source {
+    -webkit-transform: none;
+    transform: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 768px) {
+  .configurator {
+    margin: -10vw 0;
+  }
+}
+
+@media screen and (min-width: 927px) and (max-width: 1366px) {
+  .configurator__bodyColor__list__item:only-child {
+    margin-bottom: 21.96193vw;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,26 +1,13 @@
-import * as React from 'react';
-import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import Box from '@mui/material/Box';
-import ProTip from '../src/ProTip';
-import Link from '../src/Link';
-import Copyright from '../src/Copyright';
-import Nav from '@/src/nav';
-import { Oswald } from 'next/font/google';
-import { Toolbar } from '@mui/material';
-import Head from 'next/head';
-const oswald = Oswald({
-  subsets:['latin']
-})
+import * as React from "react";
+import Head from "next/head";
+import Public from "templates/public";
 export default function Index() {
   return (
-    <Container maxWidth="lg" className={oswald.className}>
+    <Public>
       <Head>
-        <title>Suzuki Singapore</title>
+        <title>Suzuki Motorocycles Singapore</title>
       </Head>
-      <Nav />
-      <Toolbar/>
-
-    </Container>
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FSuzukiSingapore%2F&tabs=timeline&width=340&height=331&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=628176207284837" width="340" height="331"  frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+    </Public>
   );
 }

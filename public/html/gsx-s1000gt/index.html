@@ -1,0 +1,919 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>GSX-S1000GT</title>
+	<script>
+		var ua = navigator.userAgent;
+		var title = document.getElementsByTagName('title');
+		if ((ua.indexOf('iPhone') > 0) || ua.indexOf('iPod') > 0 || (ua.indexOf('Android') > 0 && ua.indexOf('Mobile') > 0)) {
+			title[0].insertAdjacentHTML('afterend','<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">');
+		} else {
+			title[0].insertAdjacentHTML('afterend','<meta name="viewport" content="width=1280, user-scalable=yes">');
+		}
+	</script>
+	<link rel="stylesheet" href="commons/css/base.css">
+	<link rel="stylesheet" href="commons/css/header-footer.css">
+	<link rel="stylesheet" href="commons/css/common.css">
+
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/simple.css">
+</head>
+
+
+<body>
+
+<!-- header -->
+<header>
+	<div id="head">
+		<h1 class="logo"><a href="#"><img src="./commons/img/common/logo_img.png" alt=""></a></h1>
+	</div><!--head-->
+</header>
+<!-- header end -->
+
+<div id="stage">
+<!--contents-->
+
+<div id="configurator" class="configurator" data-current-grade="1" data-current-bodycolor="1">
+	<div class="configurator__wrapper">
+		<div class="configurator__header">
+			<p class="configurator__header__change"><a href="#">Change Models</a></p>
+			<h1 class="configurator__header__name">GSX-S1000GT</h1>
+		</div>
+		<div class="configurator__view">
+			<ul class="configurator__view__list" data-current-view="1">
+				<li class="configurator__view__list__item">
+					<picture>
+						<source srcset="./img/data/grade1/color1/01.webp" type="image/webp" class="webp">
+						<img src="./img/data/grade1/color1/01.jpg" alt="" class="jpg">
+					</picture>
+				</li>
+			</ul>
+			<div class="configurator__view__icn"><!--/.configurator__view__icn--></div>
+		<!--/.configurator__view--></div>
+
+
+		<div class="configurator__nav -active">
+			<ul class="configurator__nav__list">
+				<li class="configurator__nav__list__item">
+					<button class="configurator__nav__list__btn -bodyColor js-change-bodyColor">
+						<span class="icn"><img src="./img/icn_body_color.svg" alt="BODY COLOR" class="svg"></span>
+						<span class="txt">BODY COLOR</span>
+					</button>
+				</li>
+				<li class="configurator__nav__list__item">
+					<button class="configurator__nav__list__btn -accessories js-accessories-open">
+						<span class="icn"><img src="./img/icn_genuine_accessories.svg" alt="GENUINE ACCESSORIES" class="svg"></span>
+						<span class="txt">GENUINE<br>ACCESSORIES</span>
+					</button>
+				</li>
+			</ul>
+			<p class="configurator__nav__features landscape">
+				<a href="#">Features <br>and Benefits</a>
+			</p>
+			<ul class="configurator__nav__control">
+				<li class="configurator__nav__control__item">
+					<button class="configurator__nav__control__btn -zoom js-zoom-list-open">
+						<span class="icn"><img src="./img/icn_zoom_plus.svg" alt="ZOOM" class="svg"></span>
+						<span class="txt">ZOOM</span>
+					</button>
+				</li>
+				<li class="configurator__nav__control__item">
+					<button class="configurator__nav__control__btn -angle js-balloon-open">
+						<span class="icn"><img src="./img/img_sp_rotate.svg" alt="" class="svg"></span>
+						<span class="balloon">You can rotate the<br>device on this page</span>
+					</button>
+				</li>
+			</ul>
+			<p class="configurator__nav__features portrait">
+				<a href="#">Features <br class="pc">and Benefits</a>
+			</p>
+		<!--/.configurator__nav--></div>
+
+		<div class="configurator__bodyColor" data-bodycolor-grade="1">
+			<div class="configurator__bodyColor__inner">
+				<p class="configurator__bodyColor__head">BODY COLOR</p>
+				<ul class="configurator__bodyColor__list">
+					<li class="configurator__bodyColor__list__item">
+						<button class="configurator__bodyColor__list__btn" data-bodycolor="1">
+							<figure class="img">
+								<picture>
+									<source srcset="./img/data/img_body_color1.webp" type="image/webp">
+									<img src="./img/data/img_body_color1.png" alt="Metallic Triton Blue (YSF)">
+								</picture>
+							</figure>
+							<p class="txt">
+								<span class="name">Metallic Triton Blue</span>
+								<span class="notes">YSF</span>
+							</p>
+						</button>
+					</li>
+					<li class="configurator__bodyColor__list__item">
+						<button class="configurator__bodyColor__list__btn" data-bodycolor="2">
+							<figure class="img">
+								<picture>
+									<source srcset="./img/data/img_body_color2.webp" type="image/webp">
+									<img src="./img/data/img_body_color2.png" alt="Metallic Reflective Blue (QT8)">
+								</picture>
+							</figure>
+							<p class="txt">
+								<span class="name">Metallic Reflective Blue</span>
+								<span class="notes">QT8</span>
+							</p>
+						</button>
+					</li>
+					<li class="configurator__bodyColor__list__item">
+						<button class="configurator__bodyColor__list__btn" data-bodycolor="3">
+							<figure class="img">
+								<picture>
+									<source srcset="./img/data/img_body_color3.webp" type="image/webp">
+									<img src="./img/data/img_body_color3.png" alt="Glass Sparkle Black (YVB)">
+								</picture>
+							</figure>
+							<p class="txt">
+								<span class="name">Glass Sparkle Black</span>
+								<span class="notes">YVB</span>
+							</p>
+						</button>
+					</li>
+				</ul>
+			<!--/.configurator__bodyColor__inner--></div>
+			<button class="configurator__bodyColor__close js-config-close">
+				<span class="icn"></span>
+				<span class="txt">CLOSE</span>
+			</button>
+		<!--/.configurator__bodyColor--></div>
+
+		<div class="configurator__control">
+			<p class="configurator__control__zoom">
+				<span class="txt">ZOOM</span>
+				<span class="icn"><img src="./img/icn_zoom.svg" alt="ZOOM" class="svg"></span>
+			</p>
+			<ul class="configurator__control__list gsx-s1000gt">
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle1 js-zoom-open" data-zoom-angle="1">
+						<img src="./img/data/icn_angle1.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle2 js-zoom-open" data-zoom-angle="4">
+						<img src="./img/data/icn_angle2.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle3 js-zoom-open" data-zoom-angle="7">
+						<img src="./img/data/icn_angle3.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle4 js-zoom-open" data-zoom-angle="9">
+						<img src="./img/data/icn_angle4.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle5 js-zoom-open" data-zoom-angle="14">
+						<img src="./img/data/icn_angle5.svg" alt="" class="addSvg">
+					</button>
+				</li>
+				<li class="configurator__control__list__item">
+					<button class="configurator__control__list__btn -angle6 js-zoom-open" data-zoom-angle="19">
+						<img src="./img/data/icn_angle6.svg" alt="" class="addSvg">
+					</button>
+				</li>
+			</ul>
+			<button class="configurator__control__close js-config-close">
+				<span class="icn"></span>
+				<span class="txt">CLOSE</span>
+			</button>
+		<!--/.configurator__control--></div>
+
+		<div class="configurator__footer">
+			<div class="configurator__footer__list">
+				<dl class="configurator__footer__list__item">
+					<dt class="configurator__footer__list__title">BODY COLOR</dt>
+					<dd class="configurator__footer__list__data -bodyColor">
+						<span class="name">Metallic Triton Blue</span>
+						<span class="notes">YSF</span>
+					</dd>
+				</dl>
+			<!--/.configurator__footer__list--></div>
+			<p class="configurator__footer__notes">
+				*Specifications shown in this 360° Viewer are subject to change by Suzuki at any time without notice.
+			</p>
+		<!--/.configurator__footer--></div>
+
+	<!--/.configurator__wrapper--></div>
+
+		<div class="configurator__accessory">
+			<div class="configurator__accessory__wrapper">
+				<div class="configurator__accessory__inner">
+					<p class="configurator__accessory__head">GENUINE ACCESSORIES</p>
+					<figure class="configurator__accessory__image js-image-open">
+						<p class="img -border">
+							<picture>
+								<source srcset="./img/data/accessory/th.webp" type="image/webp">
+								<img src="./img/data/accessory/th.jpg" alt="Image Photo">
+							</picture>
+						</p>
+						<p class="txt">
+							Image Photo
+						</p>
+					</figure>
+					<ul class="configurator__accessory__list">
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/01.webp" type="image/webp">
+										<img src="./img/data/accessory/01.jpg" alt="Touring screen">
+									</picture>
+								</p>
+								<p class="head">
+									Touring screen
+								</p>
+								<p class="txt">
+									Offer a significantly higher level of wind protection that enhances comfort on long rides. The touring screen lays back toward the rider on a shallower angle and arches upward to culminate at a height that is 70 mm taller than the standard screen.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/02_1.webp" type="image/webp">
+										<img src="./img/data/accessory/02_1.jpg" alt="Side case set">
+									</picture>
+								</p>
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/02_2.webp" type="image/webp">
+										<img src="./img/data/accessory/02_2.jpg" alt="Side case set">
+									</picture>
+								</p>
+								<p class="head">
+									Side case set
+								</p>
+								<p class="txt">
+									Despite their spacious storage capacity, these large-capacity side cases feature a compact design that integrates seamlessly with the GT’s sharp, futuristic looks. Each is capable of accommodating a full-face helmet and features a quick-release key mechanism for easy mounting and removal.<br>
+									<br>
+									*Max loading 5kg and case capacity 36L each<br>
+									*In combination with side case bracket set, lock set and side case garnish set<br>
+									<br>
+									*Helmets of certain shapes may not fit in the side case.<br>
+									*Helmets are shown for illustrative purpose only.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/03.webp" type="image/webp">
+										<img src="./img/data/accessory/03.jpg" alt="Lock set">
+									</picture>
+								</p>
+								<p class="head">
+									Lock set
+								</p>
+								<p class="txt">
+									Cases lockable with ignition key<br>
+									<br>
+									*In combination with side case set
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/04.webp" type="image/webp">
+										<img src="./img/data/accessory/04.jpg" alt="Side case bracket set">
+									</picture>
+								</p>
+								<p class="head">
+									Side case bracket set
+								</p>
+								<p class="txt">
+									For attaching side case set.<br>
+									<br>
+									*In combination with side case set
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/05_1.webp" type="image/webp">
+										<img src="./img/data/accessory/05_1.jpg" alt="Side case garnish set">
+									</picture>
+								</p>
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/05_2.webp" type="image/webp">
+										<img src="./img/data/accessory/05_2.jpg" alt="Side case garnish set">
+									</picture>
+								</p>
+								<p class="head">
+									Side case garnish set
+								</p>
+								<p class="txt">
+									Metallic Triton Blue (YSF)<br>
+									<br>
+									*In combination with side case set
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/06_1.webp" type="image/webp">
+										<img src="./img/data/accessory/06_1.jpg" alt="Side case garnish set">
+									</picture>
+								</p>
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/06_2.webp" type="image/webp">
+										<img src="./img/data/accessory/06_2.jpg" alt="Side case garnish set">
+									</picture>
+								</p>
+								<p class="head">
+									Side case garnish set
+								</p>
+								<p class="txt">
+									Metallic Reflective Blue (QT8)<br>
+									<br>
+									*In combination with side case set
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/07_1.webp" type="image/webp">
+										<img src="./img/data/accessory/07_1.jpg" alt="Side case garnish set">
+									</picture>
+								</p>
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/07_2.webp" type="image/webp">
+										<img src="./img/data/accessory/07_2.jpg" alt="Side case garnish set">
+									</picture>
+								</p>
+								<p class="head">
+									Side case garnish set
+								</p>
+								<p class="txt">
+								Glass Sparkle Black (YVB)<br>
+								<br>
+								*In combination with side case set
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/08.webp" type="image/webp">
+										<img src="./img/data/accessory/08.jpg" alt="Grip heater">
+									</picture>
+								</p>
+								<p class="head">
+									Grip heater
+								</p>
+								<p class="txt">
+									With three different heat settings.<br>
+									<br>
+									*Entire surface is heated
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/10.webp" type="image/webp">
+										<img src="./img/data/accessory/10.jpg" alt="Billet brake lever (Anodized)">
+									</picture>
+								</p>
+								<p class="head">
+									Billet brake lever (Anodized)
+								</p>
+								<p class="txt">
+									Made of high-end billet aluminum
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/11.webp" type="image/webp">
+										<img src="./img/data/accessory/11.jpg" alt="Billet clutch lever (Anodized)">
+									</picture>
+								</p>
+								<p class="head">
+									Billet clutch lever (Anodized)
+								</p>
+								<p class="txt">
+									Made of high-end billet aluminum
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/12.webp" type="image/webp">
+										<img src="./img/data/accessory/12.jpg" alt="Brake lever guard">
+									</picture>
+								</p>
+								<p class="head">
+									Brake lever guard
+								</p>
+								<p class="txt">
+									Made of high-end billet aluminum and resistant plastic
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/13.webp" type="image/webp">
+										<img src="./img/data/accessory/13.jpg" alt="Clutch lever guard">
+									</picture>
+								</p>
+								<p class="head">
+									Clutch lever guard
+								</p>
+								<p class="txt">
+									Made of high-end billet aluminum and resistant plastic
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/14.webp" type="image/webp">
+										<img src="./img/data/accessory/14.jpg" alt="Stylish rider seat">
+									</picture>
+								</p>
+								<p class="head">
+									Stylish rider seat
+								</p>
+								<p class="txt">
+									Features GSX-S GT logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/15.webp" type="image/webp">
+										<img src="./img/data/accessory/15.jpg" alt="Color Brembo calipers">
+									</picture>
+								</p>
+								<p class="head">
+									Color Brembo calipers
+								</p>
+								<p class="txt">
+									OE replacement / Red. (W/O Pads)<br>
+									<br>
+									*Model in picture is GSX-S1000
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/17.webp" type="image/webp">
+										<img src="./img/data/accessory/17.jpg" alt="Front axle slider ">
+									</picture>
+								</p>
+								<p class="head">
+									Front axle slider
+								</p>
+								<p class="txt">
+									Helps reduction of damage, made of aluminium and POM (polyacetal).
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/18.webp" type="image/webp">
+										<img src="./img/data/accessory/18.jpg" alt="Rear axle slider">
+									</picture>
+								</p>
+								<p class="head">
+									Rear axle slider
+								</p>
+								<p class="txt">
+									Helps reduction of damage, made of aluminium and POM (polyacetal).
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/19.webp" type="image/webp">
+										<img src="./img/data/accessory/19.jpg" alt="Carbon front fender">
+									</picture>
+								</p>
+								<p class="head">
+									Carbon front fender
+								</p>
+								<p class="txt">
+									OE replacement / Matt finish.<br>
+									<br>
+									*Not available for US/Canada<br>
+									*Model in picture is GSX-S1000
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/20.webp" type="image/webp">
+										<img src="./img/data/accessory/20.jpg" alt="Carbon rear fender">
+									</picture>
+								</p>
+								<p class="head">
+									Carbon rear fender
+								</p>
+								<p class="txt">
+									OE replacement / Matt finish.<br>
+									<br>
+									*Not available for US/Canada
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/21.webp" type="image/webp">
+										<img src="./img/data/accessory/21.jpg" alt="Carbon alternator cover">
+									</picture>
+								</p>
+								<p class="head">
+									Carbon alternator cover
+								</p>
+								<p class="txt">
+									Matt finish.<br>
+									<br>
+									*Not available for US/Canada
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/22.webp" type="image/webp">
+										<img src="./img/data/accessory/22.jpg" alt="Carbon clutch cover">
+									</picture>
+								</p>
+								<p class="head">
+									Carbon clutch cover
+								</p>
+								<p class="txt">
+									Matt finish.<br>
+									<br>
+									*Not available for US/Canada
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/23.webp" type="image/webp">
+										<img src="./img/data/accessory/23.jpg" alt="Carbon starter cover">
+									</picture>
+								</p>
+								<p class="head">
+									Carbon starter cover
+								</p>
+								<p class="txt">
+									Matt finish.<br>
+									<br>
+									*Not available for US/Canada
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/24.webp" type="image/webp">
+										<img src="./img/data/accessory/24.jpg" alt="Textile fuel tank bag (Large) ">
+									</picture>
+								</p>
+								<p class="head">
+									Textile fuel tank bag (Large) 
+								</p>
+								<p class="txt">
+									Durable nylon. volume 11 litres expandable to 15 litres.<br>
+									<br>
+									*Max speed 130km/h (Please use this item in the speed less than 130km/h)<br>
+									*Maximum load capacity: 2.5kg<br>
+									*In combinaiton with ring for fuel tank bag
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/25.webp" type="image/webp">
+										<img src="./img/data/accessory/25.jpg" alt="Textile fuel tank bag (Small) ">
+									</picture>
+								</p>
+								<p class="head">
+									Textile fuel tank bag (Small) 
+								</p>
+								<p class="txt">
+									Durable nylon. volume 5 litres expandable to 9 litres.<br>
+									<br>
+									*Max speed 130km/h (Please use this item in the speed less than 130km/h)<br>
+									*Maximum load capacity: 2.5kg<br>
+									*In combinaiton with ring for fuel tank bag
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/26.webp" type="image/webp">
+										<img src="./img/data/accessory/26.jpg" alt="Ring for fuel tank bag">
+									</picture>
+								</p>
+								<p class="head">
+									Ring for fuel tank bag
+								</p>
+								<p class="txt">
+									Required for installing tank bag.<br>
+									<br>
+									*In combinaiton with fuel tank bag
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/27.webp" type="image/webp">
+										<img src="./img/data/accessory/27.jpg" alt="Fuel tank pad">
+									</picture>
+								</p>
+								<p class="head">
+									Fuel tank pad
+								</p>
+								<p class="txt">
+									For tank scratch protection, features new GSX-S logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/28.webp" type="image/webp">
+										<img src="./img/data/accessory/28.jpg" alt="Fuel tank pad">
+									</picture>
+								</p>
+								<p class="head">
+									Fuel tank pad
+								</p>
+								<p class="txt">
+									For tank scratch protection, features new GSX-S logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/29.webp" type="image/webp">
+										<img src="./img/data/accessory/29.jpg" alt="Fuel tank pad">
+									</picture>
+								</p>
+								<p class="head">
+									Fuel tank pad
+								</p>
+								<p class="txt">
+									For tank scratch protection, features new GSX-S GT logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/30.webp" type="image/webp">
+										<img src="./img/data/accessory/30.jpg" alt="Fuel tank protection foil (Transparent)">
+									</picture>
+								</p>
+								<p class="head">
+									Fuel tank protection foil (Transparent)
+								</p>
+								<p class="txt">
+									Protects against tank scratches.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/31.webp" type="image/webp">
+										<img src="./img/data/accessory/31.jpg" alt="Fuel tank protection foil (Black)">
+									</picture>
+								</p>
+								<p class="head">
+									Fuel tank protection foil (Black)
+								</p>
+								<p class="txt">
+									New desing foil for tank protection.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/32.webp" type="image/webp">
+										<img src="./img/data/accessory/32.jpg" alt="Wheel decals">
+									</picture>
+								</p>
+								<p class="head">
+									Wheel decals
+								</p>
+								<p class="txt">
+									Red/Black decal with Suzuki logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/33.webp" type="image/webp">
+										<img src="./img/data/accessory/33.jpg" alt="Wheel decals">
+									</picture>
+								</p>
+								<p class="head">
+									Wheel decals
+								</p>
+								<p class="txt">
+									Red decal with Suzuki logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/34.webp" type="image/webp">
+										<img src="./img/data/accessory/34.jpg" alt="Wheel decals">
+									</picture>
+								</p>
+								<p class="head">
+									Wheel decals
+								</p>
+								<p class="txt">
+									Yellow decal with S logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/35.webp" type="image/webp">
+										<img src="./img/data/accessory/35.jpg" alt="Rim decals">
+									</picture>
+								</p>
+								<p class="head">
+									Rim decals
+								</p>
+								<p class="txt">
+									New rim decal with GSX-S logo.
+								</p>
+							</figure>
+						</li>
+						<li class="configurator__accessory__list__item">
+							<figure class="configurator__accessory__list__img js-accessory-modal-open">
+								<p class="img">
+									<picture>
+										<source srcset="./img/data/accessory/36.webp" type="image/webp">
+										<img src="./img/data/accessory/36.jpg" alt="Rim decals">
+									</picture>
+								</p>
+								<p class="head">
+									Rim decals
+								</p>
+								<p class="txt">
+									New rim decal with GSX-S1000GT logo.
+								</p>
+							</figure>
+						</li>
+					</ul>
+					<p class="configurator__accessory__notes">
+						*Only main accessories are shown. Please contact Suzuki authorized dealers/distributor for the detail information of Suzuki Genuine Accessories.
+					</p>
+
+				<!--/.configurator__accessory__inner--></div>
+
+				<button class="configurator__accessory__close js-accessories-close">
+					<span class="icn"></span>
+					<span class="txt">CLOSE</span>
+				</button>
+
+			<!--/.configurator__accessory__wrapper--></div>
+
+			<div class="configurator__accessory__image__modal js-image-close">
+				<div class="configurator__accessory__image__modal__img">
+					<picture>
+						<source srcset="./img/data/accessory/image.webp" type="image/webp">
+						<img src="./img/data/accessory/image.jpg" alt="Image Photo">
+					</picture>
+				<!--/.configurator__accessory__image__modal__img--></div>
+				<button class="configurator__accessory__image__modal__close">
+					<span class="icn"></span>
+					<span class="txt">CLOSE</span>
+				</button>
+			<!--/.configurator__accessory__image__modal--></div>
+
+			<div class="configurator__accessory__modal js-accessory-modal-close">
+				<div class="configurator__accessory__modal__content">
+					<div class="slide">
+						<p class="img">
+							<picture>
+								<source srcset="./img/data/accessory/01.webp" type="image/webp">
+								<img src="./img/data/accessory/01.jpg" alt="Image Photo">
+							</picture>
+						</p>
+					<!--/.slide--></div>
+					<p class="head">
+						Image Photo
+					</p>
+					<p class="txt">
+					</p>
+				<!--/.configurator__accessory__modal__content--></div>
+				<button class="configurator__accessory__modal__close">
+					<span class="icn"></span>
+					<span class="txt">CLOSE</span>
+				</button>
+			<!--/.configurator__accessory__modal--></div>
+
+		<!--/.configurator__accessory--></div>
+
+		<div class="configurator__zoom">
+			<div class="configurator__zoom__wrapper">
+				<div class="configurator__zoom__img">
+					<picture>
+						<source srcset="./img/blank.png" type="image/webp" class="webp">
+						<img src="./img/blank.png" alt="" class="jpg">
+					</picture>
+				<!--/.configurator__zoom__img--></div>
+			<!--/.configurator__zoom__wrapper--></div>
+			<div class="configurator__zoom__icn">
+			<!--/.configurator__zoom__icn--></div>
+			<button class="configurator__zoom__close js-zoom-close">
+				<span class="icn"></span>
+				<span class="txt">CLOSE</span>
+			</button>
+		<!--/.configurator__zoom--></div>
+
+<!--/.configurator--></div>
+
+
+<!--contents-->
+
+
+</div><!--stage-->
+<footer id="footer">
+	<div class="footer-bottom">
+		<p class="copyright">&copy; XXXXXXXXXXXX(company name), 2022. All rights reserved.</p>
+	</div>
+	<style>
+	@media screen and (min-width: 768px){body{background:#d5d5d5;}}
+	</style>
+</footer>
+
+<script type="text/javascript" src="./commons/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./js/bundle.js" async></script>
+</body>
+</html>

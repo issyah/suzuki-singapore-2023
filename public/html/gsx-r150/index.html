@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+	<meta charset="utf-8">
+	<title>360&deg; VIEWER | GSX-R150</title>
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="/favicon.png" />
+	<link rel="stylesheet" type="text/css" href="css/pc.css">
+	<link rel="stylesheet" type="text/css" href="css/mark.css">
+	<link rel="stylesheet" type="text/css" href="css/modal.css">
+	<link rel="stylesheet" type="text/css" href="css/summury.css">
+
+	<script src="js/jquery.min.js" charset="utf-8"></script>
+	<script src="js/ua.js" charset="utf-8"></script>
+	<script src="js/marker.js" charset="utf-8"></script>
+	<script src="js/spin.js" charset="utf-8"></script>
+	<script src="js/controller.js" charset="utf-8"></script>
+
+</head>
+
+<body class="viewer_wrap">
+	<div id="wp">
+		<div id="header">
+			<img src="img/logo/logo_suzuki.jpg" alt="SUZUKI">
+			<img src="img/logo/logo_wol.jpg" alt="Way of Life&#33;">
+		</div>
+		<div class="container clearfix">
+			<div class="viewer">
+				<div class="box">
+					<div id="bikelogo" class="type2">
+						<div class="logo_inner">
+							<img src="img/bike_logo/gsxr150.png" alt="GSX-R150" class="type1">
+						</div>
+					</div>
+					<div id="swiches">
+						<div id="swich_features">
+							<p>FEATURES</p>
+							<span id="features_swich" class="swich"></span>
+						</div>
+						<div id="swich_light">
+							<p>LIGHTS</p>
+							<span id="light_swich" class="swich"></span>
+						</div>
+					</div>
+					<div id="spin_area1"></div>
+					<!--plugin-->
+					<div id="spin_area2"></div>
+					<!--plugin-->
+					<p class="rotation"><img src="img/rotation.png" width="96" height="65" alt="It rotates 360 degrees" /></p>
+					<div id="selected">
+						<div id="sGrade">
+							<span>GRADE</span>
+						</div>
+						<div id="sColor">
+							<span>BODY COLOR</span>
+						</div>
+						<p class="notation">*Specifications shown in this 360&#176; viewer are subject to change by Suzuki at any time without notice.</p>
+					</div>
+
+					<div id="summary_btn">
+						<div class="s_inner">
+							<span>SELECTED GENUINE ACCESSORY</span>
+						</div>
+					</div>
+
+					<div id="mark"></div>
+					<!--plugin-->
+
+					<div id="summary">
+						<div class="sbox">
+							<div id="s_close_btn"><span>CLOSE</span><img src="img/ui/arrow_close.png" alt=""></div>
+							<div class="s_inner">
+								<div class="main_area">
+									<span id="s_title">SUMMARY</span>
+									<div id="s_grade_area" class="s_area">
+										<span class="s_sub_title">GRADE</span>
+										<p></p>
+									</div>
+									<div id="s_color_area" class="s_area">
+										<span class="s_sub_title">COLOR</span>
+									</div>
+									<div id="s_options_area" class="s_area">
+										<span class="s_sub_title">GENUINE ACCESSORY</span>
+										<ul class="s_list text">
+										</ul>
+										<p class="notation">*Only main accessories are shown. Please contact Suzuki authorized dealers/distributor for the detail information of Suzuki Genuine Accessories.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div id="horizontal_notation">
+						<p>Turn vertically to see the menu</p>
+					</div>
+				</div>
+
+				<!--.box end-->
+			</div>
+			<!--viewer end-->
+
+			<div id="menu">
+				<div id="tab">
+					<div id="grade" class="tabs"><span>GRADE</span></div>
+					<div id="bodyColor" class="tabs"><span>BODY COLOR</span></div>
+					<div id="genuineAccessory" class="tabs"><span>GENUINE<br />ACCESSORY</span></div>
+				</div>
+				<div id="list">
+					<div id="gradeList" class="listbox view">
+						<ul>
+							<li class="lists">
+								<div class="listright">
+									<input type="radio" name="g" value="g01" id="rdg1">
+									<label for="rdg1" class="radiotype"></label>
+								</div>
+								<p>GSX-R150</p>
+							</li>
+						</ul>
+					</div>
+
+					<div id="bodyColorList" class="listbox hide">
+						<ul></ul>
+					</div>
+
+					<div id="genuineAccessoryList" class="listbox hide">
+						<ul></ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- modal -->
+		<!-- modal overlay -->
+		<div id="modal_contents">
+			<div class="contents_inner"><span class="close_btn"><img src="img/ui/modal_close_btn_03.jpg" alt=""></span>
+				<div class="contents_box"></div>
+			</div>
+		</div>
+		<div id="footer">
+			<p>COPYRIGHT SUZUKI MOTOR CORPORATION. ALL RIGHTS RESERVED.</p>
+		</div>
+	</div>
+</body>
+
+</html>

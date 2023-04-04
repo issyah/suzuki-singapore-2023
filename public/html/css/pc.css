@@ -1,0 +1,726 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*----------------------------------------
+	reset
+----------------------------------------*/
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, article, aside, dialog, figure, footer, header, hgroup, main, menu, nav, section, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    vertical-align: baseline;
+}
+
+header, footer, article, section, aside, hgroup, nav, menu, figure, figcaption, time {
+    display: block;
+}
+
+li {
+    list-style: none;
+}
+
+ol li {
+    list-style: decimal;
+}
+
+img {
+    border: 0;
+    vertical-align: top;
+    font-size: 0;
+    line-height: 0;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+caption, th {
+    text-align: left;
+}
+
+hr {
+    margin: 1em 0;
+    padding: 0;
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #cccccc;
+}
+
+input, select {
+    vertical-align: middle;
+}
+
+input, textarea {
+    margin: 0;
+    padding: 0;
+}
+
+.clearfix {
+    min-height: 1px;
+    _height: 1%;
+}
+
+.clearfix:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+}
+
+
+/*----------------------------------------
+	font
+----------------------------------------*/
+
+@font-face {
+    font-family: 'SuzukiPROBold';
+    src: url('font/SuzukiPROBold.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SuzukiPROHeadline';
+    src: url('font/SuzukiPROHeadline.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SuzukiPRORegular';
+    src: url('font/SuzukiPRORegular.woff') format('woff');
+}
+
+
+/*----------------------------------------
+	body
+----------------------------------------*/
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    max-width: 100%;
+    font-family: "SuzukiPRORegular", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 0 auto;
+    background-color: #000000;
+}
+
+#wp {
+    max-width: 1600px;
+    min-width: 1024px;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------
+	frame
+----------------------------------------*/
+
+.viewer, #menu {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+/*----------------------------------------
+	bike logo
+----------------------------------------*/
+
+#bikelogo {
+    position: absolute;
+    margin-top: 19px;
+    margin-left: 20px;
+}
+
+.logo_inner img {
+    position: absolute;
+    z-index: 2;
+}
+
+.type1 img.type2 {
+    display: none;
+}
+
+.type2 img.type1 {
+    display: none;
+}
+
+
+/*----------------------------------------
+	spin img
+----------------------------------------*/
+
+#wp .spin_images img {
+    top: 0;
+    bottom: 0;
+    left: -50%;
+    right: -50%;
+    /*width: 1180px;*/
+    width: auto !important;
+    height: 576px;
+    margin: 0 auto;
+}
+
+
+/*----------------------------------------
+	360° viewer
+----------------------------------------*/
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+
+.viewer {
+    position: relative;
+    overflow: hidden;
+    height: 576px;
+    margin-right: 420px;
+    z-index: 1;
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -o-user-select: none;
+    -ms-user-select: none;
+}
+
+.viewer .box {
+    position: relative;
+    width: 100%;
+    height: 576px;
+    float: left;
+    z-index: 2;
+    background-color: #ffffff;
+}
+
+.viewer .box .rotation {
+    position: absolute;
+    /*top: 200px;
+	left: 353px;*/
+    /*top: 38.46%;*/
+    /*left: 43.58%;*/
+    top:50%;
+    left: 50%;
+    margin: -32.5px 0 0 -48px;
+    width: 96px;
+    height: 65px;
+    display: block;
+    z-index: 3;
+    /*cursor: move;*/
+}
+
+
+/*.viewer .box .spin_images{
+	cursor: move;
+}*/
+
+#spin_area1, #spin_area2 {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 576px;
+}
+
+.spin_progress {
+    position: absolute;
+    overflow: hidden;
+    /*top: 0;*/
+    bottom:-25px;
+    left:0;
+    right:0;
+    width: 80px;
+    height: 20px;
+    border-radius: 2px;
+    margin: auto;
+}
+.firstrotated .spin_progress{
+  top: 0;
+  bottom: 0;
+}
+
+.spin_bar {
+    width: 100%;
+    height: 100%;
+}
+
+.spin_bar div {
+    width: 0;
+    height: 100%;
+    background-color: #666;
+    opacity: 0.6;
+    filter: alpha(opacity=60)\9;
+    -ms-filter: "alpha(opacity=60)"\9;
+}
+
+.spin_progress p {
+    padding-top: 2px;
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    color: #ddd;
+}
+
+.spin_box .spin_hidden {
+    visibility: none !important;
+    display: none !important;
+}
+
+.spin_box .near {
+    visibility: hidden !important;
+    display: block !important;
+}
+
+
+/*----------------------------------------
+	menu
+----------------------------------------*/
+
+#menu {
+    width: 420px;
+    height: 576px;
+    background-color: #cccccc;
+    font-family: "SuzukiPROHeadline", Arial, Helvetica, sans-serif;
+}
+
+#menu #tab {
+    font-size: 0;
+    background-color: #ffffff;
+}
+
+#menu .tabs {
+    display: inline-block;
+    width: 139px;
+    height: 80px;
+    background-color: #666666;
+    vertical-align: top;
+    text-align: center;
+    cursor: pointer;
+}
+
+#menu .tabs:before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#menu .tabs span {
+    display: inline-block;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#menu #genuineAccessory span {
+    line-height: 1;
+}
+
+#menu .tabs:first-child+* {
+    margin: 0 1px;
+}
+
+#menu #genuineAccessory {
+    width: 140px;
+}
+
+#menu .tabs:hover, #menu .tabs.select {
+    background-color: #333333;
+}
+
+#menu #list, #menu .listbox {
+    width: 100%;
+    height: 495px;
+    /*transition: all 200ms 0s ease;*/
+}
+
+#menu #list {
+    position: relative;
+    color: #000000;
+    border-top: 1px solid #ffffff;
+}
+
+#menu .listbox {
+    position: absolute;
+    top: 0;
+    overflow: scroll;
+}
+
+#menu .lists {
+    position: relative;
+    width: 100%;
+    height: 99px;
+    border-bottom: 1px solid #ffffff;
+    font-size: 0;
+    background-color: #cccccc;
+}
+
+#menu .lists>* {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#menu .lists .listright{
+  margin-right: 19px;
+}
+
+#menu .adapt360 .listright{
+  margin-right: 9.5px;
+}
+
+#menu .lists:before {
+    content: " ";
+    display: inline-block;
+    width: 21px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#menu .noradio:before {
+    content: " ";
+    display: inline-block;
+    width: 64px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#menu .adapt360:before {
+    content: " ";
+    display: inline-block;
+    width: 11.5px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#menu .lists .two_paragraph * {
+    display: block;
+    text-align: left;
+}
+
+#menu .lists input {
+    margin-right: 19px;
+    cursor: pointer;
+}
+
+#menu .lists p {
+    display: inline-block;
+    font-size: 20px;
+    line-height: 1;
+}
+
+#menu .lists .thum {
+    position: absolute;
+    right: 10px;
+    width: 100px;
+}
+
+#menu .lists .detail_btn {
+    display: block;
+    width: 79px;
+    height: 24px;
+    margin-top: 10px;
+    background-image: url("../img/ui/detail_btn_pc.gif");
+    background-repeat: no-repeat;
+    background-size: 200%;
+    cursor: pointer;
+}
+
+#menu .lists .detail_btn:hover {
+    background-position: -79px 0;
+}
+
+#menu .listbox.view {
+    display: block;
+}
+
+#menu .listbox.hide {
+    display: none;
+}
+
+/*#menu .havebtn {
+    width: 200px;
+    width: 236px;
+}*/
+#menu .havebtn,
+#bodyColorList .lists p
+{
+    max-width: 236px;
+}
+#menu .have_chips{
+  height: 38px;
+}
+#menu .have_chips:before{
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#menu .have_chips>.detail_btn, #menu .have_chips>ul {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#menu .icon360 {
+  margin-top: 6px;
+}
+
+
+/*---color chips---*/
+#menu .color_chips{
+  margin: 10px 0 0 3px;
+}
+#menu .color_chips li{
+  position: relative;
+  margin-right: 1px;
+}
+#menu .color_chips img{
+  width: 28px;
+}
+#menu .color_chips_active .select:before{
+  content: " ";
+  position: absolute;
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  background-image: url("../img/ui/color_chips/chip_forcus.png");
+}
+
+/*---ridio check btn---*/
+
+
+#menu .lists input[type="radio"], #menu .lists input[type="checkbox"] {
+    display: none;
+}
+
+#menu .lists input[type="radio"]:checked+label, #menu .lists input[type="checkbox"]:checked+label {
+    background-image: url("../img/ui/radio_on.png");
+}
+
+#menu .lists label {
+    display: block;
+    width: 24px;
+    height: 24px;
+    margin: 0 auto;
+    background-image: url("../img/ui/radio_off.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+#gradeList .lists .two_paragraph {
+    margin-top: 16px;
+}
+
+#gradeList .lists .two_paragraph .sub {
+    font-family: "SuzukiPRORegular", Arial, Helvetica, sans-serif;
+    font-size: 12px;
+}
+
+#menu .color_chips {
+    font-size: 0;
+}
+
+#menu .color_chips li {
+    display: inline-block;
+}
+
+
+/*----------------------------------------
+	swich
+----------------------------------------*/
+
+#swiches {
+    position: absolute;
+    margin-top: 15px;
+    margin-right: 12px;
+    right: 0;
+    z-index: 3;
+    color: #000000;
+}
+
+#swiches>div {
+    display: inline-block;
+    height: 36px;
+    font-size: 0;
+}
+
+#swiches>div:before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#swiches p {
+    display: inline-block;
+    width: 71px;
+    font-family: "SuzukiPROHeadline", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+#swiches #swich_light p {
+    width: 49px;
+    padding-left: 22px;
+}
+
+#swiches .swich {
+    display: inline-block;
+    width: 72px;
+    height: 36px;
+    background-image: url("../img/ui/swich.png");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+#swiches .swich.off {
+    background-position: 0 0;
+}
+
+#swiches .swich.on {
+    background-position: -72px 0;
+}
+
+@media screen and (max-width:1118px) {
+    #swiches>div {
+        display: block;
+    }
+}
+
+
+/*----------------------------------------
+	selected
+----------------------------------------*/
+
+#selected {
+		position: absolute;
+		/*width: 290px;*/
+		/*margin-left: 20px;*/
+		width: 300px;
+		margin-left: 10px;
+
+		margin-bottom: 14px;
+		bottom: 0;
+		left: 0;
+		z-index: 10;
+		color: #000000;
+}
+
+#selected span {
+    display: block;
+    width: 100%;
+    font-family: "SuzukiPROHeadline", Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000000;
+}
+
+#selected p {
+    font-family: "SuzukiPRORegular", Arial, Helvetica, sans-serif;
+    /*font-size: 16px;*/
+		font-size: 15px;
+}
+
+#selected #sGrade {
+    margin-bottom: 7px;
+}
+
+#selected p.notation {
+    position: absolute;
+    font-size: 10px;
+    width: 452px;
+    line-height: 1;
+}
+
+#selected #sColor {
+    margin-bottom: 5px;
+}
+
+
+/*----------------------------------------
+	header
+----------------------------------------*/
+
+#header {
+    width: 100%;
+    text-align: right;
+    font-size: 0;
+    background-color: #003145;
+}
+
+
+/*----------------------------------------
+	footer
+----------------------------------------*/
+
+#footer, .footer {
+    width: 100%;
+    height: 62px;
+    text-align: center;
+    font-size: 0;
+    background-color: #003145;
+    color: #FFFFFF;
+    font-size: 10px;
+    font-family: "SuzukiPRORegular", Arial, Helvetica, sans-serif;
+}
+
+#footer p {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#footer:before {
+    content: " ";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+
+/*----------------------------------------
+	notation
+----------------------------------------*/
+
+.notation {
+    color: #000000;
+}
+
+
+/*----------------------------------------
+	horizontal_notation
+----------------------------------------*/
+
+#horizontal_notation {
+    display: none;
+}
+
+
+/*----------------------------------------
+	protect
+----------------------------------------*/
+
+.protect {
+    pointer-events: none;
+}
+
+.protectPanel {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+}
+
+/*----------------------------------------
+	adjustment bike & marker
+----------------------------------------*/
+#wp #spin_area1,#wp #spin_area2,#wp #mark{
+  /*margin-top: 8px;*/
+}

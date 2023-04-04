@@ -1,0 +1,29 @@
+/*----------------------------------------
+	mark
+----------------------------------------*/
+#spin_area1, #spin_area2 {
+    z-index: 1;
+}
+#mark {
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    width: 1180px;
+    margin: 0 auto;
+    z-index: 3;
+}
+#mark_box li ul li {
+    position: absolute;
+    z-index: inherit;
+    cursor: pointer;
+}
+#mark_box>li.mark_hidden {
+    display: none;
+}
+#mark_box>li ul li.hide {
+    display: none;
+}
+#mark_box .marks img{
+  width: 16px;
+  height: auto;
+}

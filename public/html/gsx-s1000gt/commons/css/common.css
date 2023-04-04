@@ -1,0 +1,261 @@
+@charset "utf-8";
+
+
+@media screen and (min-width:768px){
+/*pc・タブレットcss*/
+
+/* +++++++++++++++++++++++++　layout */
+
+#stage{
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.content-area{
+	width:100%;
+	max-width:1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.content-bottom{
+	margin-bottom:70px;
+}
+
+
+/* +++++++++++++++++++++++++ */
+
+.common-bg{
+	padding:70px 0;
+	background-color:#F2F2F2;
+}
+
+/* +++++++++++++++++++++++++　ttl */
+
+.page-ttl{
+	margin-bottom:50px;
+	font-size: 4rem;
+	line-height: 1;
+	font-family: 'SuzukiPROHeadline';
+	text-align:center;
+}
+
+.ttl01{
+	margin-bottom:50px;
+	font-size: 4rem;
+	line-height: 1;
+	font-family: 'SuzukiPROHeadline';
+	text-align:center;
+}
+
+/* ++++++++++ */
+
+.ttl02{
+	position:relative;
+	margin-bottom:40px;
+	font-size: 2.8rem;
+	line-height: 1;
+	font-family: 'SuzukiPROHeadline';
+}
+.ttl02:before{
+	content:"";
+	position:absolute;
+	top:50%;
+	left:0;
+	width:100%;
+	height:1px;
+	background-color:#191919;
+}
+.ttl02 span{
+	position:relative;
+	z-index:2;
+	background-color:#fff;
+	padding-right:0.8em;
+}
+
+/* +++++++++++++++++++++++++　btn */
+
+.base-btn{
+}
+.base-btn a{
+	position:relative;
+	display:block;
+	padding:13px 20px;
+	text-align:center;
+	font-family: 'SuzukiPROHeadline';
+	font-size: 2rem;
+	line-height:1;
+	font-weight:700;
+	color: #191919;
+	border: solid 1px #191919;
+	-webkit-transition: all .25s;
+	transition: all .25s;
+}
+.base-btn a:after{
+	content:"";
+	position:absolute;
+	right: 15px;
+	top:50%;
+	width: 10px;
+	height: 10px;
+	margin-top:-5px;
+	border-top: 1px solid #191919;
+	border-right: 1px solid #191919;
+	-webkit-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.base-btn.btn-inline{
+	min-width:200px;
+	display:inline-block;
+}
+
+/* ++++++++ */
+
+.base-btn.c-black a{
+	color: #fff;
+	background-color:#191919;
+	border: solid 1px #191919;
+}
+.base-btn.c-black a:after{
+	border-top: 1px solid #fff;
+	border-right: 1px solid #fff;
+}
+
+
+
+
+}
+
+@media screen and (min-width:768px) and ( max-width:1280px) {
+	
+	.content-area{
+		padding-left:12vw;
+		padding-right:12vw;
+	}
+	
+}
+
+@media (max-width: 768px) {
+	
+/* +++++++++++++++++++++++++　layout */
+
+	#stage {
+		padding-top:13vw;
+		padding-bottom:13vw;
+	}
+	.content-area{
+		padding-left:5vw;
+		padding-right:5vw;
+	}
+	.content-bottom{
+		margin-bottom:13vw;
+	}
+	
+/* +++++++++++++++++++++++++ */
+	
+	.common-bg{
+		padding:13vw 0;
+		background-color:#F2F2F2;
+	}
+	
+/* +++++++++++++++++++++++++　ttl */
+
+	.page-ttl{
+		margin-bottom:5vw;
+		font-size: 4rem;
+		line-height: 1;
+		font-family: 'SuzukiPROHeadline';
+		text-align:center;
+	}
+	
+	/* ++++++++++ */
+
+	.ttl01{
+		margin-bottom:5vw;
+		font-size: 4rem;
+		line-height: 1;
+		font-family: 'SuzukiPROHeadline';
+		text-align:center;
+	}
+
+	/* ++++++++++ */
+	
+	.ttl02{
+		position:relative;
+		margin-bottom:4vw;
+		font-size: 2.4rem;
+		line-height: 1.1;
+		font-family: 'SuzukiPROHeadline';
+	}
+	.ttl02:before{
+		content:"";
+		position:absolute;
+		top:50%;
+		left:0;
+		width:100%;
+		height:1px;
+		background-color:#191919;
+	}
+	.ttl02 span{
+		position:relative;
+		z-index:2;
+		background-color:#fff;
+		padding-right:0.8em;
+	}
+
+/* +++++++++++++++++++++++++　btn */
+
+	.base-btn{
+	}
+	.base-btn a{
+		position:relative;
+		min-width:90%;
+		display:block;
+		padding:4vw 5vw;
+		text-align:center;
+		font-family: 'SuzukiPROHeadline';
+		font-size: 1.5rem;
+		line-height:1;
+		font-weight:700;
+		color: #191919;
+		border: solid 1px #191919;
+		-webkit-transition: all .25s;
+		transition: all .25s;
+	}
+	.base-btn a:after{
+		content:"";
+		position:absolute;
+		right: 3vw;
+		top:50%;
+		width: 8px;
+		height: 8px;
+		margin-top:-4px;
+		border-top: 1px solid #191919;
+		border-right: 1px solid #191919;
+		-webkit-transform: rotate(45deg);
+		transform: rotate(45deg);
+	}
+	.base-btn.btn-inline{
+		min-width:90%;
+		display:inline-block;
+	}
+	
+	/* ++++++++ */
+	
+	.base-btn.c-black a{
+		color: #fff;
+		background-color:#191919;
+		border: solid 1px #191919;
+	}
+	.base-btn.c-black a:after{
+		border-top: 1px solid #fff;
+		border-right: 1px solid #fff;
+	}
+	
+}
+
+
+
+
+
+
+
+

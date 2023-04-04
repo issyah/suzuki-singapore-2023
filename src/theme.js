@@ -1,15 +1,14 @@
-import { createTheme } from '@mui/material/styles';
-import { red } from '@mui/material/colors';
-
+import { createTheme } from "@mui/material/styles";
+import { red } from "@mui/material/colors";
 
 // Create a theme instance.
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#eb0000',
+      main: "#eb0000",
     },
     secondary: {
-      main: '#01599c'
+      main: "#01599c",
     },
     error: {
       main: red.A400,
@@ -18,37 +17,41 @@ const theme = createTheme({
   typography: {
     fontFamily: [
       '"Roboto"',
-      '-apple-system',
-      'BlinkMacSystemFont',
+      "-apple-system",
+      "BlinkMacSystemFont",
       '"Segoe UI"',
-      'Roboto',
+      "Roboto",
       '"Helvetica Neue"',
-      'Arial',
-      'sans-serif',
+      "Arial",
+      "sans-serif",
       '"Apple Color Emoji"',
       '"Segoe UI Emoji"',
       '"Segoe UI Symbol"',
-    ].join(','),
+    ].join(","),
     fontSize: 16,
     h1: {
-      fontFamily: 'Oswald',
+      fontFamily: "Oswald",
       fontWeight: 700,
     },
     h2: {
-      fontFamily: 'Oswald',
+      fontFamily: "Oswald",
       fontWeight: 700,
     },
     h3: {
-      fontFamily: 'Oswald',
-      fontWeight:700,
+      fontFamily: "Oswald",
+      fontWeight: 700,
     },
     h4: {
-      fontFamily: 'Oswald',
+      fontFamily: "Oswald",
+      fontWeight: 700,
+    },
+    h5: {
+      fontFamily: "Oswald",
       fontWeight: 700,
     },
     button: {
-      fontFamily: 'Oswald'
-    }
+      fontFamily: "Oswald",
+    },
     // fontFamily: oswald.style.fontFamily,
     // h1:{
     //   fontFamily: oswald.style.fontFamily
@@ -63,6 +66,22 @@ const theme = createTheme({
     //   fontWeight: 700,
     //   fontFamily: oswald.style.fontFamily
     // }
+  },
+  components: {
+    MuiButton: {
+      styleOverrides: {
+        root: {
+          textTransform: "none",
+        },
+      },
+    },
+    MuiDivider: {
+      styleOverrides: {
+        root: {
+          fontFamily: "Oswald",
+        },
+      },
+    },
   },
 });
 

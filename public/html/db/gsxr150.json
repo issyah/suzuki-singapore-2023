@@ -1,0 +1,100 @@
+{
+  "gradeName":["GSX-R150"],
+  "bdColor":[
+    {"id":"c1","listname":"Metallic Triton Blue (YSF)","thumbnail":"gsxr150_YSF.jpg"},
+    {"id":"c2","listname":"Titan Black (YVU)","thumbnail":"gsxr150_YVU.jpg"},
+    {"id":"c5","listname":"Stronger Red / Solid Black 50% Gloss (APM)","thumbnail":"gsxr150_APM.jpg"},
+    {"id":"c4","listname":"Solid Black 50% Gloss (291)","thumbnail":"gsxr150_291.jpg"},
+    {"id":"c3","listname":"Brilliant White (YUH)","thumbnail":"gsxr150_YUH.jpg"}
+
+
+  ],
+  "standard":[
+    {
+      "gid":"s02",
+      "radiobtn":false,
+      "swichControl":"",
+      "swichController":[{}],
+      "itemcolor":"",
+      "firstColSelect":"",
+      "colorThumbs":[""],
+      "ids":["s02","s02","s02","s02","s02"],
+      "ida":["none","none","none","none","none"],
+      "color":[["c00","c00","c00","c00","c00"],["","","","",""]],
+      "excflag":true,
+      "control":
+      [
+        {"tg":"Head","sourceSelect":"accessoryInput","linktg":"a02","flag":1,"value":"none"}
+      ],
+      "order":0,
+      "name":[""],
+      "thumbnail":[""],
+      "detailImg":[""]
+    }
+  ],
+  "supplies":[
+    {
+      "gid":"a02",
+      "radiobtn":true,
+      "swichControl":false,
+      "swichController":[
+        {"tg":"","control":true,"mySatus":true,"lookedTargerControl":true}
+      ],
+      "itemcolor":true,
+      "firstColSelect":1,
+			"colorThumbs":["chip_blue.png","chip_black.png","chip_red.png","chip_solid_black.png","chip_white.png"],
+      "ids":["none","none","none","none","none"],
+      "ida":["a02","a02","a02","a02","a02"],
+      "color":[["","",""],["","",""]],
+      "excflag":false,
+      "control":
+      [
+        {"tg":"","sourceSelect":"","linktg":"","flag":1,"value":""}
+      ],
+      "order":1,
+      "name":["Single seat tail cover"],
+      "thumbnail":["07.jpg"],
+      "detailImg":["07.html"]
+    }
+  ],
+  "light":[
+    {
+      "gid":"a04",
+      "radiobtn":false,
+      "itemcolor":"",
+      "firstColSelect":"",
+      "colorThumbs":[""],
+      "ids":["none","none","none","none","none"],
+      "ida":["a04","a04","a04","a04","a04"],
+      "color":[["","","","",""],["c00","c00","c00","c00","c00"]],
+      "excflag":"",
+      "control":[{}],
+      "order":0,
+      "name":[""],
+      "thumbnail":[""],
+      "detailImg":[""]
+    },
+    {
+      "gid":"a05",
+      "radiobtn":false,
+      "itemcolor":"",
+      "firstColSelect":"",
+      "colorThumbs":[""],
+      "ids":["none","none","none","none","none"],
+      "ida":["a05","a05","a05","a05","a05"],
+      "color":[["","","","",""],["c00","c00","c00","c00","c00"]],
+      "excflag":"",
+      "control":[{}],
+      "order":0,
+      "name":[""],
+      "thumbnail":[""],
+      "detailImg":[""]
+    }
+  ],
+  "mainoutputcontrol":[
+    {"gid":"s02","category":"standard","order":1},
+    {"gid":"a02","category":"supplies","order":2},
+    {"gid":"a04","category":"light","order":3},
+    {"gid":"a05","category":"light","order":4}
+  ]
+}
