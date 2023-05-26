@@ -26,7 +26,7 @@ export default function Motorcycles(props) {
       products: [
         {
           label: "GSX-R150 ABS",
-          img: "/images/gsx-r150/GSX-R150_YSF_Right.jpeg",
+          img: "/images/gsx-r150/GSX-R150_YSF_Right.jpg",
           href: "/motorcycles/gsx-r150",
           view360Href: "/motorcycles/360-viewer/gsx-r150",
         },
@@ -53,7 +53,7 @@ export default function Motorcycles(props) {
         },
         {
           label: "GSX-S150 ABS",
-          img: "/images/GSX-S150_YSF_Right.jpeg",
+          img: "/images/gsx-s150/GSX-S150_YSF_Right.jpg",
           href: "/motorcycles/gsx-s150",
         },
       ],

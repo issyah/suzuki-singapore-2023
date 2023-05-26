@@ -1,7 +1,7 @@
 // gsx-s1000gt
 
 import Public from "templates/public";
-import BannerImg from "@/public/images/gsx-s1000gt/GSX-S1000GT_M2_Action_5.jpeg";
+import BannerImg from "@/public/images/gsx-s1000gt/GSX-S1000GT_M2_Action_5.jpg";
 import Logo from "@/public/images/gsx-s1000gt/logo.jpg";
 import {
   Box,
@@ -37,7 +37,7 @@ import FeatureListCollapsible from "@/src/FeatureListCollapsible";
 import { Close, KeyboardArrowLeft } from "@mui/icons-material";
 import { useState } from "react";
 export default function GsxS1000gt(props) {
-  const [openPhoto, setOpenPhoto] = useState(false);
+  const [openPhoto, setOpenPhoto] = useState(false)
   const [photoSelected, setPhotoSelected] = useState();
   const [color, setColor] = useState("blue");
   const dimensions = [
@@ -115,22 +115,22 @@ export default function GsxS1000gt(props) {
   ];
 
   const photo = [
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_1.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_2.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_3.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_5.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_7-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_8-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_9-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_11-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_13-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_17-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_25.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Front.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear_Diagonal.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear.jpeg"
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_1.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_2.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_3.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_5.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_7-QT8.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_8-QT8.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_9-QT8.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_11-QT8.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_13-QT8.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_17-QT8.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_25.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Front.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear_Diagonal.jpg",
+    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear.jpg"
   ];
 
   const handleModalImage = (src) => {
@@ -143,7 +143,7 @@ export default function GsxS1000gt(props) {
       <Head>
         <title>GSX-S1000GT | Suzuki Singapore</title>
       </Head>
-      <Container sx={{ my: 6 }} maxWidth="xl">
+      <Container sx={{ my: 6 }} maxWidth="lg">
         <Button
           component={Link}
           href="/motorcycles"
@@ -964,8 +964,8 @@ export default function GsxS1000gt(props) {
               <Image
                 src={
                   color == "blue"
-                    ? "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpeg"
-                    : color == 'blue2' ? "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpeg" : "/images/gsx-s1000gt/GSX-S1000GT_M3_YVB_Diagonal.jpeg"
+                    ? "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpg"
+                    : color == 'blue2' ? "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpg" : "/images/gsx-s1000gt/GSX-S1000GT_M3_YVB_Diagonal.jpg"
                 }
                 width={3840}
                 height={2560}
@@ -1028,7 +1028,7 @@ export default function GsxS1000gt(props) {
 
       <Dialog
         fullWidth
-        maxWidth="lg"
+        maxWidth="full"
         open={openPhoto}
         onClose={() => setOpenPhoto(false)}
       >
@@ -1038,7 +1038,7 @@ export default function GsxS1000gt(props) {
             <Close />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "500px", width: "100%" }}>
+        <Box sx={{ position: "relative", height: "100vh", width: "100%" }} pb={2}>
           <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>

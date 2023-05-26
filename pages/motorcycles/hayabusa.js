@@ -1,7 +1,7 @@
 // gsx-r150
 
 import Public from "templates/public";
-import BannerImg from "@/public/images/hayabusa/GSX1300RRQM3_action_1.jpeg";
+import BannerImg from "@/public/images/hayabusa/GSX1300RRQM3_action_1.jpg";
 import Logo from "@/public/images/hayabusa/logo.jpg";
 import {
   Box,
@@ -116,18 +116,18 @@ export default function GsxR150(props) {
   ];
 
   const photo = [
-    "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_1.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_2.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_front_single_seat_cowl.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_image_single_seat_cowl_2.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_left_single_seat_cowl.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_rear_single_seat_cowl.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_top_single_seat_cowl.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5M_diagonal_single_seat_cowl_1.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_1.jpeg",
-    "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_single_seat_cowl_1.jpeg",
-    "/images/hayabusa/GSX1300RRQM3_action_1.jpeg",
-    "/images/hayabusa/GSX1300RRQM3_action_2.jpeg"
+    "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_1.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_2.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5L_front_single_seat_cowl.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5L_image_single_seat_cowl_2.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5L_left_single_seat_cowl.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5L_rear_single_seat_cowl.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5L_top_single_seat_cowl.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5M_diagonal_single_seat_cowl_1.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_1.jpg",
+    "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_single_seat_cowl_1.jpg",
+    "/images/hayabusa/GSX1300RRQM3_action_1.jpg",
+    "/images/hayabusa/GSX1300RRQM3_action_2.jpg"
 
   ];
 
@@ -141,7 +141,7 @@ export default function GsxR150(props) {
       <Head>
         <title>Hayabusa | Suzuki Singapore</title>
       </Head>
-      <Container sx={{ my: 6 }} maxWidth="xl">
+      <Container sx={{ my: 6 }} maxWidth="lg">
         <Button
           component={Link}
           href="/motorcycles"
@@ -764,10 +764,10 @@ export default function GsxR150(props) {
               <Image
                 src={
                   color == "black"
-                    ? "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_1.jpeg"
+                    ? "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_1.jpg"
                     : color == "silver"
-                    ? "/images/hayabusa/GSX1300RRQM2_B5M_diagonal_single_seat_cowl_1.jpeg"
-                    : "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_single_seat_cowl_1.jpeg"
+                    ? "/images/hayabusa/GSX1300RRQM2_B5M_diagonal_single_seat_cowl_1.jpg"
+                    : "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_single_seat_cowl_1.jpg"
                 }
                 width={3840}
                 height={2560}
@@ -840,7 +840,7 @@ export default function GsxR150(props) {
             <Close />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "500px", width: "100%" }}>
+        <Box sx={{ position: "relative", height: "800px", width: "100%", mb:4 }}>
           <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>

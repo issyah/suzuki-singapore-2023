@@ -23,6 +23,7 @@
     "prop-types": "latest",
     "react": "latest",
     "react-dom": "latest",
+    "swiper": "^9.2.0",
     "xml2js": "^0.4.23"
   },
   "devDependencies": {

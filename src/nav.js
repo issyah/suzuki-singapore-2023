@@ -19,14 +19,14 @@ import {
 import SuzukiLogo from "@/public/suzuki-logo.webp";
 import Image from "next/image";
 import Link from "./Link";
-import { red } from "@mui/material/colors";
+import { grey, red } from "@mui/material/colors";
 import { Menu, PinDrop } from "@mui/icons-material";
 import { useState } from "react";
 export default function Nav(props) {
   const [isOpen, setIsOpen] = useState(false);
   const pages = [
     {
-      label: "MOTORCYLES",
+      label: "MOTORCYCLES",
       href: "/motorcycles",
     },
     {
@@ -44,11 +44,12 @@ export default function Nav(props) {
       sx: {
         bgcolor: "primary.main",
         color: "white",
-        mt: -1,
-        mb: -1,
-        transform: "skewX(-10deg)",
+        transform: "skewX(-15deg)",
+        borderRadius:0,
+        py: 2,
+        px:4,
         span: {
-          transform: "skewX(10deg)",
+          transform: "skewX(15deg)",
         },
         "&:hover": {
           bgcolor: red[800],
@@ -58,14 +59,29 @@ export default function Nav(props) {
     },
   ];
   return (
-    <AppBar position="fixed" color="default" elevation={0}>
+    <AppBar
+      position="fixed"
+      sx={{
+        bgcolor: grey[800],
+      }}
+      elevation={0}
+    >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <Box position="relative" height={45} width={70} my={1}>
-            <Link href="/">
-              <Image src={SuzukiLogo} fill style={{ objectFit: "contain" }} />
-            </Link>
+          <Box sx={{
+            px:4, 
+            bgcolor:'white',
+            transform: 'skewX(-15deg)'
+          }}>
+            <Box sx={{
+              transform: 'skewX(15deg)'
+            }} position="relative" height={45} width={70} my={1}>
+              <Link href="/">
+                <Image src={SuzukiLogo} fill style={{ objectFit: "contain" }} />
+              </Link>
+            </Box>
           </Box>
+
           <Box
             sx={{
               display: {
@@ -102,6 +118,7 @@ export default function Nav(props) {
                   ml: 1,
                   ...item?.sx,
                 }}
+                color="default"
                 key={index}
                 component={Link}
                 href={item.href}
@@ -113,12 +130,19 @@ export default function Nav(props) {
           </Box>
         </Toolbar>
         <Collapse in={isOpen}>
-          <MenuList sx={{
-            height: 'calc(100vh - 61px)'
-          }}>
+          <MenuList
+            sx={{
+              height: "calc(100vh - 61px)",
+            }}
+          >
             {pages.map((item, index) => (
               <ListItem key={index}>
-                <ListItemButton component={Link} href={item.href} sx={item.sx} onClick={() => setIsOpen(false)}>
+                <ListItemButton
+                  component={Link}
+                  href={item.href}
+                  sx={item.sx}
+                  onClick={() => setIsOpen(false)}
+                >
                   <ListItemText>{item.label}</ListItemText>
                 </ListItemButton>
               </ListItem>

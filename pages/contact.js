@@ -76,7 +76,7 @@ export default function Contact() {
               width="100%"
               height="800"
               id="gmap_canvas"
-              src="https://maps.google.com/maps?q=Suzuki%20Motorcyle%20Singapore&amp;t=&amp;z=17&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3988.736050548145!2d103.89875916475397!3d1.3345616990266451!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31da19c503d3621d%3A0x95cc03a7e77ec4af!2sSuzuki%20Motorcycles%20Singapore!5e0!3m2!1sen!2ssg!4v1684810946953!5m2!1sen!2ssg"
               frameborder="0"
               marginheight="0"
               marginwidth="0"

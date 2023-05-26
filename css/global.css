@@ -1,3 +1,7 @@
+:root{
+  --swiper-theme-color: #FFF;
+}
+
 .object-contain{
   object-fit: contain;
 }

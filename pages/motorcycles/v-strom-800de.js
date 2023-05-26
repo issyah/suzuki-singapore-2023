@@ -115,22 +115,13 @@ export default function VStrom800De(props) {
   ];
 
   const photo = [
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_1.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_2.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_3.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_5.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_7-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_8-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_9-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_11-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_13-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_17-QT8.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M2_Action_25.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Front.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear_Diagonal.jpeg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear.jpeg",
+    "/images/vstrom-800de/DL800DERCM3_YU1_diagonal.jpg",
+    "/images/vstrom-800de/DL800DERCM3_YU1_front.jpg",
+    "/images/vstrom-800de/DL800DERCM3_YU1_left.jpg",
+    "/images/vstrom-800de/DL800DERCM3_YU1_rear.jpg",
+    "/images/vstrom-800de/DL800DERCM3_YU1_right.jpg",
+    "/images/vstrom-800de/DL800DERCM3_YU1_top.jpg",
+    "/images/vstrom-800de/DL800DERCM3_action_67.jpg"
   ];
 
   const handleModalImage = (src) => {
@@ -143,7 +134,7 @@ export default function VStrom800De(props) {
       <Head>
         <title>V-STROM-800-DE | Suzuki Singapore</title>
       </Head>
-      <Container sx={{ my: 6 }} maxWidth="xl">
+      <Container sx={{ my: 6 }} maxWidth="lg">
         <Button
           component={Link}
           href="/motorcycles"
@@ -667,7 +658,7 @@ export default function VStrom800De(props) {
               <Image
                 src={
                   color == "blue"
-                    ? "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpeg"
+                    ? "/images/vstrom-800de/DL800DERCM3_YU1_diagonal.jpg"
                     : color == "blue2"
                     ? "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpeg"
                     : "/images/gsx-s1000gt/GSX-S1000GT_M3_YVB_Diagonal.jpeg"
@@ -689,7 +680,7 @@ export default function VStrom800De(props) {
                   control={<Radio />}
                   label="Metallic Triton Blue"
                 />
-                <FormControlLabel
+                {/* <FormControlLabel
                   value="blue2"
                   control={<Radio />}
                   label="Metallic Reflective Blue"
@@ -698,7 +689,7 @@ export default function VStrom800De(props) {
                   value="black"
                   control={<Radio />}
                   label="Gloss Sparkle Black"
-                />
+                /> */}
               </RadioGroup>
             </FormControl>
           </Grid>
@@ -733,7 +724,7 @@ export default function VStrom800De(props) {
 
       <Dialog
         fullWidth
-        maxWidth="lg"
+        maxWidth="full"
         open={openPhoto}
         onClose={() => setOpenPhoto(false)}
       >
@@ -743,7 +734,7 @@ export default function VStrom800De(props) {
             <Close />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "500px", width: "100%" }}>
+        <Box sx={{ position: "relative", height: "800px", width: "100%", mb:4 }}>
           <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>

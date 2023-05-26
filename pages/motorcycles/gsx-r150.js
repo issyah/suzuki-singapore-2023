@@ -121,12 +121,12 @@ export default function GsxR150(props) {
   ];
 
   const photo = [
-    "/images/gsx-r150/GSX-R150_YSF_Diagonal.jpeg",
-    "/images/gsx-r150/GSX-R150_YSF_Front.jpeg",
-    "/images/gsx-r150/GSX-R150_YSF_Left.jpeg",
-    "/images/gsx-r150/GSX-R150_YSF_Rear.jpeg",
-    "/images/gsx-r150/GSX-R150_YSF_Right.jpeg",
-    "/images/gsx-r150/GSX-R150_YSF_Top.jpeg",
+    "/images/gsx-r150/GSX-R150_YSF_Diagonal.jpg",
+    "/images/gsx-r150/GSX-R150_YSF_Front.jpg",
+    "/images/gsx-r150/GSX-R150_YSF_Left.jpg",
+    "/images/gsx-r150/GSX-R150_YSF_Rear.jpg",
+    "/images/gsx-r150/GSX-R150_YSF_Right.jpg",
+    "/images/gsx-r150/GSX-R150_YSF_Top.jpg",
   ];
 
   const handleModalImage = (src) => {
@@ -139,7 +139,7 @@ export default function GsxR150(props) {
       <Head>
         <title>GSX-R150 | Suzuki Singapore</title>
       </Head>
-      <Container sx={{ my: 6 }} maxWidth="xl">
+      <Container sx={{ my: 6 }} maxWidth="lg">
         <Button
           component={Link}
           href="/motorcycles"

@@ -1,7 +1,7 @@
 // gsx-s150
 
 import Public from "templates/public";
-import BannerImg from "@/public/images/gsx-s150/GSX-S150_YSF_Diagonal.jpeg";
+import BannerImg from "@/public/images/gsx-s150/GSX-S150_YSF_Diagonal.jpg";
 import Logo from "@/public/images/gsx-r150/GSX-R150_Logo_1.jpeg";
 import {
   Box,
@@ -117,12 +117,12 @@ export default function GsxR150(props) {
   ];
 
   const photo = [
-    "/images/gsx-s150/GSX-S150_YSF_Diagonal.jpeg",
-    "/images/gsx-s150/GSX-S150_YSF_Front.jpeg",
-    "/images/gsx-s150/GSX-S150_YSF_Left.jpeg",
-    "/images/gsx-s150/GSX-S150_YSF_Rear.jpeg",
-    "/images/gsx-s150/GSX-S150_YSF_Right.jpeg",
-    "/images/gsx-s150/GSX-S150_YSF_Top.jpeg",
+    "/images/gsx-s150/GSX-S150_YSF_Diagonal.jpg",
+    "/images/gsx-s150/GSX-S150_YSF_Front.jpg",
+    "/images/gsx-s150/GSX-S150_YSF_Left.jpg",
+    "/images/gsx-s150/GSX-S150_YSF_Rear.jpg",
+    "/images/gsx-s150/GSX-S150_YSF_Right.jpg",
+    "/images/gsx-s150/GSX-S150_YSF_Top.jpg",
   ];
 
   const handleModalImage = (src) => {
@@ -492,7 +492,7 @@ export default function GsxR150(props) {
               <Image
                 src={
                   color == "blue"
-                    ? "/images/gsx-r150/GSX-R150_YSF_Diagonal.jpeg"
+                    ? "/images/gsx-s150/GSX-S150_YSF_Diagonal.jpg"
                     : "/images/gsx-r150/GSX-R150_YSF_Diagonal_yellow.png"
                 }
                 width={3840}
@@ -512,11 +512,11 @@ export default function GsxR150(props) {
                   control={<Radio />}
                   label="Metallic Triton Blue"
                 />
-                <FormControlLabel
+                {/* <FormControlLabel
                   value="yellow"
                   control={<Radio />}
                   label="Champion Yellow / Gloss Black"
-                />
+                /> */}
               </RadioGroup>
             </FormControl>
           </Grid>
