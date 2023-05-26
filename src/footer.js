@@ -72,9 +72,9 @@ export default function Footer(props) {
       <Box sx={{ py: 8, bgcolor: grey[800], color: "white" }}>
         <Container maxWidth="lg">
           <Grid container spacing={2} sx={{ mb: 4 }}>
-            <Grid item md={4} sx={6}>
+            {/* <Grid item md={4} sx={6}>
               
-            </Grid>
+            </Grid> */}
             <Grid item md={4} xs={6}>
               <Typography variant="h5" gutterBottom>LINKS</Typography>
               <Stack spacing={1}>
@@ -118,9 +118,15 @@ export default function Footer(props) {
             </Grid>
           </Grid>
           <Box
-            display="flex"
+           
             justifyContent="space-between"
             alignItems="center"
+            sx={{
+              display:{
+                xs: 'block',
+                md: 'flex'
+              }
+            }}
           >
             <Typography variant="caption">
               Copyright © {new Date().getFullYear()} All rights are reserved by

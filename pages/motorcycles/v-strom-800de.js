@@ -182,7 +182,7 @@ export default function VStrom800De(props) {
         </Box>
         <Grid container spacing={2}>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph01.jpeg"}
                 width={750}
@@ -196,7 +196,7 @@ export default function VStrom800De(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph02.jpeg"}
                 width={750}
@@ -210,7 +210,7 @@ export default function VStrom800De(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph03.jpeg"}
                 width={750}
@@ -222,7 +222,7 @@ export default function VStrom800De(props) {
             <Typography variant="body2">20L Fuel Tank</Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph04.jpeg"}
                 width={750}
@@ -678,7 +678,7 @@ export default function VStrom800De(props) {
                 <FormControlLabel
                   value="blue"
                   control={<Radio />}
-                  label="Metallic Triton Blue"
+                  label="Champion Yellow"
                 />
                 {/* <FormControlLabel
                   value="blue2"
@@ -724,17 +724,23 @@ export default function VStrom800De(props) {
 
       <Dialog
         fullWidth
-        maxWidth="full"
+        maxWidth="xl"
         open={openPhoto}
         onClose={() => setOpenPhoto(false)}
+        sx={{
+          '.MuiPaper-root' : {
+            boxShadow: 0,
+            background: 'transparent',
+          }
+        }}
       >
         <DialogTitle textAlign={"right"}>
           {" "}
           <IconButton onClick={() => setOpenPhoto(false)}>
-            <Close />
+            <Close sx={{color: 'white'}} />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "800px", width: "100%", mb:4 }}>
+        <Box sx={{ position: "relative", height: "100vh", width: "100%", mb:4 }}>
           <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>

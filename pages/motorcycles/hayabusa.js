@@ -187,7 +187,7 @@ export default function GsxR150(props) {
         </Box>
         <Grid container spacing={2}>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/hayabusa/detail_ph01.jpeg"}
                 width={750}
@@ -201,7 +201,7 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/hayabusa/detail_ph02.jpeg"}
                 width={750}
@@ -215,7 +215,7 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/hayabusa/detail_ph03.jpeg"}
                 width={750}
@@ -227,7 +227,7 @@ export default function GsxR150(props) {
             <Typography variant="body2">Aerodynamic bodywork</Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/hayabusa/detail_ph04.jpeg"}
                 width={750}

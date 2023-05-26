@@ -21,7 +21,12 @@ export default function FeatureListCollapsible(props){
             <List>
               {item?.content?.map((list,i) => (
                 <ListItem key={i}>
-                  <ListItemIcon>
+                  <ListItemIcon sx={{
+                    display: {
+                      xs: 'none',
+                      md: 'flex'
+                    }
+                  }}>
                     -
                   </ListItemIcon>
                   <ListItemText>{list}</ListItemText>

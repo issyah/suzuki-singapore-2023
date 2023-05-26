@@ -128,11 +128,11 @@ export default function Index() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item md={4} xs={6}>
+            <Grid item md={4} xs={12}>
               <Card elevation={0}>
                 <CardContent>
                   <Image
-                    src={"/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Right.jpeg"}
+                    src={"/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Right.jpg"}
                     height={350}
                     width={525}
                     alt="gsx-s1000gt"
@@ -163,7 +163,7 @@ export default function Index() {
                 </CardActions>
               </Card>
             </Grid>
-            <Grid item md={4} xs={6}>
+            <Grid item md={4} xs={12}>
               <Card elevation={0}>
                 <CardContent>
                   <Image

@@ -1,7 +1,6 @@
 import { createTheme } from "@mui/material/styles";
 import { red } from "@mui/material/colors";
-
-// Create a theme instance.
+import { responsiveFontSizes } from "@mui/material/styles";
 const theme = createTheme({
   palette: {
     primary: {
@@ -88,4 +87,4 @@ const theme = createTheme({
   },
 });
 
-export default theme;
+export default responsiveFontSizes(theme);

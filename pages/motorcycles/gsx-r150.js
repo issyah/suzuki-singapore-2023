@@ -189,21 +189,23 @@ export default function GsxR150(props) {
         </Box>
         <Grid container spacing={2}>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-r150/gsxr150_engine.jpeg"}
-                fill
-                className="object-contain"
+                width={750}
+                height={584}
+                className="img-responsive"
               />
             </Box>
             <Typography variant="body2">Science of Engine Design</Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-r150/gsxr150_headlight.jpeg"}
-                fill
-                className="object-contain"
+                width={750}
+                height={584}
+                className="img-responsive"
               />
             </Box>
             <Typography variant="body2">
@@ -211,21 +213,23 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6}>
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-r150/gsxr150_exhaust.jpeg"}
-                fill
-                className="object-contain"
+                width={750}
+                height={584}
+                className="img-responsive"
               />
             </Box>
             <Typography variant="body2">Dual-exit Exhaust Muffler</Typography>
           </Grid>
           <Grid item md={3} xs={6}>
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/keyless_ignition.jpeg"}
-                fill
-                className="object-contain"
+                width={750}
+                height={584}
+                className="img-responsive"
               />
             </Box>
             <Typography variant="body2">Key-Less Ignition System</Typography>
@@ -407,17 +411,25 @@ export default function GsxR150(props) {
 
       <Dialog
         fullWidth
-        maxWidth="lg"
+        maxWidth="xl"
         open={openPhoto}
         onClose={() => setOpenPhoto(false)}
+        sx={{
+          ".MuiPaper-root": {
+            boxShadow: 0,
+            background: "transparent",
+          },
+        }}
       >
-        <DialogTitle textAlign={'right'}>
+        <DialogTitle textAlign={"right"}>
           {" "}
           <IconButton onClick={() => setOpenPhoto(false)}>
-            <Close />
+            <Close sx={{ color: "white" }} />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "500px", width: "100%" }}>
+        <Box
+          sx={{ position: "relative", height: "100vh", width: "100%", mb: 4 }}
+        >
           <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>

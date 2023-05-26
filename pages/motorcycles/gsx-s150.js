@@ -190,21 +190,23 @@ export default function GsxR150(props) {
         </Box>
         <Grid container spacing={2}>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
+                width={750}
+                height={584}
                 src={"/images/gsx-r150/gsxr150_engine.jpeg"}
-                fill
-                className="object-contain"
+                className="img-responsive"
               />
             </Box>
             <Typography variant="body2">Science of Engine Design</Typography>
           </Grid>
           <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
+                width={750}
+                height={584}
                 src={"/images/gsx-s150/detail_ph02.jpeg"}
-                fill
-                className="object-contain"
+                className="img-responsive"
                 alt="Advanced Electronic Fuel Injection"
               />
             </Box>
@@ -213,12 +215,13 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6}>
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
+                width={750}
+                height={584}
                 alt="Multi-function, Full LCD Instrument Cluster"
                 src={"/images/gsx-s150/detail_ph03.jpeg"}
-                fill
-                className="object-contain"
+                className="img-responsive"
               />
             </Box>
             <Typography variant="body2">
@@ -226,11 +229,12 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6}>
-            <Box position="relative" height={250} mb={2}>
+            <Box position="relative" mb={2}>
               <Image
+                width={750}
+                height={584}
                 src={"/images/gsx-s150/detail_ph04.jpeg"}
-                fill
-                className="object-contain"
+                className="img-responsive"
               />
             </Box>
             <Typography variant="body2">Shutter-key Lock System</Typography>
