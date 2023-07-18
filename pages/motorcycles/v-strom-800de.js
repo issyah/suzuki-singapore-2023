@@ -171,7 +171,7 @@ export default function VStrom800De(props) {
             </Typography>
           </Grid>
         </Grid>
-        <Box position="relative" mb={1}>
+        <Box position="relative" mb={1} data-aos="fade-up">
           <Image
             src={BannerImg}
             height={3840}
@@ -181,7 +181,7 @@ export default function VStrom800De(props) {
           />
         </Box>
         <Grid container spacing={2}>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph01.jpeg"}
@@ -195,7 +195,7 @@ export default function VStrom800De(props) {
               Front and Rear Suspension with Long Stroke and Travel
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="250">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph02.jpeg"}
@@ -209,7 +209,7 @@ export default function VStrom800De(props) {
               21-inch Wire Spoked Front Wheel
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="500">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph03.jpeg"}
@@ -221,7 +221,7 @@ export default function VStrom800De(props) {
             </Box>
             <Typography variant="body2">20L Fuel Tank</Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="750">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/vstrom-800de/detail_ph04.jpeg"}
@@ -590,7 +590,7 @@ export default function VStrom800De(props) {
           </Typography>
         </Divider>
         <Grid container spacing={4}>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -607,7 +607,7 @@ export default function VStrom800De(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -624,7 +624,7 @@ export default function VStrom800De(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -648,6 +648,7 @@ export default function VStrom800De(props) {
           </Typography>
         </Divider>
         <Grid
+          data-aos="fade-up"
           container
           spacing={2}
           alignItems="center"
@@ -701,7 +702,7 @@ export default function VStrom800De(props) {
             PHOTO GALLERY
           </Typography>
         </Divider>
-        <Box sx={{ my: 4 }}>
+        <Box sx={{ my: 4 }} data-aos="fade-up">
           <Grid container spacing={2}>
             {photo.map((item, index) => (
               <Grid item key={index} md={2} xs={6}>

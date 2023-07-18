@@ -179,7 +179,7 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
         </Grid>
-        <Box position="relative" height={550} width="100%">
+        <Box position="relative" height={550} width="100%" data-aos="fade-up">
           <Image
             src={BannerImg}
             fill
@@ -188,7 +188,7 @@ export default function GsxR150(props) {
           />
         </Box>
         <Grid container spacing={2}>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-r150/gsxr150_engine.jpeg"}
@@ -199,7 +199,7 @@ export default function GsxR150(props) {
             </Box>
             <Typography variant="body2">Science of Engine Design</Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="250">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-r150/gsxr150_headlight.jpeg"}
@@ -212,7 +212,7 @@ export default function GsxR150(props) {
               Vertical Stacked LED Headlights
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6}>
+          <Grid item md={3} xs={6} textAlign='center' data-aos="fade-up" data-aos-delay="500">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-r150/gsxr150_exhaust.jpeg"}
@@ -223,7 +223,7 @@ export default function GsxR150(props) {
             </Box>
             <Typography variant="body2">Dual-exit Exhaust Muffler</Typography>
           </Grid>
-          <Grid item md={3} xs={6}>
+          <Grid item md={3} xs={6} data-aos="fade-up" data-aos-delay="750">
             <Box position="relative" mb={2}>
               <Image
                 src={"/images/keyless_ignition.jpeg"}
@@ -284,7 +284,7 @@ export default function GsxR150(props) {
           </Typography>
         </Divider>
         <Grid container spacing={4}>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos='fade-up'>
             <Table>
               <TableHead>
                 <TableRow>
@@ -301,7 +301,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos='fade-up'>
             <Table>
               <TableHead>
                 <TableRow>
@@ -318,7 +318,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos='fade-up'>
             <Table>
               <TableHead>
                 <TableRow>
@@ -346,6 +346,7 @@ export default function GsxR150(props) {
           spacing={2}
           alignItems="center"
           justifyContent={"center"}
+          data-aos='fade-up'
         >
           <Grid item md={6} xs={12}>
             <Box>
@@ -388,7 +389,7 @@ export default function GsxR150(props) {
             PHOTO GALLERY
           </Typography>
         </Divider>
-        <Box sx={{ my: 4 }}>
+        <Box sx={{ my: 4 }} data-aos='fade-up'>
           <Grid container spacing={2}>
             {photo.map((item, index) => (
               <Grid item key={index} md={2} xs={6}>

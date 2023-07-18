@@ -135,7 +135,7 @@ export default function GsxR150(props) {
       <Head>
         <title>GSX-R150 | Suzuki Singapore</title>
       </Head>
-      <Container sx={{ my: 6 }} maxWidth="xl">
+      <Container sx={{ my: 6 }} maxWidth="lg">
         <Button
           component={Link}
           href="/motorcycles"
@@ -180,7 +180,7 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
         </Grid>
-        <Box position="relative" height={550} width="100%">
+        <Box position="relative" height={550} width="100%" data-aos="fade-up">
           <Image
             src={BannerImg}
             fill
@@ -189,7 +189,7 @@ export default function GsxR150(props) {
           />
         </Box>
         <Grid container spacing={2}>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
               <Image
                 width={750}
@@ -200,7 +200,14 @@ export default function GsxR150(props) {
             </Box>
             <Typography variant="body2">Science of Engine Design</Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <Box position="relative" mb={2}>
               <Image
                 width={750}
@@ -215,7 +222,12 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6}>
-            <Box position="relative" mb={2}>
+            <Box
+              position="relative"
+              mb={2}
+              data-aos="fade-up"
+              data-aos-delay="500"
+            >
               <Image
                 width={750}
                 height={584}
@@ -229,7 +241,12 @@ export default function GsxR150(props) {
             </Typography>
           </Grid>
           <Grid item md={3} xs={6}>
-            <Box position="relative" mb={2}>
+            <Box
+              position="relative"
+              mb={2}
+              data-aos="fade-up"
+              data-aos-delay="750"
+            >
               <Image
                 width={750}
                 height={584}
@@ -428,7 +445,7 @@ export default function GsxR150(props) {
           </Typography>
         </Divider>
         <Grid container spacing={4}>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -445,7 +462,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -462,7 +479,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -490,6 +507,7 @@ export default function GsxR150(props) {
           spacing={2}
           alignItems="center"
           justifyContent={"center"}
+          data-aos="fade-up"
         >
           <Grid item md={6} xs={12}>
             <Box>
@@ -532,7 +550,7 @@ export default function GsxR150(props) {
             PHOTO GALLERY
           </Typography>
         </Divider>
-        <Box sx={{ my: 4 }}>
+        <Box sx={{ my: 4 }} data-aos="fade-up">
           <Grid container spacing={2}>
             {photo.map((item, index) => (
               <Grid item key={index} md={2} xs={6}>

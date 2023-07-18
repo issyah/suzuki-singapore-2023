@@ -1,8 +1,8 @@
-// gsx-r150
+// HAYABUSA 25TH ANNIVERSARY EDITION
 
 import Public from "templates/public";
-import BannerImg from "@/public/images/hayabusa/GSX1300RRQM3_action_1.jpg";
-import Logo from "@/public/images/hayabusa/logo.jpg";
+import BannerImg from "@/public/images/hayabusa-25th/GSX1300RRQM4_action_3.jpeg";
+import Logo from "@/public/images/hayabusa-25th/logo.jpg";
 import {
   Box,
   Breadcrumbs,
@@ -37,7 +37,7 @@ import FeatureListCollapsible from "@/src/FeatureListCollapsible";
 import { KeyboardArrowLeft } from "@mui/icons-material";
 import { useState } from "react";
 import { Close } from "@mui/icons-material";
-export default function GsxR150(props) {
+export default function Page(props) {
   const [openPhoto, setOpenPhoto] = useState(false);
   const [photoSelected, setPhotoSelected] = useState();
   const [color, setColor] = useState("black");
@@ -116,19 +116,58 @@ export default function GsxR150(props) {
   ];
 
   const photo = [
-    "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_1.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_2.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_front_single_seat_cowl.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_image_single_seat_cowl_2.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_left_single_seat_cowl.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_rear_single_seat_cowl.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5L_top_single_seat_cowl.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5M_diagonal_single_seat_cowl_1.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_1.jpg",
-    "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_single_seat_cowl_1.jpg",
-    "/images/hayabusa/GSX1300RRQM3_action_1.jpg",
-    "/images/hayabusa/GSX1300RRQM3_action_2.jpg"
+    "/images/hayabusa-25th/GSX1300RRQM4_side_cowl.jpeg",
+    "/images/hayabusa-25th/GSX1300RRQM4_B9E_diagonal.jpeg",
+    "/images/hayabusa-25th/GSX1300RRQM4_B9E_front.jpeg",
+    "/images/hayabusa-25th/GSX1300RRQM4_B9E_left.jpeg",
+    "/images/hayabusa-25th/GSX1300RRQM4_B9E_rear.jpeg",
+    "/images/hayabusa-25th/GSX1300RRQM4_B9E_top.jpeg",
+    "/images/hayabusa-25th/GSX1300RRQM4_action_3.jpeg",
+    "/images/hayabusa-25th/GSX1300RRQM4_action_13.jpeg",
+  ];
 
+  const detailFeatures = [
+    {
+      label: "25th anniversary glass enamel emblem on the fuel tank",
+      src: "detail_ph01.jpeg",
+    },
+    {
+      label: "Black molding on the cowl",
+      src: "detail_ph02.jpeg",
+    },
+    {
+      label: "Special V-shaped decal",
+      src: "detail_ph03.jpeg",
+    },
+    {
+      label:
+        "Single seat cowling as standard equipment (except for Japanese specs)",
+      src: "detail_ph04.jpeg",
+    },
+    {
+      label: "Suzuki thick logo decal on the fuel tank",
+      src: "detail_ph05.jpeg",
+    },
+    {
+      label: "Hayabusa Kanji logo on the drive chain",
+      src: "detail_ph06.jpeg",
+    },
+    {
+      label: "Gold anodized brake inner roter",
+      src: "detail_ph07.jpeg",
+    },
+    {
+      label: "25th anniversary logo on the muffler",
+      src: "detail_ph08.jpeg",
+    },
+    {
+      label: "Special V-shaped decal",
+      src: "detail_ph09.jpeg",
+    },
+    {
+      label: "Gold anodized chain adjuster",
+      src: "detail_ph10.jpeg",
+    },
   ];
 
   const handleModalImage = (src) => {
@@ -139,8 +178,17 @@ export default function GsxR150(props) {
   return (
     <Public>
       <Head>
-        <title>Hayabusa | Suzuki Singapore</title>
+        <title>Hayabusa 2th Anniversary Edition | Suzuki Singapore</title>
       </Head>
+      <Box position="relative" mb={1} data-aos="fade-up" mt={-2}>
+        <Image
+          src={BannerImg}
+          height={3840}
+          width={2246}
+          alt={"Hayabusa"}
+          style={{ width: "100%", height: "100vh", objectFit: "cover" }}
+        />
+      </Box>
       <Container sx={{ my: 6 }} maxWidth="lg">
         <Button
           component={Link}
@@ -156,7 +204,7 @@ export default function GsxR150(props) {
         </Breadcrumbs> */}
         <Grid container spacing={2} alignItems="center" justifyContent="center">
           <Grid item md="8" xs={12}>
-            <Box position="relative" height={100} width={"100%"} mb={4}>
+            <Box position="relative" height={200} width={"100%"} mb={4}>
               <Image
                 src={Logo}
                 fill
@@ -174,73 +222,61 @@ export default function GsxR150(props) {
               reliable. And all this wrapped in a package with breathtaking
               style and grace.
             </Typography>
+            <Typography>
+              The motorcycling world has changed in those years, while the
+              Hayabusa remains firmly on its perch as motorcycling’s Ultimate
+              Sportbike. The 25th Anniversary Model of Suzuki’s flagship
+              sportbike continues to be propelled by a muscular, refined inline
+              four-cylinder engine housed in a proven, yet modernized chassis
+              with incomparable manners, managed by an unequaled suite of
+              electronic rider aids within stunning aerodynamic bodywork that is
+              distinctly Hayabusa.
+            </Typography>
+            <Box mb={4}>
+              <Image
+                src={"/images/hayabusa-25th/GSX1300RRQM4_B9E_right.jpeg"}
+                height={3840}
+                width={2246}
+                alt={"Hayabusa"}
+                style={{ width: "100%", height: "auto" }}
+              />
+            </Box>
           </Grid>
         </Grid>
-        <Box position="relative" mb={1} data-aos="fade-up">
-          <Image
-            src={BannerImg}
-            height={3840}
-            width={2246}
-            alt={"Hayabusa"}
-            style={{ width: "100%", height: "auto" }}
-          />
-        </Box>
         <Grid container spacing={2}>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
-            <Box position="relative" mb={2}>
-              <Image
-                src={"/images/hayabusa/detail_ph01.jpeg"}
-                width={750}
-                height={584}
-                alt="Suzuki intelligence"
-                className="img-responsive"
-              />
-            </Box>
-            <Typography variant="body2">
-              Suzuki Intelligent Ride System (S.I.R.S)
-            </Typography>
-          </Grid>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="250">
-            <Box position="relative" mb={2}>
-              <Image
-                src={"/images/hayabusa/detail_ph02.jpeg"}
-                width={750}
-                height={584}
-                alt="Liquid-cooled inline-four engine"
-                className="img-responsive"
-              />
-            </Box>
-            <Typography variant="body2">
-              1,340cm3 liquid-cooled inline-four engine
-            </Typography>
-          </Grid>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="500">
-            <Box position="relative" mb={2}>
-              <Image
-                src={"/images/hayabusa/detail_ph03.jpeg"}
-                width={750}
-                height={584}
-                alt="Aerodynamic bodywork"
-                className="img-responsive"
-              />
-            </Box>
-            <Typography variant="body2">Aerodynamic bodywork</Typography>
-          </Grid>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="750">
-            <Box position="relative" mb={2}>
-              <Image
-                src={"/images/hayabusa/detail_ph04.jpeg"}
-                width={750}
-                height={584}
-                alt="The beauty of fine instrumentation"
-                className="img-responsive"
-              />
-            </Box>
-            <Typography variant="body2">
-              The beauty of fine instrumentation
-            </Typography>
-          </Grid>
+          {detailFeatures.map((item, index) => (
+            <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
+              <Box position="relative" mb={2}>
+                <Image
+                  src={`/images/hayabusa-25th/${item.src}`}
+                  width={750}
+                  height={584}
+                  alt="Suzuki intelligence"
+                  className="img-responsive"
+                />
+              </Box>
+              <Typography variant="body2">{item.label}</Typography>
+            </Grid>
+          ))}
         </Grid>
+      </Container>
+      <Box
+        sx={{
+          my: 4,
+          position: "relative",
+          height: {
+            xs: "250px",
+            md: "800px",
+          },
+          width: "100%",
+          img: {
+            objectFit: "cover",
+          },
+        }}
+      >
+        <Image src={"/images/hayabusa-25th/GSX1300RRQM4_action_13.jpeg"} fill />
+      </Box>
+      <Container maxWidth="lg">
         <Divider sx={{ my: 4 }}>
           <Typography variant="h3" component="h2">
             FEATURES
@@ -689,14 +725,28 @@ export default function GsxR150(props) {
             },
           ]}
         />
-
+      </Container>
+      <Box
+        sx={{
+          my: 4,
+          position: "relative",
+          height: "500px",
+          width: "100%",
+          img: {
+            objectFit: "cover",
+          },
+        }}
+      >
+        <Image src={"/images/hayabusa-25th/GSX1300RRQM4_side_cowl.jpeg"} fill />
+      </Box>
+      <Container maxWidth="lg">
         <Divider sx={{ my: 4 }}>
           <Typography variant="h3" component="h2">
             SPECIFICATIONS
           </Typography>
         </Divider>
         <Grid container spacing={4}>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -713,7 +763,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -730,7 +780,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -748,66 +798,13 @@ export default function GsxR150(props) {
             </Table>
           </Grid>
         </Grid>
-        <Divider sx={{ my: 4 }} data-aos='fade-up'>
-          <Typography variant="h3" component="h2">
-            COLORS
-          </Typography>
-        </Divider>
-        <Grid
-          container
-          spacing={2}
-          alignItems="center"
-          justifyContent={"center"}
-        >
-          <Grid item md={6} xs={12}>
-            <Box>
-              <Image
-                src={
-                  color == "black"
-                    ? "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_1.jpg"
-                    : color == "silver"
-                    ? "/images/hayabusa/GSX1300RRQM2_B5M_diagonal_single_seat_cowl_1.jpg"
-                    : "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_single_seat_cowl_1.jpg"
-                }
-                width={3840}
-                height={2560}
-                style={{ width: "100%", height: "auto" }}
-              />
-            </Box>
-          </Grid>
-          <Grid item md={4} xs={12}>
-            <FormControl fullWidth>
-              <RadioGroup
-                value={color}
-                onChange={(e) => setColor(e.target.value)}
-              >
-                <FormControlLabel
-                  value="black"
-                  control={<Radio />}
-                  label="Glass Sparkle Black / Candy Burnt Gold"
-                />
-                <FormControlLabel
-                  value="silver"
-                  control={<Radio />}
-                  label="Metallic Mat Sword Silver / Candy Daring Red"
-                />
-                <FormControlLabel
-                  value={"white"}
-                  control={<Radio />}
-                  label={"Pearl Brilliant White / Metallic Mat Stellar Blue"}
-                />
-              </RadioGroup>
-            </FormControl>
-          </Grid>
-        </Grid>
-
         {/* show 2 color bikes */}
         <Divider sx={{ my: 4 }}>
           <Typography variant="h3" component={"h2"}>
             PHOTO GALLERY
           </Typography>
         </Divider>
-        <Box sx={{ my: 4 }} data-aos='fade-up'>
+        <Box sx={{ my: 4 }} data-aos="fade-up">
           <Grid container spacing={2}>
             {photo.map((item, index) => (
               <Grid item key={index} md={2} xs={6}>
@@ -840,7 +837,9 @@ export default function GsxR150(props) {
             <Close />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "800px", width: "100%", mb:4 }}>
+        <Box
+          sx={{ position: "relative", height: "800px", width: "100%", mb: 4 }}
+        >
           <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>

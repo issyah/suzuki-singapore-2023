@@ -4,10 +4,14 @@ import Public from "templates/public";
 import { Container, Typography, Grid, Box, Divider, Stack, Button } from "@mui/material";
 import Link from "@/src/Link";
 import { Email, Phone } from "@mui/icons-material";
+import Head from "next/head";
 
 export default function Contact() {
   return (
     <Public>
+      <Head>
+        <title>Contact us | Suzuki Singapore</title>
+      </Head>
       <Container maxWidth="xl">
         <Typography variant="h3" component={"h2"} sx={{ mb: 4 }}>
           CONTACT US

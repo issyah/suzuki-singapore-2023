@@ -36,6 +36,11 @@ export default function Motorcycles(props) {
       name: "ULTIMATE SUPERSPORT",
       products: [
         {
+          label: 'HAYABUSA 25th ANNIVERSARY',
+          img: '/images/hayabusa-25th/GSX1300RRQM4_B9E_right.jpeg',
+          href: '/motorcycles/hayabusa-25th-anniversary-edition'
+        },
+        {
           label: "HAYABUSA",
           img: "/images/GSX1300RRQM3_CJH_right_single_seat_cowl.jpeg",
           href: "/motorcycles/hayabusa",
@@ -113,8 +118,8 @@ export default function Motorcycles(props) {
                         <Divider sx={{ my: 2 }} />
                         <Button
                           fullWidth
-                          color="secondary"
-                          variant="contained"
+                          color="primary"
+                          variant="outlined"
                           sx={{ mb: 1 }}
                           component={Link}
                           href={product.href}
@@ -122,7 +127,7 @@ export default function Motorcycles(props) {
                           Detail
                         </Button>
                         {product.view360Href && (
-                          <Button variant="outlined" fullWidth component={Link} href={product.view360Href} target='_blank'>
+                          <Button variant="text" color='secondary' fullWidth component={Link} href={product.view360Href} target='_blank'>
                             360 viewer
                           </Button>
                         )}
@@ -133,60 +138,6 @@ export default function Motorcycles(props) {
               </Grid>
             </Box>
           ))}
-          {/* <Box>
-            <Divider textAlign="left" sx={{ my: 2, ":before": { width: 0 } }}>
-              <Typography variant="h5" component="h3">
-                STREET
-              </Typography>
-            </Divider>
-            <Grid container spacing={4}>
-              {street.map((item, index) => (
-                <Grid item key={index} md={4} xs={6}>
-                  <Card>
-                    <CardContent sx={{ textAlign: "center" }}>
-                      <Box
-                        position="relative"
-                        height={200}
-                        width={"100%"}
-                        mb={2}
-                      >
-                        <Image
-                          src={item.img}
-                          fill
-                          style={{ objectFit: "contain" }}
-                        />
-                      </Box>
-                      <Typography
-                        variant="body1"
-                        fontWeight="bold"
-                        sx={{ mb: 2 }}
-                      >
-                        {item.label}
-                      </Typography>
-                      <Button
-                        fullWidth
-                        color="secondary"
-                        variant="contained"
-                        sx={{ mb: 1 }}
-                      >
-                        Detail
-                      </Button>
-                      <Button variant="outlined" fullWidth>
-                        360 viewer
-                      </Button>
-                    </CardContent>
-                  </Card>
-                </Grid>
-              ))}
-            </Grid>
-          </Box>
-          <Box>
-            <Divider textAlign="left" sx={{ my: 2, ":before": { width: 0 } }}>
-              <Typography variant="h5" component="h3">
-                SPORT ADVENTURE TOURER
-              </Typography>
-            </Divider>
-          </Box> */}
         </Stack>
       </Container>
     </Public>

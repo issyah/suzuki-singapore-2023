@@ -37,7 +37,7 @@ import FeatureListCollapsible from "@/src/FeatureListCollapsible";
 import { Close, KeyboardArrowLeft } from "@mui/icons-material";
 import { useState } from "react";
 export default function GsxS1000gt(props) {
-  const [openPhoto, setOpenPhoto] = useState(false)
+  const [openPhoto, setOpenPhoto] = useState(false);
   const [photoSelected, setPhotoSelected] = useState();
   const [color, setColor] = useState("blue");
   const dimensions = [
@@ -109,9 +109,9 @@ export default function GsxS1000gt(props) {
         "Front: 120/70ZR17M/C (58W), tubeless, Rear: 	190/50ZR17M/C (73W), tubeless",
     },
     {
-      title: 'Fuel tank capacity',
-      content: '19.0 L'
-    }
+      title: "Fuel tank capacity",
+      content: "19.0 L",
+    },
   ];
 
   const photo = [
@@ -130,7 +130,7 @@ export default function GsxS1000gt(props) {
     "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpg",
     "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Front.jpg",
     "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear_Diagonal.jpg",
-    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear.jpg"
+    "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Rear.jpg",
   ];
 
   const handleModalImage = (src) => {
@@ -176,7 +176,7 @@ export default function GsxS1000gt(props) {
             </Typography>
           </Grid>
         </Grid>
-        <Box position="relative" mb={1}>
+        <Box position="relative" mb={1} data-aos="fade-up">
           <Image
             src={BannerImg}
             height={3840}
@@ -186,8 +186,8 @@ export default function GsxS1000gt(props) {
           />
         </Box>
         <Grid container spacing={2}>
-          <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative"  mb={2}>
+          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-s1000gt/detail_ph01.jpeg"}
                 width={750}
@@ -200,8 +200,15 @@ export default function GsxS1000gt(props) {
               Suzuki Intelligent Ride System (S.I.R.S)
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative"  mb={2}>
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-s1000gt/detail_ph02.jpeg"}
                 width={750}
@@ -214,8 +221,15 @@ export default function GsxS1000gt(props) {
               6.5-inch Full-color TFT Display
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative"  mb={2}>
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-s1000gt/detail_ph03.jpeg"}
                 width={750}
@@ -228,8 +242,15 @@ export default function GsxS1000gt(props) {
               Aerodynamic and Wind Protection
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center">
-            <Box position="relative"  mb={2}>
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="700"
+          >
+            <Box position="relative" mb={2}>
               <Image
                 src={"/images/gsx-s1000gt/detail_ph04.jpeg"}
                 width={750}
@@ -896,7 +917,7 @@ export default function GsxS1000gt(props) {
           </Typography>
         </Divider>
         <Grid container spacing={4}>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -913,7 +934,7 @@ export default function GsxS1000gt(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -930,7 +951,7 @@ export default function GsxS1000gt(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12}>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -958,6 +979,7 @@ export default function GsxS1000gt(props) {
           spacing={2}
           alignItems="center"
           justifyContent={"center"}
+          data-aos="fade-up"
         >
           <Grid item md={6} xs={12}>
             <Box>
@@ -965,7 +987,9 @@ export default function GsxS1000gt(props) {
                 src={
                   color == "blue"
                     ? "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpg"
-                    : color == 'blue2' ? "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpg" : "/images/gsx-s1000gt/GSX-S1000GT_M3_YVB_Diagonal.jpg"
+                    : color == "blue2"
+                    ? "/images/gsx-s1000gt/GSX-S1000GT_M3_QT8_Diagonal.jpg"
+                    : "/images/gsx-s1000gt/GSX-S1000GT_M3_YVB_Diagonal.jpg"
                 }
                 width={3840}
                 height={2560}
@@ -1005,7 +1029,7 @@ export default function GsxS1000gt(props) {
             PHOTO GALLERY
           </Typography>
         </Divider>
-        <Box sx={{ my: 4 }}>
+        <Box sx={{ my: 4 }} data-aos="fade-up">
           <Grid container spacing={2}>
             {photo.map((item, index) => (
               <Grid item key={index} md={2} xs={6}>
@@ -1038,7 +1062,10 @@ export default function GsxS1000gt(props) {
             <Close />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "100vh", width: "100%" }} pb={2}>
+        <Box
+          sx={{ position: "relative", height: "100vh", width: "100%" }}
+          pb={2}
+        >
           <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>
