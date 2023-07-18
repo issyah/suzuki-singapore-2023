@@ -21,9 +21,9 @@ export default function FeatureListCollapsible(props) {
         <Box
           component={"div"}
           data-aos="fade-up"
+          key={index}
         >
           <Collapsible
-            key={index}
             title={<Typography variant="h5">{item.title}</Typography>}
             content={
               <List>
