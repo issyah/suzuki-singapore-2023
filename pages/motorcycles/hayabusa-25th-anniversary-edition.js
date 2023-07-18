@@ -245,7 +245,14 @@ export default function Page(props) {
         </Grid>
         <Grid container spacing={2}>
           {detailFeatures.map((item, index) => (
-            <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
+            <Grid
+              key={index}
+              item
+              md={3}
+              xs={6}
+              textAlign="center"
+              data-aos="fade-up"
+            >
               <Box position="relative" mb={2}>
                 <Image
                   src={`/images/hayabusa-25th/${item.src}`}

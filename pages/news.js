@@ -67,7 +67,7 @@ export default function News(props) {
           {filteredNews?.map((item, index) => (
             <ListItem key={index} sx={{
               borderBottom: '1px solid transparent',
-              borderColor: 'grey.3w00'
+              borderColor: 'grey.300'
             }}>
               <ListItemButton
                 target={"_blank"}
