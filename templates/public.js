@@ -33,7 +33,11 @@ export default function Public(props) {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = () => setAnchorEl(null);
-
+  useEffect(() => {
+    if(typeof window !== undefined) {
+      Aos.init();
+    }
+  }, [])
   return (
     <div>
       <Nav />

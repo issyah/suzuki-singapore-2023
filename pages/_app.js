@@ -1,26 +1,22 @@
-import * as React from 'react';
-import PropTypes from 'prop-types';
-import Head from 'next/head';
-import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-import { CacheProvider } from '@emotion/react';
-import theme from '../src/theme';
-import createEmotionCache from '../src/createEmotionCache';
-import Aos from 'aos';
+import * as React from "react";
+import PropTypes from "prop-types";
+import Head from "next/head";
+import { ThemeProvider } from "@mui/material/styles";
+import CssBaseline from "@mui/material/CssBaseline";
+import { CacheProvider } from "@emotion/react";
+import theme from "../src/theme";
+import createEmotionCache from "../src/createEmotionCache";
 import "@fontsource/roboto";
 import "@fontsource/oswald";
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'css/global.css';
-import 'aos/dist/aos.css';
+import "swiper/css";
+import "swiper/css/navigation";
+import "css/global.css";
+import "aos/dist/aos.css";
 // Client-side cache, shared for the whole session of the user in the browser.
 const clientSideEmotionCache = createEmotionCache();
 
 export default function MyApp(props) {
   const { Component, emotionCache = clientSideEmotionCache, pageProps } = props;
-  React.useEffect(() => {
-    Aos.init();
-  }, []);
   return (
     <CacheProvider value={emotionCache}>
       <Head>
