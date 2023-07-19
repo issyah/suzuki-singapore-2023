@@ -182,6 +182,7 @@ export default function Page(props) {
       </Head>
       <Box position="relative" mb={1} data-aos="fade-up" mt={-2}>
         <Image
+          priority
           src={BannerImg}
           height={3840}
           width={2246}
@@ -206,6 +207,7 @@ export default function Page(props) {
           <Grid item md="8" xs={12}>
             <Box position="relative" height={200} width={"100%"} mb={4}>
               <Image
+                priority
                 src={Logo}
                 fill
                 alt={"gsx-r150"}
@@ -234,6 +236,7 @@ export default function Page(props) {
             </Typography>
             <Box mb={4}>
               <Image
+                priority
                 src={"/images/hayabusa-25th/GSX1300RRQM4_B9E_right.jpeg"}
                 height={3840}
                 width={2246}
@@ -255,6 +258,7 @@ export default function Page(props) {
             >
               <Box position="relative" mb={2}>
                 <Image
+                  priority
                   src={`/images/hayabusa-25th/${item.src}`}
                   width={750}
                   height={584}
@@ -281,7 +285,11 @@ export default function Page(props) {
           },
         }}
       >
-        <Image src={"/images/hayabusa-25th/GSX1300RRQM4_action_13.jpeg"} fill />
+        <Image
+          priority
+          src={"/images/hayabusa-25th/GSX1300RRQM4_action_13.jpeg"}
+          fill
+        />
       </Box>
       <Container maxWidth="lg">
         <Divider sx={{ my: 4 }}>
@@ -744,7 +752,11 @@ export default function Page(props) {
           },
         }}
       >
-        <Image src={"/images/hayabusa-25th/GSX1300RRQM4_side_cowl.jpeg"} fill />
+        <Image
+          priority
+          src={"/images/hayabusa-25th/GSX1300RRQM4_side_cowl.jpeg"}
+          fill
+        />
       </Box>
       <Container maxWidth="lg">
         <Divider sx={{ my: 4 }}>
@@ -824,7 +836,12 @@ export default function Page(props) {
                   }}
                   onClick={() => handleModalImage(item)}
                 >
-                  <Image src={item} fill style={{ objectFit: "cover" }} />
+                  <Image
+                    priority
+                    src={item}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
                 </Box>
               </Grid>
             ))}
@@ -847,7 +864,12 @@ export default function Page(props) {
         <Box
           sx={{ position: "relative", height: "800px", width: "100%", mb: 4 }}
         >
-          <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
+          <Image
+            priority
+            src={photoSelected}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Box>
       </Dialog>
     </Public>

@@ -150,7 +150,7 @@ export default function VStrom800De(props) {
         <Grid container spacing={2} alignItems="center" justifyContent="center">
           <Grid item md="8" xs={12}>
             <Box position="relative" height={50} width={"100%"} mb={4}>
-              <Image
+              <Image priority
                 src={Logo}
                 fill
                 alt={"gsx-r150"}
@@ -172,7 +172,7 @@ export default function VStrom800De(props) {
           </Grid>
         </Grid>
         <Box position="relative" mb={1} data-aos="fade-up">
-          <Image
+          <Image priority
             src={BannerImg}
             height={3840}
             width={2246}
@@ -183,7 +183,7 @@ export default function VStrom800De(props) {
         <Grid container spacing={2}>
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
-              <Image
+              <Image priority
                 src={"/images/vstrom-800de/detail_ph01.jpeg"}
                 width={750}
                 height={584}
@@ -197,7 +197,7 @@ export default function VStrom800De(props) {
           </Grid>
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="250">
             <Box position="relative" mb={2}>
-              <Image
+              <Image priority
                 src={"/images/vstrom-800de/detail_ph02.jpeg"}
                 width={750}
                 height={584}
@@ -211,7 +211,7 @@ export default function VStrom800De(props) {
           </Grid>
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="500">
             <Box position="relative" mb={2}>
-              <Image
+              <Image priority
                 src={"/images/vstrom-800de/detail_ph03.jpeg"}
                 width={750}
                 height={584}
@@ -223,7 +223,7 @@ export default function VStrom800De(props) {
           </Grid>
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="750">
             <Box position="relative" mb={2}>
-              <Image
+              <Image priority
                 src={"/images/vstrom-800de/detail_ph04.jpeg"}
                 width={750}
                 height={584}
@@ -656,7 +656,7 @@ export default function VStrom800De(props) {
         >
           <Grid item md={6} xs={12}>
             <Box>
-              <Image
+              <Image priority
                 src={
                   color == "blue"
                     ? "/images/vstrom-800de/DL800DERCM3_YU1_diagonal.jpg"
@@ -715,7 +715,7 @@ export default function VStrom800De(props) {
                   }}
                   onClick={() => handleModalImage(item)}
                 >
-                  <Image src={item} fill style={{ objectFit: "cover" }} />
+                  <Image priority src={item} fill style={{ objectFit: "cover" }} />
                 </Box>
               </Grid>
             ))}
@@ -742,7 +742,7 @@ export default function VStrom800De(props) {
           </IconButton>
         </DialogTitle>
         <Box sx={{ position: "relative", height: "100vh", width: "100%", mb:4 }}>
-          <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
+          <Image priority src={photoSelected} fill style={{ objectFit: "contain" }} />
         </Box>
       </Dialog>
     </Public>

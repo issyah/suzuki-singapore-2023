@@ -14,17 +14,20 @@ export default function Public(props) {
     {
       label: "Talk to sales",
       contact: "6562997939",
-      message: "Hi, I got this number from suzukisingapore.com.sg, I want to talk to sales"
+      message:
+        "Hi, I got this number from suzukisingapore.com.sg, I want to talk to sales",
     },
     {
       label: "Enquire about services/repair",
       contact: "6565160016",
-      message: "Hi, I got this number from suzukisingapore.com.sg, I want to enquire about services"
+      message:
+        "Hi, I got this number from suzukisingapore.com.sg, I want to enquire about services",
     },
     {
       label: "Enquire about spare parts",
       contact: "6565160018",
-      message: "Hi, I got this number from suzukisingapore.com.sg, I want to enquire about spare parts"
+      message:
+        "Hi, I got this number from suzukisingapore.com.sg, I want to enquire about spare parts",
     },
   ];
   const [anchorEl, setAnchorEl] = useState(null);
@@ -34,10 +37,8 @@ export default function Public(props) {
   };
   const handleClose = () => setAnchorEl(null);
   useEffect(() => {
-    if(typeof window !== undefined) {
-      Aos.init();
-    }
-  }, [])
+    Aos.init();
+  }, []);
   return (
     <div>
       <Nav />
@@ -60,16 +61,23 @@ export default function Public(props) {
         open={open}
         anchorEl={anchorEl}
         anchorOrigin={{
-          vertical: 'top',
-          horizontal: 'left'
+          vertical: "top",
+          horizontal: "left",
         }}
         transformOrigin={{
-          vertical: 'bottom',
-          horizontal: 'right'
+          vertical: "bottom",
+          horizontal: "right",
         }}
       >
-        {whatsappLink.map((item,index) => (
-          <MenuItem target={'_blank'} component={Link} href={`https://api.whatsapp.com/send?phone=${item?.contact}&text=${item?.message}`} key={index}>{item.label}</MenuItem>
+        {whatsappLink.map((item, index) => (
+          <MenuItem
+            target={"_blank"}
+            component={Link}
+            href={`https://api.whatsapp.com/send?phone=${item?.contact}&text=${item?.message}`}
+            key={index}
+          >
+            {item.label}
+          </MenuItem>
         ))}
       </Menu>
     </div>

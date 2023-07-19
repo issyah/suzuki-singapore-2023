@@ -160,6 +160,7 @@ export default function GsxS1000gt(props) {
           <Grid item md="8" xs={12}>
             <Box position="relative" height={50} width={"100%"} mb={4}>
               <Image
+                priority
                 src={Logo}
                 fill
                 alt={"gsx-r150"}
@@ -178,6 +179,7 @@ export default function GsxS1000gt(props) {
         </Grid>
         <Box position="relative" mb={1} data-aos="fade-up">
           <Image
+            priority
             src={BannerImg}
             height={3840}
             width={2246}
@@ -189,6 +191,7 @@ export default function GsxS1000gt(props) {
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/gsx-s1000gt/detail_ph01.jpeg"}
                 width={750}
                 height={584}
@@ -210,6 +213,7 @@ export default function GsxS1000gt(props) {
           >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/gsx-s1000gt/detail_ph02.jpeg"}
                 width={750}
                 height={584}
@@ -231,6 +235,7 @@ export default function GsxS1000gt(props) {
           >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/gsx-s1000gt/detail_ph03.jpeg"}
                 width={750}
                 height={584}
@@ -252,6 +257,7 @@ export default function GsxS1000gt(props) {
           >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/gsx-s1000gt/detail_ph04.jpeg"}
                 width={750}
                 height={584}
@@ -984,6 +990,7 @@ export default function GsxS1000gt(props) {
           <Grid item md={6} xs={12}>
             <Box>
               <Image
+                priority
                 src={
                   color == "blue"
                     ? "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Diagonal.jpg"
@@ -1042,7 +1049,12 @@ export default function GsxS1000gt(props) {
                   }}
                   onClick={() => handleModalImage(item)}
                 >
-                  <Image src={item} fill style={{ objectFit: "cover" }} />
+                  <Image
+                    priority
+                    src={item}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
                 </Box>
               </Grid>
             ))}
@@ -1066,7 +1078,12 @@ export default function GsxS1000gt(props) {
           sx={{ position: "relative", height: "100vh", width: "100%" }}
           pb={2}
         >
-          <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
+          <Image
+            priority
+            src={photoSelected}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Box>
       </Dialog>
     </Public>

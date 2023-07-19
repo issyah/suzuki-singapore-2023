@@ -156,6 +156,7 @@ export default function GsxR150(props) {
           <Grid item md="8" xs={12}>
             <Box position="relative" height={50} width={"100%"} mb={4}>
               <Image
+                priority
                 src={Logo}
                 fill
                 alt={"gsx-r150"}
@@ -181,6 +182,7 @@ export default function GsxR150(props) {
         </Grid>
         <Box position="relative" height={550} width="100%" data-aos="fade-up">
           <Image
+            priority
             src={BannerImg}
             fill
             alt={"GSX-R150"}
@@ -191,6 +193,7 @@ export default function GsxR150(props) {
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/gsx-r150/gsxr150_engine.jpeg"}
                 width={750}
                 height={584}
@@ -199,9 +202,17 @@ export default function GsxR150(props) {
             </Box>
             <Typography variant="body2">Science of Engine Design</Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="250">
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/gsx-r150/gsxr150_headlight.jpeg"}
                 width={750}
                 height={584}
@@ -212,9 +223,17 @@ export default function GsxR150(props) {
               Vertical Stacked LED Headlights
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign='center' data-aos="fade-up" data-aos-delay="500">
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/gsx-r150/gsxr150_exhaust.jpeg"}
                 width={750}
                 height={584}
@@ -226,6 +245,7 @@ export default function GsxR150(props) {
           <Grid item md={3} xs={6} data-aos="fade-up" data-aos-delay="750">
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/keyless_ignition.jpeg"}
                 width={750}
                 height={584}
@@ -284,7 +304,7 @@ export default function GsxR150(props) {
           </Typography>
         </Divider>
         <Grid container spacing={4}>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -301,7 +321,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -318,7 +338,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -346,11 +366,12 @@ export default function GsxR150(props) {
           spacing={2}
           alignItems="center"
           justifyContent={"center"}
-          data-aos='fade-up'
+          data-aos="fade-up"
         >
           <Grid item md={6} xs={12}>
             <Box>
               <Image
+                priority
                 src={
                   color == "blue"
                     ? "/images/gsx-r150/GSX-R150_YSF_Diagonal.jpeg"
@@ -389,7 +410,7 @@ export default function GsxR150(props) {
             PHOTO GALLERY
           </Typography>
         </Divider>
-        <Box sx={{ my: 4 }} data-aos='fade-up'>
+        <Box sx={{ my: 4 }} data-aos="fade-up">
           <Grid container spacing={2}>
             {photo.map((item, index) => (
               <Grid item key={index} md={2} xs={6}>
@@ -402,7 +423,12 @@ export default function GsxR150(props) {
                   }}
                   onClick={() => handleModalImage(item)}
                 >
-                  <Image src={item} fill style={{ objectFit: "cover" }} />
+                  <Image
+                    priority
+                    src={item}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
                 </Box>
               </Grid>
             ))}
@@ -431,7 +457,12 @@ export default function GsxR150(props) {
         <Box
           sx={{ position: "relative", height: "100vh", width: "100%", mb: 4 }}
         >
-          <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
+          <Image
+            priority
+            src={photoSelected}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Box>
       </Dialog>
     </Public>

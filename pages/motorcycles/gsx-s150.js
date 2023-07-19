@@ -152,6 +152,7 @@ export default function GsxR150(props) {
           <Grid item md="8" xs={12}>
             <Box position="relative" height={50} width={"100%"} mb={4}>
               <Image
+                priority
                 src={Logo}
                 fill
                 alt={"gsx-r150"}
@@ -182,6 +183,7 @@ export default function GsxR150(props) {
         </Grid>
         <Box position="relative" height={550} width="100%" data-aos="fade-up">
           <Image
+            priority
             src={BannerImg}
             fill
             alt={"GSX-R150"}
@@ -192,6 +194,7 @@ export default function GsxR150(props) {
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
               <Image
+                priority
                 width={750}
                 height={584}
                 src={"/images/gsx-r150/gsxr150_engine.jpeg"}
@@ -210,6 +213,7 @@ export default function GsxR150(props) {
           >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 width={750}
                 height={584}
                 src={"/images/gsx-s150/detail_ph02.jpeg"}
@@ -229,6 +233,7 @@ export default function GsxR150(props) {
               data-aos-delay="500"
             >
               <Image
+                priority
                 width={750}
                 height={584}
                 alt="Multi-function, Full LCD Instrument Cluster"
@@ -248,6 +253,7 @@ export default function GsxR150(props) {
               data-aos-delay="750"
             >
               <Image
+                priority
                 width={750}
                 height={584}
                 src={"/images/gsx-s150/detail_ph04.jpeg"}
@@ -512,6 +518,7 @@ export default function GsxR150(props) {
           <Grid item md={6} xs={12}>
             <Box>
               <Image
+                priority
                 src={
                   color == "blue"
                     ? "/images/gsx-s150/GSX-S150_YSF_Diagonal.jpg"
@@ -563,7 +570,12 @@ export default function GsxR150(props) {
                   }}
                   onClick={() => handleModalImage(item)}
                 >
-                  <Image src={item} fill style={{ objectFit: "cover" }} />
+                  <Image
+                    priority
+                    src={item}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
                 </Box>
               </Grid>
             ))}
@@ -584,7 +596,12 @@ export default function GsxR150(props) {
           </IconButton>
         </DialogTitle>
         <Box sx={{ position: "relative", height: "500px", width: "100%" }}>
-          <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
+          <Image
+            priority
+            src={photoSelected}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Box>
       </Dialog>
     </Public>

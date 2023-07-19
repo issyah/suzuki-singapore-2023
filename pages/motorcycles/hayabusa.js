@@ -127,8 +127,7 @@ export default function GsxR150(props) {
     "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_1.jpg",
     "/images/hayabusa/GSX1300RRQM2_B5N_diagonal_single_seat_cowl_1.jpg",
     "/images/hayabusa/GSX1300RRQM3_action_1.jpg",
-    "/images/hayabusa/GSX1300RRQM3_action_2.jpg"
-
+    "/images/hayabusa/GSX1300RRQM3_action_2.jpg",
   ];
 
   const handleModalImage = (src) => {
@@ -158,6 +157,7 @@ export default function GsxR150(props) {
           <Grid item md="8" xs={12}>
             <Box position="relative" height={100} width={"100%"} mb={4}>
               <Image
+                priority
                 src={Logo}
                 fill
                 alt={"gsx-r150"}
@@ -178,6 +178,7 @@ export default function GsxR150(props) {
         </Grid>
         <Box position="relative" mb={1} data-aos="fade-up">
           <Image
+            priority
             src={BannerImg}
             height={3840}
             width={2246}
@@ -189,6 +190,7 @@ export default function GsxR150(props) {
           <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up">
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/hayabusa/detail_ph01.jpeg"}
                 width={750}
                 height={584}
@@ -200,9 +202,17 @@ export default function GsxR150(props) {
               Suzuki Intelligent Ride System (S.I.R.S)
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="250">
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="250"
+          >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/hayabusa/detail_ph02.jpeg"}
                 width={750}
                 height={584}
@@ -214,9 +224,17 @@ export default function GsxR150(props) {
               1,340cm3 liquid-cooled inline-four engine
             </Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="500">
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/hayabusa/detail_ph03.jpeg"}
                 width={750}
                 height={584}
@@ -226,9 +244,17 @@ export default function GsxR150(props) {
             </Box>
             <Typography variant="body2">Aerodynamic bodywork</Typography>
           </Grid>
-          <Grid item md={3} xs={6} textAlign="center" data-aos="fade-up" data-aos-delay="750">
+          <Grid
+            item
+            md={3}
+            xs={6}
+            textAlign="center"
+            data-aos="fade-up"
+            data-aos-delay="750"
+          >
             <Box position="relative" mb={2}>
               <Image
+                priority
                 src={"/images/hayabusa/detail_ph04.jpeg"}
                 width={750}
                 height={584}
@@ -696,7 +722,7 @@ export default function GsxR150(props) {
           </Typography>
         </Divider>
         <Grid container spacing={4}>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -713,7 +739,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -730,7 +756,7 @@ export default function GsxR150(props) {
               </TableBody>
             </Table>
           </Grid>
-          <Grid item md="6" xs={12} data-aos='fade-up'>
+          <Grid item md="6" xs={12} data-aos="fade-up">
             <Table>
               <TableHead>
                 <TableRow>
@@ -748,7 +774,7 @@ export default function GsxR150(props) {
             </Table>
           </Grid>
         </Grid>
-        <Divider sx={{ my: 4 }} data-aos='fade-up'>
+        <Divider sx={{ my: 4 }} data-aos="fade-up">
           <Typography variant="h3" component="h2">
             COLORS
           </Typography>
@@ -762,6 +788,7 @@ export default function GsxR150(props) {
           <Grid item md={6} xs={12}>
             <Box>
               <Image
+                priority
                 src={
                   color == "black"
                     ? "/images/hayabusa/GSX1300RRQM2_B5L_diagonal_single_seat_cowl_1.jpg"
@@ -807,7 +834,7 @@ export default function GsxR150(props) {
             PHOTO GALLERY
           </Typography>
         </Divider>
-        <Box sx={{ my: 4 }} data-aos='fade-up'>
+        <Box sx={{ my: 4 }} data-aos="fade-up">
           <Grid container spacing={2}>
             {photo.map((item, index) => (
               <Grid item key={index} md={2} xs={6}>
@@ -820,7 +847,12 @@ export default function GsxR150(props) {
                   }}
                   onClick={() => handleModalImage(item)}
                 >
-                  <Image src={item} fill style={{ objectFit: "cover" }} />
+                  <Image
+                    priority
+                    src={item}
+                    fill
+                    style={{ objectFit: "cover" }}
+                  />
                 </Box>
               </Grid>
             ))}
@@ -840,8 +872,15 @@ export default function GsxR150(props) {
             <Close />
           </IconButton>
         </DialogTitle>
-        <Box sx={{ position: "relative", height: "800px", width: "100%", mb:4 }}>
-          <Image src={photoSelected} fill style={{ objectFit: "contain" }} />
+        <Box
+          sx={{ position: "relative", height: "800px", width: "100%", mb: 4 }}
+        >
+          <Image
+            priority
+            src={photoSelected}
+            fill
+            style={{ objectFit: "contain" }}
+          />
         </Box>
       </Dialog>
     </Public>
