@@ -110,17 +110,23 @@ export default function Index() {
         </Box>
         <Grid container spacing={2} sx={{ mb: 4 }}>
           <Grid item md={4} xs={6}>
-            <Image
-              src={Banner3}
-              alt="Hayabusa 25th Anniversary"
-              className="img-responsive"
-            />
+            <Link href="/motorcycles/hayabusa-25th-anniversary-edition">
+              <Image
+                src={Banner3}
+                alt="Hayabusa 25th Anniversary"
+                className="img-responsive"
+              />
+            </Link>
           </Grid>
           <Grid item md={4} xs={6}>
-            <Image src={Banner2} alt="hayabusa" className="img-responsive" />
+            <Link href={"/motorcycles/hayabusa"}>
+              <Image src={Banner2} alt="hayabusa" className="img-responsive" />
+            </Link>
           </Grid>
           <Grid item md={4} xs={6}>
-            <Image src={Banner1} alt="v-strom" className="img-responsive" />
+            <Link href={"/motorcycles/v-strom-800de"}>
+              <Image src={Banner1} alt="v-strom" className="img-responsive" />
+            </Link>
           </Grid>
         </Grid>
       </Container>
@@ -138,7 +144,11 @@ export default function Index() {
           <Grid container spacing={4}>
             {latestMotos.map((item, index) => (
               <Grid item md={3} key={index}>
-                <CardActionArea component={Link} href={item?.href} sx={{height:'100%'}}>
+                <CardActionArea
+                  component={Link}
+                  href={item?.href}
+                  sx={{ height: "100%" }}
+                >
                   <Card elevation={0} sx={{ height: "100%" }}>
                     <CardContent sx={{ height: "100%" }}>
                       <Image
@@ -148,7 +158,12 @@ export default function Index() {
                         alt="hayabusa"
                         className="img-responsive"
                       />
-                      <Typography variant="body1" fontWeight='bold' align="center" gutterBottom>
+                      <Typography
+                        variant="body1"
+                        fontWeight="bold"
+                        align="center"
+                        gutterBottom
+                      >
                         {item?.label}
                       </Typography>
                       <Grid container spacing={2}>

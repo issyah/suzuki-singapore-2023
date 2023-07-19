@@ -37,7 +37,11 @@ export default function Public(props) {
   };
   const handleClose = () => setAnchorEl(null);
   useEffect(() => {
-    Aos.init();
+    if (typeof window !== undefined) {
+      window.onload = () => {
+        Aos.init();
+      };
+    }
   }, []);
   return (
     <div>
