@@ -12,20 +12,14 @@ export default function Public(props) {
   const { children } = props;
   const whatsappLink = [
     {
-      label: "Talk to sales",
-      contact: "6562997939",
+      label: "Talk to sales / Showroom",
+      contact: "6583897596",
       message:
         "Hi, I got this number from suzukisingapore.com.sg, I want to talk to sales",
     },
     {
-      label: "Enquire about services/repair",
-      contact: "6565160016",
-      message:
-        "Hi, I got this number from suzukisingapore.com.sg, I want to enquire about services",
-    },
-    {
       label: "Enquire about spare parts",
-      contact: "6565160018",
+      contact: "6585628797",
       message:
         "Hi, I got this number from suzukisingapore.com.sg, I want to enquire about spare parts",
     },
@@ -37,11 +31,10 @@ export default function Public(props) {
   };
   const handleClose = () => setAnchorEl(null);
   useEffect(() => {
-    if (typeof window !== undefined) {
-      window.onload = () => {
-        Aos.init();
-      };
-    }
+    Aos.init();
+    document
+      .querySelectorAll("img")
+      .forEach((img) => img.addEventListener("load", () => Aos.refresh()));
   }, []);
   return (
     <div>

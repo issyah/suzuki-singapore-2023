@@ -53,7 +53,7 @@ export default function Motorcycles(props) {
       products: [
         {
           label: "GSX-S1000GT",
-          img: "/images/gsx-s1000gt.jpeg",
+          img: "/images/gsx-s1000gt/GSX-S1000GT_M3_YSF_Right.jpg",
           href: "/motorcycles/gsx-s1000gt",
         },
         {
@@ -68,7 +68,7 @@ export default function Motorcycles(props) {
       products: [
         {
           label: "V-STROM 800DE",
-          img: "/images/dl800de.jpeg",
+          img: "/images/vstrom-800de/DL800DERCM3_YU1_right.jpeg",
           href: "/motorcycles/v-strom-800de",
         },
       ],
